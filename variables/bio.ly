@@ -1,4 +1,4 @@
-%fifteen inventions project
+% river project
 
 xbio = \markup {
   \center-column {

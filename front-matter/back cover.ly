@@ -1,4 +1,4 @@
-%cowbell project
+% river project
 
 backcover = \markuplist { \fill-line {
     \line { \null }

@@ -1,4 +1,4 @@
-%cowbell project
+% river project
 
 cover =  \markuplist {
     \fill-line {

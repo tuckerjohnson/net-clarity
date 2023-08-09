@@ -1,4 +1,4 @@
-%cowbell project
+% river project
 front-matter = \markuplist {
  \fill-line {
    \left-column {

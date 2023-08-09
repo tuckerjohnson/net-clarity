@@ -1,4 +1,4 @@
-%cowbell project
+% river project
 
 xpnote = \markup {
   \center-column {

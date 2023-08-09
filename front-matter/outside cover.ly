@@ -1,4 +1,4 @@
-%cowbell project
+% river project
 
 outcover = \markuplist {
 \fill-line {

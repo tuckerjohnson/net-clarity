@@ -1,4 +1,4 @@
-%cowbell project
+% river project
 %texts
 xtitle = \markup { River Sonata }
 xsub = \markup { dedicated to Amber Lucas }

@@ -1,4 +1,4 @@
-%cowbell project
+% river project
 
 \new PianoStaff \with {
   instrumentName = \markup { "piano " }
@@ -12,9 +12,11 @@
     \accidentalStyle piano
     <<
       \relative { \numericTimeSignature
-      \time 7/2
-      <c c'>2 <ees c'> <ees g> <d g> <des g>2~ 2. r8. g16 |
-      <g c>2 f4.. ges16 <f c'>2 |
+      \time 4/2
+      <c c'>2\pp <ees c'> <ees g> <d g>
+      \time 3/2
+      <des g>1~ 4 r8. g16 |
+      <g c>2 <f c'>4.. ges16 <f c'>2 |
 
 
       }
@@ -27,8 +29,9 @@
     \accidentalStyle piano
     <<
       \relative { \numericTimeSignature
-      \time 7/2
-      aes,,2 aes bes bes ces~ 2. r4 |
+      \time 4/2
+      aes,,2 aes bes bes |
+      ces1~ 4 r4 |
       aes'2 aes bes |
       }
     >>
