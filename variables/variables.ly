@@ -1,6 +1,6 @@
 % river project
 %texts
-xtitle = \markup { River Sonata }
+xtitle = \markup { Net Clarity }
 xsub = \markup { dedicated to Amber Lucas }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { Clarinet and Piano }
