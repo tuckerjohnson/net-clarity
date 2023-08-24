@@ -29,7 +29,7 @@
 	\Score
 	\override RehearsalMark.break-visibility = #begin-of-line-invisible
 	\override BarNumber.font-size = #1
-	\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+	\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
       }
     }
   }
