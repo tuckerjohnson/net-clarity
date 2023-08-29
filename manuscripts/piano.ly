@@ -26,6 +26,25 @@
       s1 |
       s1 |
       s1 |
+      s1 |
+      \time 3/8
+      s8 s8 s8 |
+      \time 1/4
+      \tuplet 3/2 { r8 des4\fermata } |
+      \time 2/2 \clef bass
+      <<
+	\relative {
+	  \voiceOne
+	  c'4 bes s2 |
+	  s2  des2 |
+	}
+	\new Voice \relative {
+	  \afterGrace 12/16 e2 { \stemDown f8( } \afterGrace 15/16 <f aes>2) { \stemDown des'8^( } |
+	  <aes des>2) g4 f |
+	}
+      >>
+      \oneVoice
+      c,1\fermata |
       }
     >>
   }
@@ -52,8 +71,12 @@
 	  <ees g c>2 <gis b>2~ |
 	  \afterGrace 15/16 1\fermata { ees'8( } |
 	  <ees g,>1) |
-	  <bes g>1\fermata |
-
+	  \afterGrace 15/16 <bes g>1\fermata { \stemDown c8( } |
+	  \stemUp <aes c>2) <ees c'> |
+	  \time 3/8
+	  <fis b>4 <e c'>8~ |
+	  \time 1/4
+	  4 |
 	}
 	\new Voice \relative { \numericTimeSignature
 	  \voiceTwo
@@ -71,9 +94,17 @@
 	  1 |
 	  f,1 |
 	  e1 |
-
+	  ges2 f2 |
+	  \time 3/8
+	  a,4 d8~ |
+	  \time 1/4
+	  d4 |
 	}
       >>
+      \oneVoice
+      g,2 <d~ b'>2 |
+      d2 bes'2 |
+      ees1\fermata |
     }
   }
 >>

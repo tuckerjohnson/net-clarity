@@ -22,6 +22,15 @@
   \time 2/2
   f2~ \tuplet 3/2 { f4 e( fis } |
   a,1)\fermata |
-  a1 |
-  d1\fermata |
+  a1-- |
+  d1--\fermata |
+  cis'4( b') bes2 |
+  \time 3/8
+  \tuplet 3/2 { c8( g,4~ } 8~ |
+  \time 1/4
+  \tuplet 3/2 { g8 aes4) } |
+  \time 2/2
+  r2 \tuplet 3/2 { e4( fis a,~ } |
+  a8) r8 r4 r2 |
+  R1\fermata |
 }
