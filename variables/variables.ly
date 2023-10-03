@@ -40,9 +40,6 @@ ppsempre =
 #:transparent "f" #:normal-text #:italic "sempre" ) )
 
 
-utwo = \change Staff = "ui2"
-dtwo = \change Staff = "di2"
-
 U = \change Staff = "u"
 D = \change Staff = "d"
 

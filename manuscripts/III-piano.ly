@@ -21,17 +21,28 @@
         r4 <f bes>2~ 4. cis'8( |
         \time 4/4 <fis, gis~>4 <gis dis'>2.) |
         \time 3/4 r4 a8( <e b'>~ 4) |
-        \clef treble
-        \time 4/4 d'4( <c g'>2.) |
+        \clef treble \time 4/4 d'4( <c g'>2.) |
         \time 3/4 r8 f8~ <f bes,>4~ 8 dis8( |
         \time 7/8 gis4.) b,4(~ <b e>4) |
         \time 3/4 cis'4.( d,8~ 8)[ g]( |
         \time 7/8 a4. ges,8~ <ges c>~ 4) |
-        \time 4/4 r8 f8 fis cis'~ cis bes aes' ees~ |
-        2 r4 \tuplet 3/2 { r8 a, e'} |
+        \time 4/4 r8 f8( fis cis') r8 (bes aes' ees~ |
+        2) r4 \tuplet 3/2 { r8 a,( e') } |
         r2 \tuplet 3/2 { r8 c'4~-> } 8 \clef bass e,,8 |
         <d g>1~\arpeggio |
         1 |
+        R1 |
+        r2 ees2~ |
+        4 \clef treble <fis cis' gis'>2.~\arpeggio |
+        1 |
+        \time 3/4 r4 a'2 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        \time 4/4 R1 |
+        R1 |
+        ees1 |
+        des1 |
       }
     >>
   }
@@ -57,11 +68,23 @@
         \time 7/8 a8~([ <a cis>~ <a cis~ fis~>] <cis fis>2) |
         \time 3/4 b8~( <b gis'>~ <b gis' e'>2) |
         \time 7/8 bes8~([ <bes ees>~ <bes ees f'>~] 2) |
-        \time 4/4 \tuplet 3/2 { d,8( <b' g'>4~ } 4) \tuplet 3/2 { c,8( <a' e'>4~ } 4) |
-        \tuplet 3/2 { des,8( <aes' f'>4~ } 4) \tuplet 3/2 { ees8( <bes' ges'>4~ } 4) |
+        \time 4/4 \tuplet 3/2 { d,8 <b' g'>4~ } \tuplet 3/2 { 8 4 } \tuplet 3/2 { c,8 <a' e'>4~ } \tuplet 3/2 { 8 4 } |
+        \tuplet 3/2 { des,8 <aes' f'>4~ } \tuplet 3/2 { 8 4 } \tuplet 3/2 { ees8 <bes' ges'>4~ } \tuplet 3/2 { 8 4 } |
         b,2~->^\mf \tuplet 3/2 { 8 a'4~-> } 8 r8 |
         <bes, f'>1~\arpeggio |
         1 |
+        r2 <c g'>2~\arpeggio |
+        1~ |
+        4 d,2.~ |
+        4~ <d b''>2.
+        \time 3/4 b'8~( <b e'>8~ 2) |
+        c'8~( <c g'>~ <c g' d'>2) |
+        ees,8~( <ees bes'>~ <ees bes' f'>2) |
+        gis8( fis'~ <fis cis'>2) |
+        \time 4/4 a,8~( <a d>~ <a d b'>2.) |
+        g8~( <g e'>4.~ 8) c'4. |
+        \U \tuplet 3/2 { ees8( \D bes ges } \tuplet 3/2 { bes ges bes } \tuplet 3/2 { ges bes ges } \tuplet 3/2 { bes ges bes) }
+        \U \tuplet 3/2 { des8( \D aes f } \tuplet 3/2 { aes f aes } \tuplet 3/2 { f aes f } \tuplet 3/2 { aes f aes) }
       }
     }
 >>
