@@ -81,18 +81,40 @@
         r4 <g d'>4( <a c>2) |
         \time 3/4 r4 <f bes>4. cis'8 |
         <fis, gis~>4 <gis dis'>2 |
-        r4 r8 a8( <b e,>4) |
+        r4 r8 a8( <b e,>4) | \clef treble
+        r4 c8~ <c g'>~ <c g' d'>4~ |
+        \time 4/4 8 f'8~ 2 f8( ees |
+        \time 3/4 bes'2.) |
+        \time 4/4 r8 bes8~( 4 aes4.) e8( |
+        \time 3/4 b'2.) |
+        \time 4/4 r8 fis8~( 4 cis'2 |
+        \time 3/4 a2.) |
+        \time 4/4 r8 g8~( 4 d'2 |
+        \time 3/4 c,2.) |
+        \time 4/4 <ges f' bes>2.( <ees aes des>4) |
+        R1 |
+        R1 |
+        \time 3/4 R1*3/4 |
+        \time 7/8 R1*7/8 |
+        \time 3/4 R1*3/4 |
+        \time 7/8 R1*7/8 | \clef bass
+        \time 3/4 r8 f,4( bes8 ees4) |
+        \time 4/4 r2 r8 c,8~ 4~ |
+        \time 5/4 8 r8 r4 r8 b'8~ <b e,>2 |
+        r2 gis8~ <gis cis>~ 2 |
+        \time 4/4 fis2 r2 |
+        \time 5/4 r4 g4~ 8~ <g d>~ 2 |
+        a2.~ 2 \bar "|."
       }
     >>
   }
   \new Staff = "d" \with { \consists "Merge_rests_engraver" }
   {
     \clef bass
-    \set Staff.pedalSustainStyle = #'mixed
+    \set Staff.pedalSustainStyle = #'bracket
     \accidentalStyle piano
     \override Score.SpacingSpanner.strict-grace-spacing = ##t
     \relative {
-        \numericTimeSignature
         \numericTimeSignature
         \tempo "Lento, poco rubato" 4=50
         \time 5/4 c8(~^\p <c g'>~ <c g' d'>1) |
@@ -169,6 +191,29 @@
         \time 3/4 c'8~ <c g'>4~ <c g' d'~>8 d'4 |
         a,8~ <a e'>~ <a e' b'>2 |
         fis8~ <fis cis'>~ <fis cis' gis'>2 |
+        ees8~ <ees bes'>~ <ees bes' f'>2 |
+        \time 4/4 r4 \tuplet 3/2 { r8 c''4~\sustainOn } \tuplet 3/2 { 4 d,8~ } 4 |
+        \time 3/4 g,,2. |
+        \time 4/4 a2~\sustainOff \tuplet 3/2 { 4 cis'8~ } 4\sustainOn |
+        \time 3/4 fis'2. |
+        \time 4/4 r4\sustainOff \tuplet 3/2 {r8 b,4~\sustainOn } \tuplet 3/2 { 4 e,,8~ } 4 |
+        \time 3/4 gis,2. |
+        \time 4/4 bes4~\sustainOff\sustainOn \tuplet 3/2 { 8 ees'4~ } 2 |
+        \time 3/4 f'2.\sustainOff |
+        \time 4/4 r4 <a,, d g>4 <b c, e,>2 |
+        cis,16~ <cis gis'>~ <cis gis' fis'>8~ 4 ees16~ <ees bes'>~ <ees bes' f'>8~ 4~ |
+        8 b8( a'4~ <a e'>2) |
+        \time 3/4 bes,8~ <bes f'>~ <bes f' d'>2 |
+        \time 7/8 c8~ <c g'>8~ 4 ees'4. |
+        \time 3/4 fis,8~ <fis cis'>4~ <fis cis' gis'>8~ 4 |
+        \time 7/8 b,8~ <b a'>4~ <b a' e'>2 |
+        \time 3/4 c'8~ <c g'>~ <c g' d'>2 |
+        \time 4/4 ees,8~ <ees bes'>4~ <ees bes' f'>8~ 2 |
+        \time 5/4 gis4. cis8~ <cis fis>2. |
+        b8~ <b e>4.~ <b e a>2. |
+        \time 4/4 d4~ <d g> c2 |
+        \time 5/4 f,8~ <f bes>8~ 4~ 8~ <f bes ges'>8~ 2 |
+        cis'4~ <cis gis'>~ 8~ <cis gis' dis'>8~ 2 \bar "|."
       }
     }
 >>

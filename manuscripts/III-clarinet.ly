@@ -84,5 +84,27 @@
   \time 3/4 r4 bes2( |
   fis4 gis2) |
   R1*3/4
-
+  R1*3/4
+  \time 4/4 R1
+  \time 3/4 R1*3/4
+  \time 4/4 R1
+  \time 3/4 R1*3/4
+  \time 4/4 R1
+  \time 3/4 R1*3/4
+  \time 4/4 R1
+  \time 3/4 R1*3/4
+  \time 4/4 R1 |
+  \tuplet 3/2 { c8( b' e~ } 4) \tuplet 3/2 { g,8( d a~ } 4~ |
+  8) fis4( g8~ 4 cis4~ |
+  \time 3/4 8)[ r16 cis16(] aes'4 c,4 |
+  \time 7/8 f bes d4.~ |
+  \time 3/4 8) r8 b8( e, a,4~ |
+  \time 7/8 8) r8 gis'8( cis, fis,8~ 4~ |
+  \time 3/4 8) r8 r4 r4 |
+  \time 4/4 r8 d'8( g,2. |
+  \time 5/4 8 a8~ 2) r2 |
+  dis2.~ 2 |
+  \time 4/4 r4 r8 bes8~( 8 f4.~ |
+  \time 5/8 8 c'8~ 2~ 2) |
+  r4 r8 e8( b'2.) |
 }

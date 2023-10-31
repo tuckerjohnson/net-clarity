@@ -46,7 +46,7 @@
         \include "manuscripts/III-clarinet.ly"
         \include "manuscripts/III-piano.ly"
       >>
-      \midi { }
+      %\midi { }
       \layout {
         \context {
           \Score
