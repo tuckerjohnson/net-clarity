@@ -3,7 +3,7 @@
 xpnote = \markup {
   \center-column {
     \override #'(line-width . 100) \justify {
-      river sonata
+      for Amber Lucas
     }
   }
 }
