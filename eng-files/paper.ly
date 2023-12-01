@@ -1,6 +1,7 @@
-%sonata project
+% clarity project
 %------paper-block------
 \paper {
+  line-width = 120
   first-page-number = -1
   print-page-number = ##f
 	oddHeaderMarkup = \markup { \tiny { "  " } }
@@ -26,7 +27,7 @@
 		        #:roman "Junicode"
 			#:sans "syne"
 		))
-        max-systems-per-page = #7
+        max-systems-per-page = #8
         system-system-spacing =
                 #'((basic-distance . 5)
                 (minimum-distance . 5)
