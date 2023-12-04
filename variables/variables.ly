@@ -1,7 +1,7 @@
 % river project
 %texts
 xtitle = \markup { Net Clarity }
-xsub = \markup { dedicated to Amber Lucas }
+xsub = \markup { for Amber Lucas }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { Clarinet and Piano }
 xdur = \markup { \null }
