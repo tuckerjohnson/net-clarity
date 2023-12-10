@@ -190,9 +190,9 @@
         \time 4/4 a,8~( <a d>~ <a d b'>2.) |
         g8~( <g e'>4.~ 8) c'4. |
         \tuplet 3/2 { r8^\pp^\<\sustainOn bes8 ges } \tuplet 3/2 { bes ges bes } \tuplet 3/2 { ges^\!^\> bes ges } \tuplet 3/2 { bes ges bes } |
-        \omit Score.BarNumber
         \tuplet 3/2 { r8^\p^\<\sustainOff\sustainOn aes8 f } \tuplet 3/2 { aes f aes } \tuplet 3/2 { f aes f } \tuplet 3/2 { aes f aes } |
 
+        \omit Score.BarNumber
         \sectionLabel \markup { \box \number 30 }
 
         <<
@@ -214,9 +214,9 @@
         >>
         \oneVoice
         \time 4/4 \tuplet 3/2 { b,,8(\sustainOff fis'4~ } 16) g( aes ees' c8) bes16( d \tuplet 5/4 { f8) e16( a cis,) } |
-        \omit Score.BarNumber
         gis2.~ 8 r8 |
 
+        \omit Score.BarNumber
         \sectionLabel \markup { \box \number 36 }
 
         \tuplet 5/4 { dis'8~_\markup { \parenthesize { \concat { \italic "con " \musicglyph #"pedal.Ped" } } } <dis fis,>~ <dis fis, b,>4.~ } 2 |
@@ -231,9 +231,9 @@
         R1 |
         R1 |
         \tuplet 3/2 { r8 r8 \ottava #-1 f8~ } 2. |
-        \omit Score.BarNumber
         <ees bes'>4. \ottava #0 b'''16( gis \tuplet 3/2 { e8) a,( d } fis,16) c'( f, des) |
 
+        \omit Score.BarNumber
         \sectionLabel \markup { \box \number 48 }
 
         a'4~\sustainOn <a e'>~ <a e' b'>2~ |
@@ -243,9 +243,9 @@
         \time 3/4 ees,4.~\sustainOff\sustainOn <ees bes'>~ |
         \time 4/4 <ees bes' f'>1 |
         \time 3/4 fis4.~\sustainOff\sustainOn <fis cis'>~ |
-        \omit Score.BarNumber
         \time 4/4 <fis cis' gis'>1 |
 
+        \omit Score.BarNumber
         \sectionLabel \markup { \box \number 55 }
 
         c'8~\sustainOff <c g'>~_\markup { \parenthesize { \concat { \italic "con " \musicglyph #"pedal.Ped" } } } <c g' d'>2. |
@@ -255,9 +255,9 @@
         ees,8~ <ees bes'>4~ <ees bes' f'>8~ 2 |
         \time 3/4 c'8~ <c g'>4~ <c g' d'~>8 d'4 |
         a,8~ <a e'>~ <a e' b'>2 |
-        \omit Score.BarNumber
         fis8~ <fis cis'>~ <fis cis' gis'>2 |
 
+        \omit Score.BarNumber
         \sectionLabel \markup { \box \number 62 }
 
         ees8~ <ees bes'>~ <ees bes' f'>2 |
@@ -270,10 +270,10 @@
         \time 3/4 gis,2. |
         \time 4/4 bes4~\sustainOff\sustainOn \tuplet 3/2 { 8 ees'4~ } 2 |
         \time 3/4 f'2.\sustainOff |
-        \omit Score.BarNumber
         \time 4/4 r4_\markup { \parenthesize { \concat { \italic "con " \musicglyph #"pedal.Ped" } } } <a,, d g>4 \once \override PianoStaff.Arpeggio.arpeggio-direction = #DOWN <b c, e,>2\arpeggio |
 
 
+        \omit Score.BarNumber
         \sectionLabel \markup { \box \number 72 }
         \override DynamicLineSpanner.staff-padding = \ds
 
