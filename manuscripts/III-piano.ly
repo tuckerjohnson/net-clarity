@@ -158,11 +158,24 @@
     \relative {
         \numericTimeSignature
         \tempo \markup { "Lento, poco rubato" } 4=50
-        \time 5/4 c8(~ \offset Y-offset -2 _\markup { \italic "con" \musicglyph #"pedal.Ped" } <c g'>~ <c g' d'>1) |
-        \time 4/4 a8(~ <a e'>~ <a e' b'>2.) |
-        \time 5/4 fis4. cis'8_(~ <cis gis'>2.) |
-        ees,8(~ <ees bes'>4~ <ees bes' f'>8~ 2.) |
-        c'8(~ <c g'>4~ <c g' d'>8~ <c g' d'~>2 d'4) |
+        <<
+          \relative {
+            \voiceOne
+            \time 5/4 r8 g8~ <g d'>4~ 2. |
+            \time 4/4 r8 e8~ <e b'>4~ 2 |
+            \time 5/4 r2 gis2. |
+            r8 bes,4~ <bes f'>8~ 2. |
+            r8 g'4~ <g d'>8~ <g d'~>2 d'4 |
+          }
+          \new Voice \relative {
+            \voiceTwo
+            \time 5/4 c2~ c2. |
+            \time 4/4 a1 |
+            \time 5/4 fis4. cis'8~ 2. |
+            ees,2~ ees2. |
+            c'2~ 2 r4 |
+          }
+        >>
         \time 4/4 a,8(~ <a e'>~ <a e' b'>2.) |
         \time 3/4 fis8(~ <fis cis'>~ <fis cis' gis'>2) |
         \time 4/4 ees8~( <ees bes'>~ <ees bes' f'>2.) |
