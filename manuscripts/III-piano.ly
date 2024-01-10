@@ -161,11 +161,14 @@
         <<
           \relative {
             \voiceOne
-            \time 5/4 r8 g8~ <g d'>4~ 2. |
+            \time 5/4 r8 g8_~ <g d'>4~ 2. |
             \time 4/4 r8 e8~ <e b'>4~ 2 |
             \time 5/4 r2 gis2. |
             r8 bes,4~ <bes f'>8~ 2. |
             r8 g'4~ <g d'>8~ <g d'~>2 d'4 |
+            \time 4/4 r8 e,8~ <e b'>4~ 2 |
+            \time 3/4 r8 cis8~ <cis gis'>2 |
+            \time 4/4 r8 bes8~ <bes f'>4~ 2 |
           }
           \new Voice \relative {
             \voiceTwo
@@ -174,11 +177,12 @@
             \time 5/4 fis4. cis'8~ 2. |
             ees,2~ ees2. |
             c'2~ 2 r4 |
+            \time 4/4 a1 |
+            \time 3/4 fis2. |
+            \time 4/4 ees1 |
           }
         >>
-        \time 4/4 a,8(~ <a e'>~ <a e' b'>2.) |
-        \time 3/4 fis8(~ <fis cis'>~ <fis cis' gis'>2) |
-        \time 4/4 ees8~( <ees bes'>~ <ees bes' f'>2.) |
+        \oneVoice
         \time 3/4 c'8~( <c g'>8~ <c g' d'>2) |
         \time 7/8 a8~([ <a cis>~ <a cis~ fis~>] <cis fis>2) |
         \time 3/4 b8~( <b gis'>~ <b gis' e'>2) |
