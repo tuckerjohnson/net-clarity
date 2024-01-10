@@ -37,14 +37,14 @@
 %    }
 %  }
   \bookpart {
-    \tocItem \markup { "III. " \bold "Chiaro; calma" }
+    \tocItem \markup { "III. " \bold "Calma" }
     \score {
       \header {
         title = \markup { \fontsize #1 \xtitle }
         subtitle = \markup { \medium \italic \xsub }
         composer = \xcomp
         poet = \markup { \xinst }
-        piece = \markup { \large "III." \bold "Chiaro; calma" }
+        piece = \markup { \large "III." \bold "Calma" }
       }
       <<
         \include "manuscripts/III-clarinet.ly"
@@ -57,7 +57,7 @@
           \remove Text_mark_engraver
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
           \override BarNumber.font-size = #1
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
           \override Hairpin.to-barline = ##f
           \override Staff.pedalSustainStyle = #'mixed
         }

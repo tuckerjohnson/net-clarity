@@ -1,9 +1,9 @@
 % river project
 %texts
 xtitle = \markup { Net Clarity }
-xsub = \markup { for Amber Lucas }
+xsub = \markup { " " }
 xcomp = \markup { Tucker Johnson }
-xinst = \markup  { Clarinet and Piano }
+xinst = \markup  { clarinet and piano }
 xdur = \markup { \null }
 xcr = \markup \tiny { Copyright Tucker Johnson MMXXIII. All Rights Reserved }
 oddfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small { \xcomp } } \null } }

@@ -72,8 +72,8 @@
   \sectionLabel \markup { \box \number 36 }
 
   bes,1-- |
-  R1 |
-  fis'2.--\f r4 |
+  r2 r4 \tuplet 3/2 { r8 r8 fis'8~\f } |
+  fis2. r4 |
   R1 |
   cis2.--\mf r4 |
   b8(\mp e,~ 2\< g4~ |
@@ -130,7 +130,7 @@
 
   \tuplet 3/2 { c8_(\p\<^\markup { \tiny \italic "fioritura" } b' e~ } 4)\mf \tuplet 3/2 { g,8(\> d a~ } 4~\p |
   8) fis4( g8~ 4 cis4~ |
-  \time 3/4 8)[ r16 cis16(]\< aes'4 c,4 |
+  \time 3/4 8)[ r16 des16(]\< aes'4 c,4 |
   \time 7/8 f bes d4.~\mf |
   \time 3/4 8) r8 b8(\> e, a,4~\! |
   \time 7/8 8)[ r8 aes'8(]\> des,[ ges,8~] 4~\p |

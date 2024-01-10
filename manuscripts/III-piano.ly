@@ -28,7 +28,7 @@
         \time 3/4 r8 f8~\> <f bes,>4~ 8 dis8( |
         \time 7/8 gis4.)\p b,4(~ <b e>4) |
         \time 3/4 cis'4.(\< d,8~ 8)[ g]( |
-        \time 7/8 a4. ges,8~\mp <ges c>~ 4) |
+        \time 7/8 a4. ges,8~[\mp <ges c>~] 4) |
         \time 4/4 r8\p\<^\markup { "poco accel." }_\markup { \tiny \italic "quasi-waltz" } f8( fis cis') r8 bes( aes' ees~\mf |
         2)\mp\< r4 \tuplet 3/2 { r8 a,(\f\> e') } \bar "||"
 
@@ -74,9 +74,9 @@
         \sectionLabel \markup { \box \number 36 }
         \set PianoStaff.connectArpeggios = ##f
 
-        ais,2.--\f_\markup { \italic \tiny "maestoso" } <g, g'>8 <d' d'> |
-        <a' a'>4.\arpeggio <cis, cis'>8 <gis' gis'>4~\ff\arpeggio \tuplet 3/2 { 8 <dis dis'>8\> <e e'> } |
-        <fis fis'>2.\mf\arpeggio b8( c,~ |
+        ais,2.--\f_\markup { \italic \tiny "maestoso" } <g, g'>8\arpeggio <d' d'>\arpeggio |
+        <a' a'>4.\arpeggio <cis, cis'>8\arpeggio <gis' gis'>4\ff\>\arpeggio \tuplet 3/2 { <dis dis'>8 <e e'> <fis fis'>8~\mf } |
+        <fis fis'>2. b8( c,~ |
         4) f2~ 8 aes(\> |
         <ges des'>2. <ees bes'>4)\mp |
         r8 \clef bass <des,, aes'>8~\arpeggio 2. |
@@ -85,12 +85,12 @@
         4 <cis e b'>2.) |
         r8 <bes ges'>8~ 2 \ottava #0 r8 \clef bass <d,, a>8~\mf |
         <d a c,>1 |
-        g,4. \clef treble des''16(\> c \tuplet 3/2 { aes4)^\markup { "rit." } bes8( } g8) b8 |
+        g,4. \clef treble des''16(\> c \tuplet 3/2 { aes4)^\markup { "rit." } bes8( } g8) b8 \bar "||"
 
         \sectionLabel \markup { \box \number 48 }
 
         \tempo 4 = 50
-        r2\mp \tuplet 3/2 { r8 fis\ppp\< dis' } \tuplet 3/2 { fis, dis' fis, } |
+        r2\mp \tuplet 3/2 { r8 fis\ppp\< dis' } \tuplet 3/2 { fis, dis' fis, } \bar "||"
         \tempo \markup {
           \concat {
             \rhythm { \tuplet 3/2 { 8 } }
@@ -161,32 +161,36 @@
         <<
           \relative {
             \voiceOne
-            \time 5/4 r8 g8_~ <g d'>4~ 2. |
-            \time 4/4 r8 e8~ <e b'>4~ 2 |
+            \time 5/4 r4 d'4~ 2. |
+            \time 4/4 r4 b2. |
             \time 5/4 r2 gis2. |
-            r8 bes,4~ <bes f'>8~ 2. |
-            r8 g'4~ <g d'>8~ <g d'~>2 d'4 |
-            \time 4/4 r8 e,8~ <e b'>4~ 2 |
-            \time 3/4 r8 cis8~ <cis gis'>2 |
-            \time 4/4 r8 bes8~ <bes f'>4~ 2 |
+            r4 r8 f8~ 2. |
+            r4 r8 d'8~ 2. |
+            \time 4/4 r4 b2. |
+            \time 3/4 r4 gis2 |
+            \time 4/4 r4 f4~ 2 |
+            \time 3/4 r4 d'2 |
+            \time 7/8 r8 cis,8_~[ <cis fis>8~] 2 |
+            \time 3/4 r4 e'2 |
+            \time 7/8 r8 r8 f8~ 2 |
           }
           \new Voice \relative {
             \voiceTwo
-            \time 5/4 c2~ c2. |
-            \time 4/4 a1 |
+            \time 5/4 c8~ <c g'>8~ 4~ 2. |
+            \time 4/4 a8~ <a e'>8~ 2. |
             \time 5/4 fis4. cis'8~ 2. |
-            ees,2~ ees2. |
-            c'2~ 2 r4 |
-            \time 4/4 a1 |
-            \time 3/4 fis2. |
-            \time 4/4 ees1 |
+            ees,8~ <ees bes'>8~ 4~ 2. |
+            c'8~ <c g'>8~ 4~ 2 r4 |
+            \time 4/4 a8~ <a e'>8~ 2. |
+            \time 3/4 fis8~ <fis cis'>8~ 2 |
+            \time 4/4 ees8 <ees bes'>8~ 2. |
+            \time 3/4 c'8~ <c g'>8~ 2 |
+            \time 7/8 a4. r2 |
+            \time 3/4 b8~ <b gis'>~ 2 |
+            \time 7/8 bes8~ <bes ees>4~ 2 |
           }
         >>
         \oneVoice
-        \time 3/4 c'8~( <c g'>8~ <c g' d'>2) |
-        \time 7/8 a8~([ <a cis>~ <a cis~ fis~>] <cis fis>2) |
-        \time 3/4 b8~( <b gis'>~ <b gis' e'>2) |
-        \time 7/8 bes8~([ <bes ees>~ <bes ees f'>~] 2) |
         \time 4/4 \once \offset staff-padding 1 TupletBracket \tuplet 3/2 { d,8 <b' g'>4~ } \tuplet 3/2 { 8 4 } \tuplet 3/2 { c,8 <a' e'>4~ } \tuplet 3/2 { 8 4 } |
         \tuplet 3/2 { des,8 <aes' f'>4~ } \tuplet 3/2 { 8 4 } \once \offset staff-padding 1 TupletBracket \tuplet 3/2 { ees8 <bes' ges'>4~ } \tuplet 3/2 { 8 4 } |
 
@@ -200,14 +204,29 @@
         1~ |
         4 d,2.~ |
         4~ <d b''>2.
-        \time 3/4 b'8~( <b e'>8~ 2) |
-        c'8~( <c g'>~ <c g' d'>2) |
-        ees,8~( <ees bes'>~ <ees bes' f'>2) |
-        gis8( fis'~ <fis cis'>2) |
-        \time 4/4 a,8~( <a d>~ <a d b'>2.) |
-        g8~( <g e'>4.~ 8) c'4. |
-        \tuplet 3/2 { r8^\pp^\<\sustainOn bes8 ges } \tuplet 3/2 { bes ges bes } \tuplet 3/2 { ges^\!^\> bes ges } \tuplet 3/2 { bes ges bes } |
-        \tuplet 3/2 { r8^\p^\<\sustainOff\sustainOn aes8 f } \tuplet 3/2 { aes f aes } \tuplet 3/2 { f aes f } \tuplet 3/2 { aes f aes } |
+        \time 3/4 b'8~ <b e'>8~ 2 |
+        <<
+          \relative {
+            \voiceOne
+            r4 d'2 |
+            r4 f,2 |
+            r8 fis8_~ <fis cis'>2 |
+            \time 4/4 r4 b2. |
+          }
+          \new Voice \relative {
+            \voiceTwo
+            c8~ <c g'>~ 2 |
+            ees,8~ <ees bes'>~ 2 |
+            gis4 r4 r4 |
+            \time 4/4 a8~ <a d>~ 2. |
+          }
+        >>
+        \oneVoice
+        g'8~ <g e'>8~ 4~ 8 c'8~ 4 |
+        \tuplet 3/2 { r8^\pp^\<\sustainOn bes8 ges } \tuplet 3/2 { bes ges bes }
+        \tuplet 3/2 { ges^\!^\> bes ges } \tuplet 3/2 { bes ges bes } |
+        \tuplet 3/2 { r8^\p^\<\sustainOff\sustainOn aes8 f } \tuplet 3/2 { aes f aes }
+        \tuplet 3/2 { f aes f } \tuplet 3/2 { aes f aes } |
 
         \omit Score.BarNumber
         \sectionLabel \markup { \box \number 30 }
@@ -225,7 +244,7 @@
             \voiceTwo
             \time 7/4 e,2.~-> 8 8->~ 2. |
             d2.-> d1~-> |
-            d8 ees8->~ 2.~ 4 2-> |
+            d8 ees8->~ 2.~ 8 8~-> 2 |
             des2.->~ 8 8->~ 2. |
           }
         >>
@@ -236,7 +255,7 @@
         \omit Score.BarNumber
         \sectionLabel \markup { \box \number 36 }
 
-        \tuplet 5/4 { dis'8~_\markup { \parenthesize { \concat { \italic "con " \musicglyph #"pedal.Ped" } } } <dis fis,>~ <dis fis, b,>4.~ } 2 |
+        \tuplet 5/4 { dis'8~ <dis fis,>~ <dis fis, b,>4.~ } 2 |
         \undo \omit Score.BarNumber
         <c, e'>2\arpeggio \tuplet 3/2 { d8~ <d bes'>~ <d bes' f'>~ } 4 |
         <d a'>2.~ 8 des8~ |
@@ -244,7 +263,7 @@
         <a e' b'>1\arpeggio |
         \ottava #-1 fis1 |
         ees1 |
-        g2~ 8 \ottava #0 r8 r4 |
+        g2 r8 \ottava #0 r8 r4 |
         R1 |
         R1 |
         \tuplet 3/2 { r8 r8 \ottava #-1 f8~ } 2. |
