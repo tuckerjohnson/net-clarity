@@ -26,7 +26,7 @@
         \time 3/4 r4 a8( <e b'>~ 4) |
         \clef treble \time 4/4 d'4(\mp <c g'>2.) |
         \time 3/4 r8 f8~\> <f bes,>4~ 8 dis8( |
-        \time 7/8 gis4.)\p b,4(~ <b e>4) |
+        \time 7/8 gis4.)\p b,4^(~ <b e>4) |
         \time 3/4 cis'4.(\< d,8~ 8)[ g]( |
         \time 7/8 a4. ges,8~[\mp <ges c>~] 4) |
         \time 4/4 r8\p\<^\markup { "poco accel." }_\markup { \tiny \italic "quasi-waltz" } f8( fis cis') r8 bes( aes' ees~\mf |
@@ -103,7 +103,7 @@
         \time 3/4 d\< a d a d a |
         d\f\> a d a d a d a |
         \time 3/4 d\< e, d' e, d' e, |
-        d'\mf\> e, d' e, d'^\markup { "molto rit." } e, d \clef bass e, |
+        d'\mf\> e, d' e, d'^\markup { "molto rit." } e, d \clef bass e, \bar "||"
 
         \sectionLabel \markup { \box \number 55 }
 
@@ -118,12 +118,12 @@
 
         \sectionLabel \markup { \box \number 62 }
 
-        r4 c8~ <c g'>~ <c g' d'>4~\pp |
-        \time 4/4 8 f'8~\<_\markup { \italic \tiny "semplicemente" } 2 f8( ees |
+        r4 r4 g'8~ <g d'>8~\pp |
+        \time 4/4 8\fermata f'8~\<_\markup { \italic \tiny "semplicemente" } 2 f8( ees |
         \time 3/4 bes'2.)\p |
         \time 4/4 r8 bes8~(\< 4 aes4.) e8( |
         \time 3/4 b'2.)\mp |
-        \time 4/4 fis8~(\< 4 cis'2 a8~ |
+        \time 4/4 fis4.(\< cis'8~ 4. a8~ |
         \time 3/4 a2.)\mf |
         \time 4/4 r8\< g8~( 4 d'2 |
         \time 3/4 c2.)\f |
@@ -137,14 +137,14 @@
         \time 3/4 R1*3/4 |
         \time 7/8 R1*7/8 |
         \time 3/4 R1*3/4 |
-        \time 7/8 R1*7/8 | \clef bass
-        \time 3/4 r8 f,4(\mf bes8 ees4) |
-        \time 4/4 r2 r8 c,8~-> 4~ |
-        \time 5/4 4 r4 r8 b'8~ <b e,>2 |
-        r2 gis8~\mp <gis cis>~ 2 |
-        \time 4/4 fis2 r2 |
-        \time 5/4 r4 g4~\p 8~ <g d'>~ 2 |
-        a2.~ 2\fermata \bar "|."
+        \time 7/8 R1*7/8 |
+        \time 3/4 r8 f,4(^\mf bes8 ees4) |
+        \time 4/4 r2 r8 c8~ 4~ |
+        \time 5/4 4 r4 r8 b8~( 4 e4~ |
+        8) r8 r4 gis8(\mp cis,8~ 2  |
+        \time 4/4 fis2) r2 |
+        \time 5/4 r4 r8 g8~(\p 4~ 4. d8 |
+        a2~ 8) r8 r2\fermata \bar "|."
       }
     >>
   }
@@ -170,8 +170,8 @@
             \time 3/4 r4 gis2 |
             \time 4/4 r4 f4~ 2 |
             \time 3/4 r4 d'2 |
-            \time 7/8 r8 cis,8_~[ <cis fis>8~] 2 |
-            \time 3/4 r4 e'2 |
+            \time 7/8 s4. s2 |
+            \time 3/4 r4 e2 |
             \time 7/8 r8 r8 f8~ 2 |
           }
           \new Voice \relative {
@@ -185,14 +185,14 @@
             \time 3/4 fis8~ <fis cis'>8~ 2 |
             \time 4/4 ees8 <ees bes'>8~ 2. |
             \time 3/4 c'8~ <c g'>8~ 2 |
-            \time 7/8 a4. r2 |
+            \time 7/8 a8[ cis8~ <cis fis>~] 2 |
             \time 3/4 b8~ <b gis'>~ 2 |
             \time 7/8 bes8~ <bes ees>4~ 2 |
           }
         >>
         \oneVoice
         \time 4/4 \once \offset staff-padding 1 TupletBracket \tuplet 3/2 { d,8 <b' g'>4~ } \tuplet 3/2 { 8 4 } \tuplet 3/2 { c,8 <a' e'>4~ } \tuplet 3/2 { 8 4 } |
-        \tuplet 3/2 { des,8 <aes' f'>4~ } \tuplet 3/2 { 8 4 } \once \offset staff-padding 1 TupletBracket \tuplet 3/2 { ees8 <bes' ges'>4~ } \tuplet 3/2 { 8 4 } |
+        \tuplet 3/2 { des,8 <aes' f'>4~ } \tuplet 3/2 { 8 4 } \once \offset staff-padding 1 TupletBracket \tuplet 3/2 { ees8 <bes' ges'>4~ } \tuplet 3/2 { 8 4 } \bar "||"
 
         \sectionLabel \markup { \box \number 15 }
 
@@ -249,7 +249,7 @@
           }
         >>
         \oneVoice
-        \time 4/4 \tuplet 3/2 { b,,8(\sustainOff fis'4~ } 16) g( aes ees' c8) bes16( d \tuplet 5/4 { f8) e16( a cis,) } |
+        \time 4/4 \tuplet 3/2 { b,,8( fis'4~\sustainOff } 16) g( aes ees' c8) bes16( d \tuplet 5/4 { f8) e16( a cis,) } |
         gis2.~ 8 r8 |
 
         \omit Score.BarNumber
@@ -274,31 +274,72 @@
 
         a'4~\sustainOn <a e'>~ <a e' b'>2~ |
         \undo \omit Score.BarNumber
-        4 d4.~\sustainOff\sustainOn <d g,>4.~ |
+        4 d4~\sustainOff\sustainOn 8~ <d g,>8~ 4~ |
         <d g, c,>1 |
         \time 3/4 ees,4.~\sustainOff\sustainOn <ees bes'>~ |
         \time 4/4 <ees bes' f'>1 |
-        \time 3/4 fis4.~\sustainOff\sustainOn <fis cis'>~ |
-        \time 4/4 <fis cis' gis'>1 |
+        <<
+          \relative {
+            \voiceOne
+            \time 3/4 \stemNeutral fis,4._~ <fis_~ cis'~> |
+            \time 4/4 <fis cis' gis'>1 |
+          }
+          \new Voice \relative {
+            \voiceTwo
+            \time 3/4 s4\sustainOff\sustainOn s2 |
+            \time 4/4 s2 s4 s8 s16 s16\sustainOff |
+          }
+        >>
+        \oneVoice
 
         \omit Score.BarNumber
         \sectionLabel \markup { \box \number 55 }
 
-        c'8~\sustainOff <c g'>~_\markup { \parenthesize { \concat { \italic "con " \musicglyph #"pedal.Ped" } } } <c g' d'>2. |
-        \undo \omit Score.BarNumber
-        a8~ <a e'>~ <a e' b'>2. |
-        fis4 cis'8~ <cis gis'>8~ 2 |
-        ees,8~ <ees bes'>4~ <ees bes' f'>8~ 2 |
-        \time 3/4 c'8~ <c g'>4~ <c g' d'~>8 d'4 |
-        a,8~ <a e'>~ <a e' b'>2 |
-        fis8~ <fis cis'>~ <fis cis' gis'>2 |
+        <<
+          \relative {
+            \voiceOne
+            r4 d'2. |
+            \undo \omit Score.BarNumber
+            r4 b2. |
+            s1 |
+            r4 r8 f8~ 2 |
+            \time 3/4 r4 r8 d'8~ 4 |
+            r4 b2 |
+            r4 gis2 |
+          }
+          \new Voice \relative {
+            \voiceTwo
+            c8~ <c g'>~ 2. |
+            \undo \omit Score.BarNumber
+            a8~ <a e'>~ 2. |
+            fis4 cis'8~ <cis gis'>8~ 2 |
+            ees,8~ <ees bes'>8~ 2. |
+            \time 3/4 c'8~ <c g'>8~ 4 r4  |
+            a8~ <a e'>~ 2 |
+            fis8~ <fis cis'>~ 2 |
+          }
+        >>
+        \oneVoice
 
         \omit Score.BarNumber
         \sectionLabel \markup { \box \number 62 }
 
-        ees8~ <ees bes'>~ <ees bes' f'>2 |
-        \undo \omit Score.BarNumber
-        \time 4/4 r4 \tuplet 3/2 { r8 c''4~\sustainOn } \tuplet 3/2 { 4 d,8~ } 4 |
+        <<
+          \relative {
+            \voiceOne
+            r4 f8~ <f c'>8~ 4~ |
+            \undo \omit Score.BarNumber
+            \time 4/4 8\fermata
+          }
+          \new Voice \relative {
+            \voiceTwo
+            ees,8~ <ees bes'>~ 2~ |
+            \undo \omit Score.BarNumber
+            \time 4/4 8
+          }
+        >>
+        \oneVoice
+        r8 \tuplet 3/2 { r8 c''4~\sustainOn } \tuplet 3/2 { 4 d,8~ } 4 |
         \time 3/4 g,,2. |
         \time 4/4 a2~\sustainOff \tuplet 3/2 { 4 cis'8~ } 4\sustainOn |
         \time 3/4 fis'2. |
@@ -306,27 +347,50 @@
         \time 3/4 gis,2. |
         \time 4/4 bes4~\sustainOff\sustainOn \tuplet 3/2 { 8 ees'4~ } 2 |
         \time 3/4 f'2.\sustainOff |
-        \time 4/4 r4_\markup { \parenthesize { \concat { \italic "con " \musicglyph #"pedal.Ped" } } } <a,, d g>4 \once \override PianoStaff.Arpeggio.arpeggio-direction = #DOWN <b c, e,>2\arpeggio |
+        \time 4/4 r4 <a,, d g>4 \once \override PianoStaff.Arpeggio.arpeggio-direction = #DOWN <b c, e,>2\arpeggio |
 
 
         \omit Score.BarNumber
         \sectionLabel \markup { \box \number 72 }
         \override DynamicLineSpanner.staff-padding = \ds
 
-        cis,16~ <cis gis'>~ <cis gis' fis'>8~ 4 ees16~ <ees bes'>_~ <ees bes' f'>8~ 4~ |
-        \undo \omit Score.BarNumber
-        8 b8(^\p a'4~ <a e'>2) |
-        \time 3/4 bes,8~^\< <bes f'>~ <bes f' d'>2 |
-        \time 7/8 c8~[ <c g'>8~] 4 ees'4.^\mf |
-        \time 3/4 fis,8~\> <fis cis'>4~ <fis cis' gis'>8~ 4 |
-        \time 7/8 b,8~ <b a'>4~ <b a' e'>2 |
-        \time 3/4 c'8~\p <c g'>~ <c g' d'>2 |
-        \time 4/4 ees,8~ <ees bes'>4~ <ees bes' f'>8~ 2 |
-        \time 5/4 gis4. cis8~ <cis fis>2. |
-        b8~ <b e>4.~ <b e a>2. |
-        \time 4/4 d4~ <d g> c2 |
-        \time 5/4 f,8~\pp <f bes>8~ 4~ 8~ <f bes ges'>8~ 2 |
-        cis'4~ <cis gis'>~ 8~ <cis gis' dis'>8~ 2\fermata \bar "|."
+        <<
+          \relative {
+            \voiceOne
+            r8 fis8~ 4 r8 f8~ 4~ |
+            \undo \omit Score.BarNumber
+            4 r4 e2 |
+            \time 3/4 r4 d2 |
+            \time 7/8 s2 s4. |
+            \time 3/4 r4^\> r8 gis8~ 4 |
+            \time 7/8 r8 a,8_~ <a_~ e'~>4 4.  |
+            \time 3/4 r4^\p d2 |
+            \time 4/4 r4 r8 f8_~ 2 |
+            \time 5/4 r2 fis2. |
+            r8 e8~ 4~ <e a,>2. |
+            \time 4/4 r2 c2 |
+            \time 5/4 r4 r4 <ges'>4~ 2 |
+            r4 r8 dis'8~ 4~ 2\fermata |
+          }
+          \new Voice \relative {
+            \voiceTwo
+            cis,16~ <cis gis'>8.~ 4 ees16~ <ees bes'>8.~ 4~ |
+            \undo \omit Score.BarNumber
+            8 b8^\p a'4~ 2 |
+            \time 3/4 bes,8~^\< <bes f'>~ 2 |
+            \time 7/8 \stemNeutral c8~[ <c g'>8~] 4 ees'4.^\mf |
+            \time 3/4 \stemDown fis,8~ <fis cis'>8~ 2 |
+            \time 7/8 b,2~ 4. |
+            \time 3/4 c8~ <c g'>~ 2 |
+            \time 4/4 ees8~ <ees bes'>8~ 2. |
+            \time 5/4 gis4. cis,8~ cis2. |
+            b2~ 2. |
+            \time 4/4 d4~ <d g>4~ 8 r8 r4 |
+            \time 5/4 f8~\pp <f bes>8~ 2~ 2 |
+            cis'4~ <cis gis'>2~ 2 \bar "|."
+          }
+        >>
+        \oneVoice
       }
     }
 >>

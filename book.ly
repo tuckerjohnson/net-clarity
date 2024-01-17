@@ -11,40 +11,38 @@
   \header {
     tagline = ##f
   }
-%  \bookpart {
-%    \tocItem \markup { "I. " \bold "Largo; Allegro moderato" }
-%    \score {
-%      \header {
-%        title = \markup { \fontsize #1 \xtitle }
-%        subtitle = \markup { \medium \italic \xsub }
-%        composer = \xcomp
-%        poet = \markup { \xinst }
-%        piece = \markup { \large \bold "I. " }
-%      }
-%      <<
-%        \include "manuscripts/I-clarinet.ly"
-%        \include "manuscripts/I-piano.ly"
-%      >>
-%      %\midi { }
-%      \layout {
-%        \context {
-%          \Score
-%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-%          \override BarNumber.font-size = #1
-%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
-%        }
-%      }
-%    }
-%  }
   \bookpart {
-    \tocItem \markup { "III. " \bold "Calma" }
+    \tocItem \markup { "I. " \bold "Canto" }
     \score {
       \header {
         title = \markup { \fontsize #1 \xtitle }
         subtitle = \markup { \medium \italic \xsub }
         composer = \xcomp
         poet = \markup { \xinst }
-        piece = \markup { \large "III." \bold "Calma" }
+        piece = \markup { \large \bold "I. " \bold "Canto" }
+      }
+      <<
+        \include "manuscripts/I-clarinet.ly"
+        \include "manuscripts/I-piano.ly"
+      >>
+      %\midi { }
+      \layout {
+        \context {
+          \Score
+          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+          \override BarNumber.font-size = #1
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+          \override Hairpin.to-barline = ##f
+          \override Staff.pedalSustainStyle = #'mixed
+        }
+      }
+    }
+  }
+  \bookpart {
+    \tocItem \markup { "III. " \bold "Calma" }
+    \score {
+      \header {
+        piece = \markup { \large "III." \bold "Calma" " " \parenthesize \italic "to Amber Lucas"  }
       }
       <<
         \include "manuscripts/III-clarinet.ly"

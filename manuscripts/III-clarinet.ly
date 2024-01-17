@@ -133,12 +133,12 @@
   \time 3/4 8)[ r16 des16(]\< aes'4 c,4 |
   \time 7/8 f bes d4.~\mf |
   \time 3/4 8) r8 b8(\> e, a,4~\! |
-  \time 7/8 8)[ r8 aes'8(]\> des,[ ges,8~] 4~\p |
+  \time 7/8 8) r8 aes'8([\> des,] ges,4.~\p |
   \time 3/4 8) r8 r4 r4 |
   \time 4/4 r8 d'8(\mf g,2) r4 |
   \time 5/4 r8 a8~ 2 r2 |
-  ees'2.\p r2 |
+  ees'2~\p 8 r8 r2 |
   \time 4/4 r4 r8 bes8~(\mp\> 8 f4.~ |
-  \time 5/8 8 c'8~\p 2~ 2) |
-  r4 r8 e8(\pp b'4~ b2)\fermata |
+  \time 5/8 8 c'8~\p 4) r4 r2 |
+  r4 r4 e8_(\pp b'8~ b2)\fermata |
 }
