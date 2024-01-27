@@ -2,6 +2,8 @@
 
 \new PianoStaff \with {
   instrumentName = \markup { "piano " }
+  shortInstrumentName = \markup { "pno " }
+  \consists Text_mark_engraver
 }
 <<
   \set PianoStaff.connectArpeggios = ##t
