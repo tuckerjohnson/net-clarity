@@ -1,4 +1,21 @@
 % project
+
+
+doubleSeparator = \markup {
+  \left-column {
+  \vcenter \combine
+  \beam #2.0 #0.3 #0.5
+  \raise #0.7 \beam #2.0 #0.3 #0.5
+  }
+  \hspace #98
+  \right-column {
+  \vcenter \combine
+  \beam #2.0 #0.3 #0.5
+  \raise #0.7 \beam #2.0 #0.3 #0.5
+  }
+}
+
+
 to-internal-ts =
 #(define-scheme-function
   (top partial bottom)
