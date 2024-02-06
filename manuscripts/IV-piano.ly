@@ -16,7 +16,7 @@
 
     \relative {
       \numericTimeSignature
-      \tempo \markup { "Giusto e giocoso" } 4=104
+      \tempo 4=104
       \time 5/4 R1*5/4 | %001
       \time 4/4 r16 bes'8.~(^\p^\markup { \tiny \italic "cantabile" } 2~ 8 f'8~ | %002
       f2~ 8 ges8~ 4 | %003
@@ -55,7 +55,17 @@
       >>
       f'16(\< bes,8.) g16[( d'16 fis16 e16 cis'16 a16]) | %029
       \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\>^\markup { "molto rit." } <aes, aes'>8-> <b b'>8-> } |%030
-      \time 3/4 <c c'>4\mf
+      \tempo 2=104
+      \time 2/2 <c c'>1\mf
+      r4 f'4( d4 b4 |
+      g4 e2) dis'4~( |
+      dis2 gis,2~ |
+      gis4) ais4( fis2~ |
+      fis4 cis2) a'4~( |
+      a4 c4 bes2) |
+      a2(  \tuplet 3/2 { b4 d,8 } gis8-.) r8 |
+      r4 \tuplet 3/2 { r8 f4~( } \tuplet 3/2 { f4 ees2 } |
+      c8)-. r8 fis,2( g8-.) r8 |
 
     }
 
@@ -70,9 +80,9 @@
 
     \relative {
       \numericTimeSignature
-      \tempo \markup { "Giusto e giocoso" } 4=104
+      \tempo 4=104
       \time 5/4 r16 f'16-.^\pp aes,16-. r16 r8 fis16-. r16 dis'16[-. r8 cis16]-. r4 r4 | %001
-      \time 4/4 b8-.^\markup { \tiny \parenthesize \italic "sempre stacatiss." } r8 a8-. c,8-. g'8-. e16-. d16-. r8. bes'16-. | %002
+      \time 4/4 b8-.^\markup { \tiny \parenthesize \italic "sempre staccatiss." } r8 a8-. c,8-. g'8-. e16-. d16-. r8. bes'16-. | %002
       cis16-.^\< gis8-. b16-. r8. a16-. r4 r16 e'16-. r8 | %003
       r16 d16-. g,16-. c16-.^\p r4 bes16-.^\> ees,16-. f8-. ges8-. r8 | %004
       b16-. a-. g8-.\pp r8 e'8-. cis[-. r16 d16]-. c8-. r8 | %005
@@ -103,7 +113,20 @@
       \time 5/8 a'16-. e16-. r8 b16[-. \set stemRightBeamCount = #1 fis16-. \set stemLeftBeamCount = #1 \set stemRightBeamCount = #1 r16 cis16]-.\p r8 | %028
       c16[(\< ees8.]~ ees8) <bes bes'>4-> | %029
       \time 2/8 <f f'>8[->\f\> <d' d'>8]-> | %030
-      \time 3/4 <g, g'>4\mf
+      \tempo 2=104
+      \time 2/2 <g, g'>1\mf\sustainOn \clef treble | %031
+      a'''1~ |
+      a2 ges2(\sustainOff\sustainOn |
+      des4 bes2 c4) |
+      gis'4~(\sustainOff\sustainOn \tuplet 3/2 { 8 dis4~ } 2 |
+      e2~\sustainOff\sustainOn \tuplet 3/2 { 4 b8~\sustainOff } b4) |
+      d2~ \tuplet 3/2 { d4 f8~ } 4~ |
+      1 \clef bass |
+      g,2 des2~ |
+      \tuplet 3/2 { des2~ <des aes'>4~ } 2 |
+
+
+
     }
 
   }
