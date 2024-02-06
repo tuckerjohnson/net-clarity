@@ -12,7 +12,6 @@
   \new Staff = "u" \with { \consists "Merge_rests_engraver" }
   {
     \set PianoStaff.connectArpeggios = ##t
-    \accidentalStyle piano
 
     \relative {
       \numericTimeSignature
@@ -75,7 +74,6 @@
   {
     \clef bass
     \set Staff.pedalSustainStyle = #'mixed
-    \accidentalStyle piano
     \override Score.SpacingSpanner.strict-grace-spacing = ##t
 
     \relative {

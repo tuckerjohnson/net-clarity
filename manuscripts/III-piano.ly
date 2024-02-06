@@ -12,7 +12,6 @@
     \clef bass
     \set PianoStaff.connectArpeggios = ##t
     \override DynamicLineSpanner.staff-padding = \phds
-    \accidentalStyle piano
     <<
       \relative {
         \numericTimeSignature
@@ -152,7 +151,6 @@
   {
     \clef bass
     \set Staff.pedalSustainStyle = #'mixed
-    \accidentalStyle piano
     \override Score.SpacingSpanner.strict-grace-spacing = ##t
     \override DynamicLineSpanner.staff-padding = \phds
     \relative {

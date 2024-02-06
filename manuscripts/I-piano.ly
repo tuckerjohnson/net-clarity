@@ -10,7 +10,6 @@
   \override PianoStaff.Arpeggio.arpeggio-direction = #UP
   \new Staff = "u" \with { \consists "Merge_rests_engraver" }
   {
-    \accidentalStyle piano
     <<
       \relative { \numericTimeSignature
       \tempo Largo 2=92
@@ -54,7 +53,6 @@
   {
     \clef bass
     \set Staff.pedalSustainStyle = #'mixed
-    \accidentalStyle piano
     \override Score.SpacingSpanner.strict-grace-spacing = ##t
     \relative { \numericTimeSignature
       <<
