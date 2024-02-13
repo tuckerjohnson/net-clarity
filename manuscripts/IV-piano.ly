@@ -52,20 +52,26 @@
           \time 5/8 s4 s8. s8.\mp
         }
       >>
-      f'16(\< bes,8.) g16[( d'16 fis16 e16 cis'16 a16]) | %029
-      \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\>^\markup { "molto rit." } <aes, aes'>8-> <b b'>8-> } |%030
+      f'16(\< bes,8.) g16[( d'16 fis16^\markup { "molto rit." } e16 cis'16 a16]) | %029
+      \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\> <aes, aes'>8-> <b b'>8-> } |%030
+      \time 2/2 <c c'>1\mf\fermata \clef bass
       \tempo 2=104
-      \time 2/2 <c c'>1\mf
-      r4 f'4( d4 b4 |
-      g4 e2) dis'4~( |
-      dis2 gis,2~ |
-      gis4) ais4( fis2~ |
-      fis4 cis2) a'4~( |
-      a4 c4 bes2) |
-      a2(  \tuplet 3/2 { b4 d,8 } gis8-.) r8 |
-      r4 \tuplet 3/2 { r8 f4~( } \tuplet 3/2 { f4 ees2 } |
-      c8)-. r8 fis,2( g8-.) r8 |
-
+      r8 f,,4.~ f2~ |
+      f4 fis2 bes8( des, |
+      c2.) b'4(~ |
+      b8 gis8~ gis4 e4.) ees8( |
+      \time 3/2 d8-.) r8 r4 r2 r2 |
+      \time 2/2 r8 f8->~ f2. |
+      g1-> \clef treble |
+      \time 3/4 bes8-. des-. b( a4.~ |
+      a1) |
+      r2 fis'8-. b8-. \tuplet 3/2 { r8 r8 a'8~ } |
+      a1 |
+      R1 |
+      R1 |
+      r4 r8 c8-. g-. bes-. r4 |
+      \time 5/4 r8 b8-. r4 r8 ees,8-. des-. f-. aes-. r8 |
+      r2 e8-. a-. d,-. fis-. |
     }
 
   }
@@ -111,20 +117,24 @@
       \time 5/8 a'16-. e16-. r8 b16[-. \set stemRightBeamCount = #1 fis16-. \set stemLeftBeamCount = #1 \set stemRightBeamCount = #1 r16 cis16]-.\p r8 | %028
       c16[(\< ees8.]~ ees8) <bes bes'>4-> | %029
       \time 2/8 <f f'>8[->\f\> <d' d'>8]-> | %030
+      \time 2/2 <g, g'>1\mf\fermata | %031
       \tempo 2=104
-      \time 2/2 <g, g'>1\mf\sustainOn \clef treble | %031
-      a'''1~ |
-      a2 ges2(\sustainOff\sustainOn |
-      des4 bes2 c4) |
-      gis'4~(\sustainOff\sustainOn \tuplet 3/2 { 8 dis4~ } 2 |
-      e2~\sustainOff\sustainOn \tuplet 3/2 { 4 b8~\sustainOff } b4) |
-      d2~ \tuplet 3/2 { d4 f8~ } 4~ |
-      1 \clef bass |
-      g,2 des2~ |
-      \tuplet 3/2 { des2~ <des aes'>4~ } 2 |
-
-
-
+      b8-. r8 r4  r8 d8-. g8-. r8 | %032
+      e8-. f8-. r4 r8 ees8-. r4 | %033
+      r2 ges8-. bes,-. r8 des-. | %034
+      R1 | %035
+      \time 3/2 a8-. r8 r4 r8 c8~( c2. | %036
+      \time 2/2 bes8-.) r8 e'8( d cis b a gis) | %037
+      r2 r8 c8-. r4 | %038
+      \time 3/4 ees8-. f-. fis( g) e-. d-. | %039
+      \time 2/2 cis2.. f8-. | %040
+      ees( aes) g( c) r2\sustainOn | %041
+      R1 | %042
+      r2\sustainOff \tuplet 3/2 { gis2~ <dis gis>4~ } | %043
+      <dis gis>2. d4 | %044
+      e,2. f4 | %045
+      \time 5/4 fis2.~ fis2 | %046
+      \time 2/2 <g g'>4.-> <c, c'>8~-> 2 | %047
     }
 
   }
