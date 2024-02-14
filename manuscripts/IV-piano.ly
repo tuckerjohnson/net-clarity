@@ -7,13 +7,12 @@
 }
 <<
 
-  \override PianoStaff.Arpeggio.arpeggio-direction = #UP
-
   \new Staff = "u" \with { \consists "Merge_rests_engraver" }
   {
-    \set PianoStaff.connectArpeggios = ##t
 
+    \set PianoStaff.connectArpeggios = ##t
     \relative {
+
       \numericTimeSignature
       \tempo 4=104
       \time 5/4 R1*5/4 | %001
@@ -36,28 +35,27 @@
       ees8) r8 a16(^\f gis8.~  gis4) g8 e8 | %018
       c4-- r16 bes8.~^\mp bes16 bes16-. r8 r4 | %019
       r4 r16 ges'8.~^\mf ges4~ ges8 ges8--^\f | %020
+      \sectionLabel \markup { \box \number 21 }
+      \omit Score.BarNumber
       \override DynamicLineSpanner.staff-padding = \phds
       \time 3/4 ges8-.\f r8 r4\pp r4 | %021
+      \undo \omit Score.BarNumber
       fis,8.-- g16~->\mf\> g8 bes16-. c16-. e,16-. gis8( cis16)-.\p | %022
       r8 d16(\< a16 b4)\mf b8 dis,8~\> | %023
       dis4 dis8-- r8 f8[-.\mp r16 f16]-. | %024
       r8 a8-. r16\< cis16( e,8 b'8. fis16 | %025
       bes16\f ees8.~ ees8 d8~ d4~ | %026
       d8) r8 aes4 f'8-. c16-.\> g16-. | %027
-      <<
-        {
-          \time 5/8 R1*5/8 | %028
-        }
-        {
-          \time 5/8 s4 s8. s8.\mp
-        }
-      >>
+      \time 5/8 \after 4.. \mp R1*5/8 | %028
       f'16(\< bes,8.) g16[( d'16 fis16^\markup { "molto rit." } e16 cis'16
       a16]) | %029
       \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\> <aes, aes'>8-> <b b'>8-> } | %030
       \time 3/4 <c c'>2.\mf\fermata \clef bass | %031
+      \sectionLabel \markup { \box \number 32 }
+      \omit Score.BarNumber
       \tempo 2=104
       \time 2/2 r8\p f,,4.~ f2~ | %032
+      \undo \omit Score.BarNumber
       f4 fis2 bes8( des, | %033
       c2.) b'4(~\< | %035
       b8 gis8~ gis4 e4.) ees8( | %036
@@ -73,18 +71,30 @@
       \revert DynamicLineSpanner.staff-padding
       r4 r8 c8-.\mf g-. bes-. r4 | %045
       \time 5/4 r8 b8-. r4 r8 ees,8-.\< des-. f-. aes-.\! r8 | %046
-      r2 e8-.\< a-. d,-. fis-.\! | %047
+      r2 e8-.\< a,-. fis-. d-.\! | %047
+      \override DynamicLineSpanner.staff-padding = \phds
+      \after 2. \> R1 | %048
+      r8 f8-. gis,8-. a8~\mf \after 4 \> a2 | %049
+      \time 5/4 r8 ees'8( des2.)\mp b'4~(\pp | %050
+      \time 2/2 \tuplet 3/2 { b2 g4~ } \after 4 \mf <g c>2~ | %051
+      <g c>8) r8\f\> r4 d4-- \tuplet 3/2 { d8-. bes8-. ges8-. } | %052
+      \time 3/2 r8 ges8-- r4 \after 4. \mp e2~( \tuplet 3/2 { e2\> g4~ } | %053
+      \time 2/2 g2~ g2\p\fermata) | %054
+      \after 4 \f R1 | %055
+      r2 e'8-. f8-. r4 | %056
+      r4 r8 des8-. bes'4 c4 | %057
     }
 
   }
 
   \new Staff = "d" \with { \consists "Merge_rests_engraver" }
   {
+
     \clef bass
     \set Staff.pedalSustainStyle = #'mixed
     \override Score.SpacingSpanner.strict-grace-spacing = ##t
-
     \relative {
+
       \numericTimeSignature
       \tempo 4=104
       \time 5/4 r16 f'16-.^\pp aes,16-. r16 r8 fis16-. r16 dis'16[-. r8
@@ -132,24 +142,36 @@
       \time 2/8 <f f'>8[->\f\> <d' d'>8]-> | %030
       \time 3/4 <g, g'>2.\mf\fermata | %031
       \tempo 2=104
-      \time 2/2 b8-. r8 r4  r8 d8-. g8-. r8 | %032
+      \time 2/2 b8-.\p r8 r4  r8 d8-. g8-. r8 | %032
       e8-. f8-. r4 r8 ees8-. r4 | %033
       r2 ges8-. bes,-. r8 des-. | %034
       R1 | %035
-      \time 3/2 a8-. r8 r4 r4 c2.( | %036
-      \time 2/2 bes8-.) r8 e'8( d cis b a gis) | %037
-      r2 r8 c8-. r4 | %038
-      \time 3/4 ees8-. f-. fis( g) e-. d-. | %039
-      \time 2/2 cis2.. f8-. | %040
-      ees( aes) g( c) r2\sustainOn | %041
+      \time 3/2 a8-.\mf r8 r4 r4 c2.( | %036
+      \time 2/2 bes8-.)\< r8 e'8( d cis b a gis) | %037
+      r2\f r8 c8-. r4 | %038
+      \time 3/4 ees8-.\> f-. fis( g) e-. d-. | %039
+      \time 2/2 cis2..\mp f8-.\p | %040
+      ees(\< aes) g( c)\mf r2\sustainOn | %041
       R1 | %042
       \revert Staff.Hairpin.stencil
       \revert Staff.DynamicText.stencil
-      r2\sustainOff \tuplet 3/2 { gis2~\p <dis gis>4~ } | %043
+      r2\sustainOff \tuplet 3/2 { gis2~^\p <dis gis>4~ } | %043
       <dis gis>2. d,4^\mp | %044
       e2. f4^\mf | %045
       \time 5/4 fis2.~ fis2 | %046
-      \time 2/2 <g g'>4.-> <c, c'>8~->^\f 2 | %047
+      \time 2/2 g4.-- <c, c'>8~->^\f 2 | %047
+      \override Staff.DynamicText.stencil = ##f
+      \override Staff.Hairpin.stencil = ##f
+      <ees ees'>8->( ges bes) <d, d'>8~-> \tuplet 3/2 { <d d'>2\> <cis cis'>4( } | %048
+      <e e'>4~ <e b' e>2)\mf\> g4~ | %049
+      \time 5/4 <g c>8~ <g c f>4.~\mp 2. | %050
+      \time 2/2 r2 r4 a4~\mf | %051
+      a8 a4.->\f\> gis4( b4~ | %052
+      \time 3/2 b2.) f8(\mp\> <d d'>8~ 8 <c c'>4. | %053
+      \time 2/2 <bes bes'>2 <a a'>2)\fermata\p | %054
+      r4 cis8(\f dis e fis gis4 | %055
+      g!4.) <d d'>8~-> 4 <ees ees'>4~-> | %056
+      <ees ees'>1 | %057
     }
 
   }

@@ -1,14 +1,19 @@
 % net-clarity project
 
 \new Staff \with {
+
   instrumentName = \markup { clarinet in \concat { \bold "B" \tiny \flat " " } }
   shortInstrumentName = \markup { cl }
   \override DynamicLineSpanner.staff-padding = \sods
   fontSize = #-1
   \override StaffSymbol.staff-space = #(magstep -1)
   \consists Text_mark_engraver
+
 }
-\transpose bes c' \relative {
+
+%\transpose bes c'
+\relative {
+
   \numericTimeSignature
   \clef treble
   \tempo 4=104
@@ -38,4 +43,15 @@
   \after 2. \p a1)\> | %044
   \time 5/4 r4 \after 4 \< bes1~( | %045
   \time 2/2 bes4 b2.)\mf | %046
+  r2 c8-.\f g-. a4~ | %047
+  a4. d,8~(\> d4 aes) | %048
+  \time 5/4 bes1\mp\> aes'8(\pp fes8 | %049
+  \time 2/2 ees2.) r4 | %050
+  f8[-.->\f r8 f8-.-> cis8]]-.-> r4 cis4~\> | %051
+  \time 3/2 \after 2 \mp cis2. r4 r2 | %052
+  \time 2/2 r2 r2\fermata | %053
+  r8 b'8~->\f b2~ b8 bes-. | %054
+  a8-. b-. c2. | %055
+  ges8-. aes-. f2. | %056
+
 }
