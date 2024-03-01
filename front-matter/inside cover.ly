@@ -5,7 +5,7 @@ cover =  \markuplist {
         \line { \null }
         \center-column {
             \vspace #10
-            \line { \hbracket \fontsize #10 \number 2023 }
+            \line { \hbracket \fontsize #10 \number 2024 }
             \vspace #4
             \line { \xcomp  }
             \vspace #1

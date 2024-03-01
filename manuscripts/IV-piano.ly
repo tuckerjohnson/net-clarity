@@ -53,7 +53,7 @@
       \time 3/4 <c c'>2.\mf\fermata \clef bass | %031
       \sectionLabel \markup { \box \number 32 }
       \omit Score.BarNumber
-      \tempo 2=104
+      \tempo 2=96
       \time 2/2 r8\p f,,4.~ f2~ | %032
       \undo \omit Score.BarNumber
       f4 fis2 bes8( des, | %033
@@ -78,11 +78,21 @@
       \time 5/4 r8 ees'8( des2.)\mp b'4~(\pp | %050
       \time 2/2 \tuplet 3/2 { b2 g4~ } \after 4 \mf <g c>2~ | %051
       <g c>8) r8\f\> r4 d4-- \tuplet 3/2 { d8-. bes8-. ges8-. } | %052
-      \time 3/2 r8 ges8-- r4 \after 4. \mp e2~( \tuplet 3/2 { e2\> g4~ } | %053
-      \time 2/2 g2~ g2\p\fermata) | %054
+      \time 3/2 r8 ges8-- r4 \after 4. \mp e2~( \tuplet 3/2 { e2\>^\markup { "molto rit." } g4~ } | %053
+      \time 2/2 g2~ g2\p\fermata) \bar "||" %054
+      \tempo "A tempo"
       \after 4 \f R1 | %055
       r2 e'8-. f8-. r4 | %056
-      r4 r8 des8-. bes'4 c4 | %057
+      \time 5/4 r4 r8 des8-. bes'4( c4.) d8-. | %057
+      \time 2/2 a2.. aes8~ | %058
+      aes2. r4 | %059
+      \tuplet 3/2 { b,2 dis fis } | %060
+      \tuplet 3/2 { b2 dis fis } | %061
+      r8 des'8 f,4 <f des'>2 |
+      <c a' d>2\arpeggio gis4 <gis e'> |
+
+
+
     }
 
   }
@@ -141,7 +151,7 @@
       c16[(\< ees8.]~ ees8) <bes bes'>4-> | %029
       \time 2/8 <f f'>8[->\f\> <d' d'>8]-> | %030
       \time 3/4 <g, g'>2.\mf\fermata | %031
-      \tempo 2=104
+      \tempo 2=96
       \time 2/2 b8-.\p r8 r4  r8 d8-. g8-. r8 | %032
       e8-. f8-. r4 r8 ees8-. r4 | %033
       r2 ges8-. bes,-. r8 des-. | %034
@@ -171,7 +181,13 @@
       \time 2/2 <bes bes'>2 <a a'>2)\fermata\p | %054
       r4 cis8(\f dis e fis gis4 | %055
       g!4.) <d d'>8~-> 4 <ees ees'>4~-> | %056
-      <ees ees'>1 | %057
+      \time 5/4 <ees ees'>2.. des8~ des4~ | %057
+      \tuplet 3/2 { des2 b4~ } b4 fis'4~ | %058
+      fis8 g'-. c,-. f-. bes,4( a | %059
+      gis2~\sustainOn <gis e'>2) | %060
+      g'2~\sustainOff\sustainOn <g e'> |
+      r2\sustainOff\sustainOn b4 bes |
+      bes2\sustainOff\sustainOn r4\sustainOff\sustainOn fis4 |
     }
 
   }

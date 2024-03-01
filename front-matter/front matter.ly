@@ -2,8 +2,8 @@
 front-matter = \markuplist {
  \fill-line {
    \left-column {
-     \line { \bold \xtitle " [2023]" }
-     \line { \xinst " | " \xdur }
+     \line { \bold \xtitle " [2024]" }
+     \line { \xinst " | " 20 minutes }
      \line { \xcomp }
 
      \vspace #25
