@@ -56,8 +56,18 @@
   \time 2/2 f4 g8-. e8~ e4 ees-> | %058
   d2~ d8 cis4.~ | %059
   cis1 | %060
-  r2 r4 r8 c'8( |
-  d bes aes ges~ ges4) r8 e'8( |
-  g8 f4) ees4( des8 b' a-.) |
+  r2 r4 r8 c'8( | %061
+  d bes aes ges~ ges4) r8 e'8( | %062
+  g8 f4) ees4( des8 b' a->)~ | %063
+  a4 d4.-> f,8~-> f4 | %064
+  \tuplet 3/2 { fis4( b, a' } \tuplet 3/2 { bes, aes' c, } | %065
+  \time 7/8 g'2~ 8) r8 cis,8( | %066
+  \time 3/4 e,2. | %067
+  ees2~ 4)\fermata | %068
+  \time 2/2 g8( d' b fis' bes des4) c8( | %069
+  \time 7/8 e4 a,8) ees([ f] aes,4) | %070
+  des,8([ c e a,] d[ b f'] | %071
+  \time 2/2 ees aes g fis bes,) c( des ees! | %072
+  d8 e f g4) r8 r4 |
 
 }
