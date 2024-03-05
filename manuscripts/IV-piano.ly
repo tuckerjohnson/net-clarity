@@ -88,18 +88,23 @@
       aes2. r4 | %059
       \tuplet 3/2 { b,2 dis fis } | %060
       \tuplet 3/2 { b2 dis fis } | %061
-      r8 des'8 f,4 <f des'>2 |
-      <c a' d>2\arpeggio gis4 <gis e'> |
-      <bes g'>4 bes8-> c8~ <c aes'>2 |
-      \tuplet 3/2 { e,8~ <e d'>~ <e d' g>~ } 4 \tuplet 3/2 { ees8~ <ees des'>~ <ees des' f>~ } 4 |
-      \time 7/8 R1*7/8 |
-      \time 3/4 fis'4( a, b,~ |
-      b4. bes8~ bes4)\fermata |
-      a4 <e' gis dis'>2~\arpeggio 8 f'8 |
-      \time 7/8 g8~ <g b, d,>4 <ges, bes>( <des c'>) |
-      r4 <ges, aes>4-. r8 g8-. r8 |
-      \time 2/2 r4 <a cis>8-. <b d>-. r4 gis'8-. r8 |
-      <c, a'>8-. r8 r4 bes8-. r8 r4 |
+      r8 des'8 f,4 <f des'>2 | %062
+      <c a' d>2\arpeggio gis4 <gis e'> | %063
+      <bes g'>4 bes8-> c8~ <c aes'>2 | %064
+      \tuplet 3/2 { e,8~ <e d'>~ <e d' g>~ } 4 \tuplet 3/2 { ees8~ <ees des'>~ <ees des' f>~ } 4 | %065
+      \time 7/8 R1*7/8 | %066
+      \time 3/4 fis'4( a, b,~ | %067
+      b4. bes8~ bes4)\fermata | %068
+      a4 <e' gis dis'>2~\arpeggio 8 f'8 | %069
+      \time 7/8 g8~ <g b, d,>4 <ges, bes>( <des c'>) | %070
+      r4 <ges, aes>4-. r8 g8-. r8 | %071
+      \time 2/2 r4 <a cis>8-. <b d>-. r4 gis'8-. r8 | %072
+      <c, a'>8-. r8 r4 bes8( <ees e'!>-.) r4 | %073
+      r4 <f d'>8-. r8 r2 | %074
+      \time 3/4 R1*3/4 | %075
+      \time 2/2 r4 g4-- g2 | %076
+      r4 des8-. r8 c''8-. r8 r4 | %077
+      b8-. bes-. r4 ees,4-. r4 | %078
     }
 
   }
@@ -192,19 +197,25 @@
       \tuplet 3/2 { des2 b4~ } b4 fis'4~ | %058
       fis8 g'-. c,-. f-. bes,4( a | %059
       gis2~\sustainOn <gis e'>2) | %060
-      g'2~\sustainOff\sustainOn <g e'> |
-      r2\sustainOff\sustainOn b4 bes |
-      bes2\sustainOff\sustainOn r4\sustainOff\sustainOn fis4 |
-      r8\sustainOff ees8~ 2~ \tuplet 3/2 { 4 des8~ } |
-      des2. r4 |
-      \time 7/8 R1*7/8 |
-      \time 3/4 aes4.(\sustainOn d4. |
-      f4\sustainOff\sustainOn a, c,)\fermata |
-      \time 2/2 R1\sustainOff |
-      \time 7/8 R1*7/8 |
-      r4 ees4-. r8 bes8-. r8 |
-      \time 2/2 r4 e8-. e-. r8 f-. fis-. r8
-      b,8-. r8 r4 r2 |
+      g'2~\sustainOff\sustainOn <g e'> | %061
+      r2\sustainOff\sustainOn b4 bes | %062
+      bes2\sustainOff\sustainOn r4\sustainOff\sustainOn fis4 | %063
+      r8\sustainOff ees8~ 2~ \tuplet 3/2 { 4 des8~ } | %064
+      des2. r4 | %065
+      \time 7/8 R1*7/8 | %066
+      \time 3/4 aes4.(\sustainOn d4. | %067
+      f4\sustainOff\sustainOn a, c,)\fermata | %068
+      \time 2/2 R1\sustainOff | %069
+      \time 7/8 R1*7/8 | %070
+      r4 ees4-. r8 bes8-. r8 | %071
+      \time 2/2 r4 e8-. e-. r8 f-. fis-. r8 | %072
+      b,8-. r8 r4 r8 des'8-. r4 | %073
+      R1 | %074
+      \time 3/4 R1*3/4 | %075
+      \time 2/2 r4 c4-- c2 | %076
+      r4 aes8-. r8 r8 d,8-. r8 e''8( | %077
+      f8-.) ges8-. r8 a,,8( g4-.) r4 | %078
+
     }
 
   }

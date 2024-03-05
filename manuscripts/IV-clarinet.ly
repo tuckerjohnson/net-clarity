@@ -68,6 +68,11 @@
   \time 7/8 e4 a,8) ees([ f] aes,4) | %070
   des,8([ c e a,] d[ b f'] | %071
   \time 2/2 ees aes g fis bes,) c( des ees! | %072
-  d8 e f g4) r8 r4 |
+  d8 e f g8~ g) r8 aes8-. fis8-. | %073
+  b8( bes a-.) r8 \tuplet 3/2 { g4( c e) } | %074
+  \time 3/4 gis16( ais b cis) \tuplet 3/2 { d8( eis fis~ } fis8.) a,16 | %075
+  \time 2/2 dis2 r8 e8( fis b,8) | %076
+  g( f ees bes'~ bes) a8( aes4) | %077
+  r4 des8( c d2) | %078
 
 }
