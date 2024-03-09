@@ -72,7 +72,12 @@
   b8( bes a-.) r8 \tuplet 3/2 { g4( c e) } | %074
   \time 3/4 gis16( ais b cis) \tuplet 3/2 { d8( eis fis~ } fis8.) a,16 | %075
   \time 2/2 dis2 r8 e8( fis b,8) | %076
-  g( f ees bes'~ bes) a8( aes4) | %077
-  r4 des8( c d2) | %078
+  g( f ees bes'~ bes) a8( aes4 | %077
+  des8) r8 r8 d8( c2)\breathe | %078
+  \time 3/4 c,,8-. e''( d b a-.) c,,( |
+  ees,8-.) ees-.-> des'''( bes g c-.) |
+  bes,,-.-> bes-. aes''( ges f ees-.) |
+  d( e a cis-.) f,,-. f( | a,)-.
+
 
 }

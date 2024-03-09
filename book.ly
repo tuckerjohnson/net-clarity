@@ -79,7 +79,7 @@
         \include "manuscripts/IV-clarinet.ly"
         \include "manuscripts/IV-piano.ly"
       >>
-      %\midi { }
+      \midi { }
       \layout {
         \context {
           \Score
