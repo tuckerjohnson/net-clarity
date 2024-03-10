@@ -105,10 +105,6 @@
       \time 2/2 r4 g4-- g2 | %076
       r4 des8-. r8 c''8-. r8 r4 | %077
       b8-. bes-. r4 ees,4-. r4 | %078
-      \time 3/4 r4 g,,4. 8 |
-      aes2 r4 |
-      r8 b8~ 2 |
-      r4 r8 bes8~ 4 |
 
 
     }
@@ -221,10 +217,6 @@
       \time 2/2 r4 c4-- c2 | %076
       r4 aes8-. r8 r8 d,8-. r8 e''8( | %077
       f8-.) ges8-. r8 a,,8( g4-.) r4 | %078
-      \time 3/4 r4 fis4. 8 |
-      f2 r4 |
-      r8 cis8~ cis2 |
-      r4 r8 g'8~ g4 |
 
     }
 
