@@ -52,31 +52,32 @@
   \time 2/2 r2 r2\fermata | %054
   r8 b'8~->\f b2~ b8 bes-. | %055
   a8-. b-. c2. | %056
-  \time 5/4 ges8-. aes-. f1~ | %057
-  \time 2/2 f4 g8-. e8~ e4 ees-> | %058
-  d2~ d8 cis4.~ | %059
-  cis1 | %060
-  r2 r4 r8 c'8( | %061
+  \time 5/4 ges8-. aes-. f1~\> | %057
+  \time 2/2 f4 g8-. e8~\mp e4 ees->\f | %058
+  d2~\> d8 cis4.~ | %059
+  \after 2 \p cis1 | %060
+  r2 r4 r8 c'8(\mf | %061
   d bes aes ges~ ges4) r8 e'8( | %062
-  g8 f4) ees4( des8 b' a->~ | %063
-  a4) d4.-> f,8~-> f4 | %064
-  \tuplet 3/2 { fis4( b, a' } \tuplet 3/2 { bes, aes' c, } | %065
-  \time 7/8 g'2~ 8) r8 cis,8( | %066
-  \time 3/4 e,2. | %067
-  ees2~ 4)\fermata | %068
-  \time 2/2 g8( d' b fis' bes des4) c8( | %069
-  \time 7/8 e4 a,8) ees([ f] aes,4) | %070
-  des,8([ c e a,] d[ b f'] | %071
-  \time 2/2 ees aes g fis bes,) c( des ees! | %072
-  d8 e f g8~ g) r8 aes8-. fis8-. | %073
-  b8( bes a-.) r8 \tuplet 3/2 { g4( c e) } | %074
-  \time 3/4 gis16( ais b cis) \tuplet 3/2 { d8( eis fis~ } fis8.) a,16 | %075
-  \time 2/2 dis2 r8 e8( fis b,8) | %076
-  g( f ees bes'~ bes) a8( aes4 | %077
-  des8) r8 r8 d8( c4.)\breathe e8( | %078
+  g8 f4)\< ees8~( ees des8 b' a~ | %063
+  a4) d4.->\f f,8~-> f4 | %064
+  \tuplet 3/2 { fis4( b, a'\> } \tuplet 3/2 { bes, aes' c, } | %065
+  \time 7/8 g'2~\mp 8) r8 cis,8( | %066
+  \time 3/4 \after 4 ^\markup { "poco rit." } e,2.\> | %067
+  ees2~ 4\p)\fermata \bar "||" %068
+  \tempo "A tempo"
+  \time 2/2 g8(\mf\< d' b fis' bes des4) c8( | %069
+  \time 7/8 e4\f a,8) ees([ f]\> aes,4) | %070
+  des,8([\mp\< c e a,] d[ b f'] | %071
+  \time 2/2 ees aes g fis\mf bes,) c(\mp\< des ees! | %072
+  d8 e f g8~\mf g) r8 aes8-.\< fis8-. | %073
+  b8( bes a-.)\f r8 \tuplet 3/2 { g4( c e) } | %074
+  \time 3/4 gis16(\< ais b cis) \tuplet 3/2 { d8( eis fis~ } fis8.) a,16( | %075
+  \time 2/2 dis2)\ff r8 e8( fis b,8) | %076
+  g( f\> ees bes'~ bes) a8(\f aes4\> | %077
+  des4) r8 d8( \after 8 \mf c4.) \breathe e8( | %078
   \time 3/4 d b a-.) c,,( ees,-.->) des'''( | %079
   bes c g-.) bes,,-.-> aes''( ges | %080
-  \time 2/4 f8 ees4--) \breathe d8( | %081
+  \time 2/4 f8 ees4--) \breathe d8_( | %081
   \time 3/4 e a cis-.) f,,,( a-.->) ees''( | %082
   ges b c-.) d,,,-.-> aes'''( bes  | %083
   f' g4.~ 4) \breathe | %084

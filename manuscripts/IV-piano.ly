@@ -4,6 +4,7 @@
   instrumentName = \markup { "piano " }
   shortInstrumentName = \markup { "pno " }
   \consists Text_mark_engraver
+  \consists Metronome_mark_engraver
 }
 <<
 
