@@ -79,7 +79,19 @@
   \time 2/4 f8 ees4--) \breathe d8( | %081
   \time 3/4 e a cis-.) f,,,( a-.->) ees''( | %082
   ges b c-.) d,,,-.-> aes'''( bes  | %083
-  \time 2/2 e f4.~ 4) r4 | %084
+  f' g4.~ 4) \breathe | %084
+  \time 2/2 e,,,4.-- aes''8( d, ees a,4) | %085
+  cis,4. bes'8_( f' c' b-.) g,,( | %086
+  fis4) gis2 b4 \breathe | %087
+  \time 3/8 cis''8 e,( fis \bar "||" %089
+  \time 3/2 gis1.) | %090
+  \time 3/4 r4 r4 r8 b,16( e, | %091
+  \time 3/2 g2.~ g2) d4( | %092
+  \time 2/4 fis4 cis) \bar "||" %093
+  \time 3/4 R1*3/4 | %094
+  \time 3/2 c2.~ c4 c( ees~ | %095
+  \time 2/2 ees) f( bes,2) \bar "||" %096
+
 
 
 }

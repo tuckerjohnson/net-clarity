@@ -105,6 +105,23 @@
       \time 2/2 r4 g4-- g2 | %076
       r4 des8-. r8 c''8-. r8 r4 | %077
       b8-. bes-. r4 ees,4-. r4 | %078
+      \time 3/4 r4 r8 <g,, c>8( <ees bes'>4~ | %079
+      4) r8 <ais b>8~ 4~ | %080
+      \time 2/4 4~ 8 r8 | %081
+      \time 3/4 r4 r8 <f bes>8-. <a e'>4~ | %082
+      4~ 8 r8 ees'4~ | %083
+      2~ 8 fis( | %084
+      \time 2/2 cis d a4) \tuplet 3/2 { c4( f) fis( } | %085
+      <cis b'>4.) gis'8 \tuplet 3/2 { a4( d, e) } \clef bass | %086
+      \tuplet 3/2 { cis( dis) c_( } \tuplet 3/2 { f,) bes,( g~ } | %087
+      \time 3/8 g4.) \clef treble \bar "||" %089
+      \time 3/2 b'4( dis cis) b( dis cis) | %090
+      \time 3/4 f( d f) | %091
+      \time 3/2 c( bes c) bes( c bes) | %092
+      \time 2/4 R1*2/4 \bar "||" %093
+      \time 3/4 e4( g e) | %094
+      \time 3/2 aes( ges aes) ges( aes ges) | %095
+      \time 2/2 a2 s2 | \bar "||" %096
 
 
     }
@@ -217,6 +234,38 @@
       \time 2/2 r4 c4-- c2 | %076
       r4 aes8-. r8 r8 d,8-. r8 e''8( | %077
       f8-.) ges8-. r8 a,,8( g4-.) r4 | %078
+      \time 3/4 r4 fis8-- fis( f4~ | %079
+      f) r4 r8 <des des'>8~ | %080
+      \time 2/4 4~ 8 r8 | %081
+      \time 3/4 r4 g8-- g-. aes4~ | %082
+      aes~ aes8 d8-. r8 <c c,>8~ | %083
+      2. | %084
+      \time 2/2 b,2 bes | %085
+      e4. dis8~ dis2 | %086
+      fis'4 <gis a,>4 a, <d b'>~ | %087
+      \time 3/8 4. \bar "||" %089
+      \time 3/2 fis,4. e fis( \tuplet 2/3 { e8) bes' } | %090
+      <<
+        {
+          \voiceOne
+          \time 3/4 r4 r4 g'( | %091
+          \time 3/2 f2.~ f2) f4( | %092
+          \time 2/4 a2) \bar "||" %093
+          \time 3/4 s4 s4 s4 | %094
+          \time 3/2 s4 s4 s4 bes2.~ | %095
+          \time 2/2 bes4 \change Staff = "u" \stemDown d( ees c) \bar "||" %096
+        }
+        \new Voice \relative {
+          \voiceTwo
+          \time 3/4 a,4.( c) | %091
+          \time 3/2 aes( ees) aes( ees) | %092
+          \time 2/4 s4 s4 \bar "||" %093
+          \time 3/4 d'4.( b) | %094
+          \time 3/2 f'( des) f( des) | %095
+          \time 2/2 r4 r8 g,8~ g2 \bar "||" %096
+        }
+      >>
+
 
     }
 
