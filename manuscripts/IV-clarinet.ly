@@ -74,13 +74,13 @@
   \time 3/4 gis16(\< ais b cis) \tuplet 3/2 { d8( eis fis~ } fis8.) a,16( | %075
   \time 2/2 dis2)\ff r8 e8( fis b,8) | %076
   g( f\> ees bes'~ bes) a8(\f aes4\> | %077
-  des4) r8 d8( \after 8 \mf c4.) \breathe e8( | %078
-  \time 3/4 d b a-.) c,,( ees,-.->) des'''( | %079
-  bes c g-.) bes,,-.-> aes''( ges | %080
-  \time 2/4 f8 ees4--) \breathe d8_( | %081
-  \time 3/4 e a cis-.) f,,,( a-.->) ees''( | %082
-  ges b c-.) d,,,-.-> aes'''( bes  | %083
-  f' g4.~ 4) \breathe | %084
+  des4) r8 d8( \after 8 \mf c4.) e8( | %078
+  \time 3/4 d b a-.) c,,(\< ees,-.->)\ff des'''(^\mp | %079
+  bes c g-.) bes,,-.->\ff aes''(^\< ges | %080
+  \time 2/4 f8 ees4--)^\f \breathe d8_(^\mp | %081
+  \time 3/4 e a cis-.) f,,,(\< a-.->)\ff ees''(^\< | %082
+  ges b c-.)\mf d,,,-.->_\ff aes'''(^\< bes  | %083
+  f' g4.~\ff 4) \breathe | %084
   \time 2/2 e,,,4.-- aes''8( d, ees a,4) | %085
   cis,4. bes'8_( f' c' b-.) g,,( | %086
   fis4) gis2 b4 \breathe | %087
