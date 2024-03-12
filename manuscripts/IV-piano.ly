@@ -112,7 +112,7 @@
       \time 3/4 r4 r8 <f bes>8-. <a e'>4~ | %082
       4~ 8 r8 ees'4~ | %083
       2~ 8 fis( | %084
-      \time 2/2 cis d a4) \tuplet 3/2 { c4( f) fis( } | %085
+      \time 2/2 cis d a4~ 8)  c8( f) fis( | %085
       <cis b'>4.) gis'8 \tuplet 3/2 { a4( d, e) } \clef bass | %086
       \tuplet 3/2 { cis( dis) c_( } \tuplet 3/2 { f,) bes,( g~ } | %087
       \time 3/8 g4.) \clef treble \bar "||" %089
