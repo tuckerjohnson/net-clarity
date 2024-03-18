@@ -8,7 +8,7 @@
   \override StaffSymbol.staff-space = #(magstep -1)
   \consists Text_mark_engraver
 }
-\relative {
+\transpose bes c' \relative {
   \numericTimeSignature
   \clef treble
   \tempo Largo 2=92

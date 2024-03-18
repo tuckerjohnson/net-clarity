@@ -63,7 +63,7 @@
   \tuplet 3/2 { fis4( b, a'\> } \tuplet 3/2 { bes, aes' c, } | %065
   \time 7/8 g'2~\mp 8) r8 cis,8( | %066
   \time 3/4 \after 4 ^\markup { "poco rit." } e,2.\> | %067
-  ees2~ 4\p)\fermata \bar "||" %068
+  ees2~ 4\p) \bar "||" %068
   \tempo "A tempo"
   \time 2/2 g8(\mf\< d' b fis' bes des4) c8( | %069
   \time 7/8 e4\f a,8) ees([ f]\> aes,4) | %070
@@ -81,18 +81,17 @@
   \time 3/4 e a cis-.) f,,,(\< a-.->)\ff ees''(^\< | %082
   ges b c-.)\mf d,,,-.->_\ff aes'''(^\< bes  | %083
   f' g4.~\ff 4) \breathe | %084
-  \time 2/2 e,,,4.-- aes''8( d, ees a,4) | %085
-  cis,4. bes'8_( f' c' b-.) g,,( | %086
-  fis4) gis2 b4 \breathe | %087
-  \time 3/8 cis''8 e,( fis \bar "||" %089
-  \time 3/2 gis1.) | %090
-  \time 3/4 r4 r4 r8 b,16( e, | %091
-  \time 3/2 g2.~ g2) d4( | %092
-  \time 2/4 fis4 cis) \bar "||" %093
-  \time 3/4 R1*3/4 | %094
-  \time 3/2 c2.~ c4 c( ees~ | %095
-  \time 2/2 ees) f( bes,2) \bar "||" %096
-
+  \time 2/2 e,,,4.--\mp aes''8(\f\> d, ees a,4)\!| %085
+  cis,4.--\mp bes'8_(\f\< f' c' b-.)\! g,,(\mp\> | %086
+  fis4) gis2 b4\p \breathe | %087
+  \time 3/8 cis''8\mf e, fis,( \bar "||" %089
+  \time 12/8 gis1.) | %090
+  \time 6/8 r4. r8 r8 b16( e, |
+  \time 12/8 g2.~ 4.) r8 d4( |
+  \time 2/4 fis4 cis) \bar "||"
+  \time 6/8 R1*6/8 |
+  \time 12/8 r4 c8~ c4.~ c4 c4( ees~ |
+  \time 3/4 ees8) f8( bes,4~ 4\fermata) |
 
 
 }

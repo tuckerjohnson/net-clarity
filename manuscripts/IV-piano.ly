@@ -82,47 +82,64 @@
       \time 3/2 r8 ges8-- r4 \after 4. \mp e2~( \tuplet 3/2 { e2\>^\markup { "molto rit." } g4~ } | %053
       \time 2/2 g2~ g2\p\fermata) \bar "||" %054
       \tempo "A tempo"
-      \after 4 \f R1 | %055
-      r2 e'8-. f8-. r4 | %056
-      \time 5/4 r4 r8 des8-. bes'4( c4.) d8-. | %057
-      \time 2/2 a2.. aes8~ | %058
-      aes2. r4 | %059
+      \after 4 \< R1 | %055
+      \after 4. \f r2 e'8-. f8-. r4 | %056
+      \time 5/4 r4 r8 des8-.\> bes'4( c4.) d8-. | %057
+      \time 2/2 a2..\mp aes8~ | %058
+      \after 8 \f \after 4 \> aes2. r4 | %059
       \tuplet 3/2 { b,2 dis fis } | %060
-      \tuplet 3/2 { b2 dis fis } | %061
-      r8 des'8 f,4 <f des'>2 | %062
+      \tuplet 3/2 { b2\p dis fis } | %061
+      r8 des'8\< f,4 <f des'>2 | %062
       <c a' d>2\arpeggio gis4 <gis e'> | %063
-      <bes g'>4 bes8-> c8~ <c aes'>2 | %064
-      \tuplet 3/2 { e,8~ <e d'>~ <e d' g>~ } 4 \tuplet 3/2 { ees8~ <ees des'>~ <ees des' f>~ } 4 | %065
+      <bes g'>4\f bes8-> c8~ <c aes'>2 | %064
+      \tuplet 3/2 { e,8~\mf <e d'>~ <e d' g>~ } 4 \tuplet 3/2 { ees8~\mp <ees des'>~ <ees des' f>~ } 4 | %065
       \time 7/8 R1*7/8 | %066
-      \time 3/4 fis'4( a, b,~ | %067
-      b4. bes8~ bes4)\fermata | %068
-      a4 <e' gis dis'>2~\arpeggio 8 f'8 | %069
-      \time 7/8 g8~ <g b, d,>4 <ges, bes>( <des c'>) | %070
-      r4 <ges, aes>4-. r8 g8-. r8 | %071
-      \time 2/2 r4 <a cis>8-. <b d>-. r4 gis'8-. r8 | %072
+      \time 3/4 fis'4(\> a, b,~ | %067
+      b4. bes8~ bes4)\pp | %068
+      a4\< <e' gis dis'>2~\arpeggio 8 f'8 | %069
+      \time 7/8 g8~\mf\> <g b, d,>4 <ges, bes>( <des c'>) | %070
+      r4 <ges, aes>8-.\mp r8 r8 g8-. r8 | %071
+      \time 2/2 r4 <a cis>8-.\< <b d>-. r4 gis'8-. r8 | %072
       <c, a'>8-. r8 r4 bes8( <ees e'!>-.) r4 | %073
-      r4 <f d'>8-. r8 r2 | %074
+      r4 <f d'>8-.\f r8 r2 | %074
       \time 3/4 R1*3/4 | %075
       \time 2/2 r4 g4-- g2 | %076
-      r4 des8-. r8 c''8-. r8 r4 | %077
-      b8-. bes-. r4 ees,4-. r4 | %078
-      \time 3/4 r4 r8 <g,, c>8( <ees bes'>4~ | %079
-      4) r8 <ais b>8~ 4~ | %080
+      r4 des8-.\> r8 c''8-. r8 r4 | %077
+      b8-. bes-. r4 ees,4-.\mf r4 | %078
+      \time 3/4 r4 r8\p\< <g,, c>8( <ees bes'>4~ | %079
+      4) r8 <ais b>8~ \after 8 \mf 4~ | %080
       \time 2/4 4~ 8 r8 | %081
-      \time 3/4 r4 r8 <f bes>8-. <a e'>4~ | %082
-      4~ 8 r8 ees'4~ | %083
-      2~ 8 fis( | %084
-      \time 2/2 cis d a4~ 8)  c8( f) fis( | %085
-      <cis b'>4.) gis'8 \tuplet 3/2 { a4( d, e) } \clef bass | %086
-      \tuplet 3/2 { cis( dis) c_( } \tuplet 3/2 { f,) bes,( g~ } | %087
+      \time 3/4 r4 r8\mp\< <f bes>8-. <a e'>4~ | %082
+      4~ 8 r8 \after 8 \f ees'4~ | %083
+      2~ 8 fis^(\p\< | %084
+      <<
+        {
+          \voiceOne
+          \time 2/2 cis d a4~
+        }
+        \new Voice {
+          \voiceTwo
+          \time 2/2 e2
+        }
+      >>
+      \oneVoice a8) c8( f) fis( | %085
+      <cis b'>4.) gis'8 \tuplet 3/2 { a4(\mf d, e) } \clef bass | %086
+      \tuplet 3/2 { cis(\>^\markup { "molto rit." } dis) c_( } \tuplet 3/2 { f,) bes,( g~\pp } | %087
       \time 3/8 g4.) \clef treble \bar "||" %089
-      \time 3/2 b'4( dis cis) b( dis cis) | %090
-      \time 3/4 f( d f) | %091
-      \time 3/2 c( bes c) bes( c bes) | %092
+      \tempo \markup { "A tempo"
+          \concat {
+            \rhythm { { 4 } }
+            " = "
+            \rhythm { { 2 } }
+          }
+        } 4. = 64
+      \time 12/8 b'8(\p dis cis) b( dis cis) b( dis cis) b( dis cis) | %090
+      \time 6/8 f( d f) f( d f) | %091
+      \time 12/8 c( bes c) bes( c bes) bes( c bes) bes( c bes) | %092
       \time 2/4 R1*2/4 \bar "||" %093
-      \time 3/4 e4( g e) | %094
-      \time 3/2 aes( ges aes) ges( aes ges) | %095
-      \time 2/2 a2 s2 | \bar "||" %096
+      \time 6/8 e8( g e) e( g e) | %094
+      \time 12/8 aes( ges aes) ges( aes ges) aes( ges aes) ges( aes ges) | %095
+      \time 3/4 \voiceOne a4 r4 r4\fermata | \bar "||" %096
 
 
     }
@@ -211,59 +228,70 @@
       a8 a4.->\f\> gis4( b4~ | %052
       \time 3/2 b2.) f8(\mp\> <d d'>8~ 8 <c c'>4. | %053
       \time 2/2 <bes bes'>2 <a a'>2)\fermata\p | %054
-      r4 cis8(\f dis e fis gis4 | %055
-      g!4.) <d d'>8~-> 4 <ees ees'>4~-> | %056
-      \time 5/4 <ees ees'>2.. des8~ des4~ | %057
-      \tuplet 3/2 { des2 b4~ } b4 fis'4~ | %058
-      fis8 g'-. c,-. f-. bes,4( a | %059
+      r4 cis8(\< dis e fis gis4 | %055
+      g!4.) <d d'>8~->\f 4 <ees ees'>4~-> | %056
+      \time 5/4 <ees ees'>2..\> des8~ des4~ | %057
+      \tuplet 3/2 { des2 b4~\mp } b4 fis'4~ | %058
+      fis8 g'-.\< c,-. f-. bes,4( a | %059
       gis2~\sustainOn <gis e'>2) | %060
-      g'2~\sustainOff\sustainOn <g e'> | %061
-      r2\sustainOff\sustainOn b4 bes | %062
+      g'2~\sustainOff\sustainOn\p <g e'> | %061
+      r2\sustainOff\sustainOn b4\< bes | %062
       bes2\sustainOff\sustainOn r4\sustainOff\sustainOn fis4 | %063
-      r8\sustainOff ees8~ 2~ \tuplet 3/2 { 4 des8~ } | %064
+      r8\sustainOff ees8~\f 2~ \tuplet 3/2 { 4 des8~\mf } | %064
       des2. r4 | %065
       \time 7/8 R1*7/8 | %066
-      \time 3/4 aes4.(\sustainOn d4. | %067
-      f4\sustainOff\sustainOn a, c,)\fermata | %068
+      \time 3/4 aes4.(\sustainOn\> d4. | %067
+      f4\sustainOff\sustainOn a, c,)\p | %068
       \time 2/2 R1\sustainOff | %069
       \time 7/8 R1*7/8 | %070
-      r4 ees4-. r8 bes8-. r8 | %071
-      \time 2/2 r4 e8-. e-. r8 f-. fis-. r8 | %072
-      b,8-. r8 r4 r8 des'8-. r4 | %073
+      r4 ees4-.\mp r8 bes8-. r8 | %071
+      \time 2/2 r4 e8-.\< e-. r8 f-. fis-. r8 | %072
+      b,8-. r8 r4 r8 des'8-.\mf r4 | %073
       R1 | %074
       \time 3/4 R1*3/4 | %075
       \time 2/2 r4 c4-- c2 | %076
-      r4 aes8-. r8 r8 d,8-. r8 e''8( | %077
-      f8-.) ges8-. r8 a,,8( g4-.) r4 | %078
-      \time 3/4 r4 fis8-- fis( f4~ | %079
-      f) r4 r8 <des des'>8~ | %080
+      r4 aes8-.\> r8 r8 d,8-. r8 e''8( | %077
+      f8-.) ges8-. r8 a,,8( g4-.)\mf r4 | %078
+      \time 3/4 r4 fis8--\p\< fis( f4~ | %079
+      f) r4 r8 <des des'>8~\f | %080
       \time 2/4 4~ 8 r8 | %081
-      \time 3/4 r4 g8-- g-. aes4~ | %082
-      aes~ aes8 d8-. r8 <c c,>8~ | %083
+      \time 3/4 r4 g8--\mp\< g-. aes4~ | %082
+      aes~ aes8 d8-. r8 <c c,>8~\f | %083
       2. | %084
-      \time 2/2 b,2 bes | %085
-      e4. dis8~ dis2 | %086
-      fis'4 <gis a,>4 a, <d b'>~ | %087
-      \time 3/8 4. \bar "||" %089
-      \time 3/2 fis,4. e fis( \tuplet 2/3 { e8) bes' } | %090
+      \time 2/2 b,2\p\< bes | %085
+      e'4. dis8~\mf dis4. g8 | %086
       <<
         {
           \voiceOne
-          \time 3/4 r4 r4 g'( | %091
-          \time 3/2 f2.~ f2) f4( | %092
-          \time 2/4 a2) \bar "||" %093
-          \time 3/4 s4 s4 s4 | %094
-          \time 3/2 s4 s4 s4 bes2.~ | %095
-          \time 2/2 bes4 \change Staff = "u" \stemDown d( ees c) \bar "||" %096
+          fis4\> gis2 b4~\\ | %087
+          \time 3/8 4. \bar "||" %089
         }
         \new Voice \relative {
           \voiceTwo
-          \time 3/4 a,4.( c) | %091
-          \time 3/2 aes( ees) aes( ees) | %092
-          \time 2/4 s4 s4 \bar "||" %093
-          \time 3/4 d'4.( b) | %094
-          \time 3/2 f'( des) f( des) | %095
-          \time 2/2 r4 r8 g,8~ g2 \bar "||" %096
+          r4 a,4\> a d4~\pp | %087
+          \time 3/8 d4. \bar "||" %089
+        }
+      >>
+      \oneVoice
+      \time 12/8 fis,8.(\p\sustainOn e) fis( e) fis( e) fis( bes) | %090
+      <<
+        {
+          \voiceOne
+          \time 6/8 r4. r8 g'4( | %091
+          \time 12/8 f2.~ f4.~ f8) f4( | %092
+          \time 2/4 a2) \bar "||" %093
+          \time 6/8 s4 s4 s4 | %094
+          \time 12/8 s4 s4 s4 \change Staff = "u" \voiceTwo bes2.~ | %095
+          \time 3/4 bes8 d( ees c~ c4) \bar "||" %096
+        }
+        \new Voice \relative {
+          \voiceTwo
+          \time 6/8 a,8.(\sustainOff\sustainOn c,) a'( c,) | %091
+          \time 12/8 aes'(\sustainOff\sustainOn ees) aes( ees) aes( ees) aes( ees) | %092
+          \time 2/4 s2\sustainOff \bar "||" %093
+          \time 6/8 b'8.(\sustainOn d,) b'( d,) | %094
+          \time 12/8 des'(\sustainOff\sustainOn f,) des'( f,) des'( f,) des'( f,) | %095
+          \time 3/4 r8.\sustainOff\sustainOn g16~ g4~ 4\fermata \bar "||" %096
         }
       >>
 
