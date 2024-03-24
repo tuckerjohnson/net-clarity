@@ -1,14 +1,13 @@
-% net-clarity project
+% net clarity project
 
 \new Staff \with {
 
   instrumentName = \markup { clarinet in \concat { \bold "B" \tiny \flat " " } }
   shortInstrumentName = \markup { cl }
   \override DynamicLineSpanner.staff-padding = \sods
-  fontSize = #-1
-  \override StaffSymbol.staff-space = #(magstep -1)
+  fontSize = #-2
+  \override StaffSymbol.staff-space = #(magstep -2)
   \consists Text_mark_engraver
-
 }
 
 %\transpose bes c'
@@ -22,12 +21,16 @@
   \time 5/4 R1*5/4 |
   \time 4/4 R1*13 |
   \time 3/4 R1*3/4*7 |
-  \time 5/8 R1*5/8*2 |
-  \time 2/8 R1*2/8 |
+  \time 5/8 R1*5/8 \molrit \after 4 \startTextSpan R1*5/8 |
+  \time 2/8 \after 8. \stopTextSpan R1*2/8 |
   \once \override Hairpin.circled-tip = ##t
   \time 3/4 c'2.~\fermata\< \bar "||" %031
+
+  \omit Score.BarNumber
+  \sectionLabel \markup { \box \number 32 }
   \tempo 2=96
   \time 2/2 c2..\p c8~->\mf\> | %032
+  \undo \omit Score.BarNumber
   c2.~ c8\pp r8 | %033
   r4 f2.~(\< | %034
   f1 | %035
@@ -48,9 +51,13 @@
   \time 5/4 bes1\mp\> aes'8(\pp fes8 | %050
   \time 2/2 ees2.) r4 | %051
   f8[-.->\f r8 f8-.-> cis8]]-.-> r4 cis4~\> | %052
-  \time 3/2 \after 2 \mp cis2. r4 r2^\markup { "molto rit." } | %053
-  \time 2/2 r2 r2\fermata | %054
+  \time 3/2 \after 2 \mp cis2. r4 \molrit r2\startTextSpan | %053
+  \time 2/2 \after 4. \stopTextSpan r2 r2\fermata | %054
+
+  \omit Score.BarNumber
+  \sectionLabel \markup { \box \number 55 }
   r8 b'8~->\f b2~ b8 bes-. | %055
+  \undo \omit Score.BarNumber
   a8-. b-. c2. | %056
   \time 5/4 ges8-. aes-. f1~\> | %057
   \time 2/2 f4 g8-. e8~\mp e4 ees->\f | %058
@@ -62,10 +69,15 @@
   a4) d4.->\f f,8~-> f4 | %064
   \tuplet 3/2 { fis4( b, a'\> } \tuplet 3/2 { bes, aes' c, } | %065
   \time 7/8 g'2~\mp 8) r8 cis,8( | %066
-  \time 3/4 \after 4 ^\markup { "poco rit." } e,2.\> | %067
-  ees2~ 4\p) \bar "||" %068
-  \tempo "A tempo"
+  \pocrit
+  \time 3/4 \after 4 \startTextSpan  e,2.\> | %067
+  \after 2 \p \after 2 \stopTextSpan ees2.) \bar "||" %068
+
+  \omit Score.BarNumber
+  \sectionLabel \markup { \box \number 69 }
+  \tempo "a tempo"
   \time 2/2 g8(\mf\< d' b fis' bes des4) c8( | %069
+  \undo \omit Score.BarNumber
   \time 7/8 e4\f a,8) ees([ f]\> aes,4) | %070
   des,8([\mp\< c e a,] d[ b f'] | %071
   \time 2/2 ees aes g fis\mf bes,) c(\mp\< des ees! | %072
@@ -75,23 +87,46 @@
   \time 2/2 dis2)\ff r8 e8( fis b,8) | %076
   g( f\> ees bes'~ bes) a8(\f aes4\> | %077
   des4) r8 d8( \after 8 \mf c4.) e8( | %078
-  \time 3/4 d b a-.) c,,(\< ees,-.->)\ff des'''(^\mp | %079
+  \time 3/4 d b a-.) c,,(\< ees,-.)\ff des'''(^\mp | %079
   bes c g-.) bes,,-.->\ff aes''(^\< ges | %080
   \time 2/4 f8 ees4--)^\f \breathe d8_(^\mp | %081
-  \time 3/4 e a cis-.) f,,,(\< a-.->)\ff ees''(^\< | %082
+  \time 3/4 e a cis-.) f,,,(\< a-.)\ff ees''(^\< | %082
   ges b c-.)\mf d,,,-.->_\ff aes'''(^\< bes  | %083
-  f' g4.~\ff 4) \breathe | %084
-  \time 2/2 e,,,4.--\mp aes''8(\f\> d, ees a,4)\!| %085
-  cis,4.--\mp bes'8_(\f\< f' c' b-.)\! g,,(\mp\> | %086
-  fis4) gis2 b4\p \breathe | %087
-  \time 3/8 cis''8\mf e, fis,( \bar "||" %089
-  \time 12/8 gis1.) | %090
-  \time 6/8 r4. r8 r8 b16( e, |
-  \time 12/8 g2.~ 4.) r8 d4( |
-  \time 2/4 fis4 cis) \bar "||"
-  \time 6/8 R1*6/8 |
-  \time 12/8 r4 c8~ c4.~ c4 c4( ees~ |
-  \time 3/4 ees8) f8( bes,4~ 4\fermata) |
+  f' g4.~\f 4) \breathe | %084
+  \time 2/2 e,,,4.--\mp aes''8(\f\> d, ees a,8)\! r8 | %085
+  cis,4.--\mp bes'8_(\f\< f' c'\! b-.) g,,-- | %086
+  \molrit fis4\>\startTextSpan gis2 b4\p \breathe | %087
+  \time 3/8 cis''8(\mf e,) fis,(\stopTextSpan \bar "||" %088
+
+  \omit Score.BarNumber
+  \sectionLabel \markup { \box \number 89 }
+  \time 12/8 \after 1 \! gis1.)\> | %089
+  \undo \omit Score.BarNumber
+  \time 6/8 r4. r8 r8 b16(\< e, | %090
+  \time 12/8 g2.~\mf 4.) r8 d4~( | %091
+  \time 2/4 d8\> fis8 cis4)\p | %092
+  \time 6/8 R1*6/8 | %093
+  \time 12/8 r4 c8~\< c4.~ c4 c4( ees~ | %094
+  \time 6/8 ees8) f8( bes,8~\mf 4 a8~ | %095
+  \time 7/8 \after 4. \! a4.)\> r8 fis'4(\p ees8\< | %096
+  \time 12/8 \after 2 \> g2.~\mp g8 e4~\pp e4.~ | %097
+  \time 7/8 e4.) r4 r8 bes'16(\< f' | %098
+  \time 12/8 \after 4. \> d2.~\mf 8)\! r8 r8 r8 b4(\mp\< | %099
+  \time 3/16 aes8. | %100
+  \time 6/8 \after 4 \> \after 2 \! c2.)\f | %101
+  \time 15/8 r4.\startTextSpan a4.~\> a8 cis4~ cis4.~ \after 4 \stopTextSpan cis4.\pp \mark \markup { \smaller \musicglyph "scripts.ufermata" } \bar "||" %102
+
+  \omit Score.BarNumber
+  \sectionLabel \markup { \box \number 103 }
+  \time 2/2 \acepoc r8\startTextSpan ges,8( ees8) r8 r4 r8 g8(\< | %103
+  \undo \omit Score.BarNumber
+  \time 5/8 e8) r8 r4 c'8( | %104
+  \time 2/2 a4) r8 cis8( gis4) r4 | %105
+  r4 r8 bes8( f8-.) r8 r8 b8(\stopTextSpan \bar "||" %106
+  \tempo 2 = 96
+  \time 7/8 d,8-.) des''8[-- c,]( aes-.)[ g''-. aes(\f d,-.]) | %107
+  \time 2/2 cis,( a-.) f''( ees-.) bes,( g-.) bes''( f-.) | %108
+  \time 5/4 b,,( fis-.) c''-- d,,( e-.) b''( a-.) ees,( f-.) ges'-. | %109
 
 
 }

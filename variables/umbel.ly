@@ -1,4 +1,4 @@
-% river project
+% net clarity project
 xumbel = \markup {
   \center-column {
 	    \path #0.1

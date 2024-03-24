@@ -14,7 +14,7 @@
   }
 
   \bookpart {
-    \tocItem \markup { "I. " \bold "Canto" }
+    \tocItem \markup { "I. " }
     \score {
       \header {
         title = \markup { \fontsize #1 \xtitle }
@@ -84,14 +84,16 @@
         \context {
           \Score
           \remove Text_mark_engraver
+          \remove Mark_engraver
+          \override TextSpanner.bound-details.left-broken.text = " "
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
           \override BarNumber.font-size = #1
           \override Hairpin.to-barline = ##f
-          \override Staff.pedalSustainStyle = #'mixed
         }
         \context {
           \Staff
           \RemoveEmptyStaves
+          \consists Mark_engraver
         }
       }
     }

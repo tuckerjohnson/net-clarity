@@ -1,4 +1,4 @@
-% clarity project
+% net clarity project
 
 \new PianoStaff \with {
   instrumentName = \markup { "piano " }
@@ -12,6 +12,7 @@
   {
 
     \set PianoStaff.connectArpeggios = ##t
+    \omit Staff.SectionLabel
     \relative {
 
       \numericTimeSignature
@@ -36,6 +37,7 @@
       ees8) r8 a16(^\f gis8.~  gis4) g8 e8 | %018
       c4-- r16 bes8.~^\mp bes16 bes16-. r8 r4 | %019
       r4 r16 ges'8.~^\mf ges4~ ges8 ges8--^\f | %020
+
       \sectionLabel \markup { \box \number 21 }
       \omit Score.BarNumber
       \override DynamicLineSpanner.staff-padding = \phds
@@ -48,10 +50,10 @@
       bes16\f ees8.~ ees8 d8~ d4~ | %026
       d8) r8 aes4 f'8-. c16-.\> g16-. | %027
       \time 5/8 \after 4.. \mp R1*5/8 | %028
-      f'16(\< bes,8.) g16[( d'16 fis16^\markup { "molto rit." } e16 cis'16
-      a16]) | %029
-      \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\> <aes, aes'>8-> <b b'>8-> } | %030
+      f'16(\< bes,8.) \molrit g16[(\startTextSpan d'16 fis16 e16 cis'16 a16]) | %029
+      \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\> <aes, aes'>8-> <b b'>8->\stopTextSpan } | %030
       \time 3/4 <c c'>2.\mf\fermata \clef bass | %031
+
       \sectionLabel \markup { \box \number 32 }
       \omit Score.BarNumber
       \tempo 2=96
@@ -79,10 +81,14 @@
       \time 5/4 r8 ees'8( des2.)\mp b'4~(\pp | %050
       \time 2/2 \tuplet 3/2 { b2 g4~ } \after 4 \mf <g c>2~ | %051
       <g c>8) r8\f\> r4 d4-- \tuplet 3/2 { d8-. bes8-. ges8-. } | %052
-      \time 3/2 r8 ges8-- r4 \after 4. \mp e2~( \tuplet 3/2 { e2\>^\markup { "molto rit." } g4~ } | %053
-      \time 2/2 g2~ g2\p\fermata) \bar "||" %054
-      \tempo "A tempo"
+      \time 3/2 r8 ges8-- r4 \after 4. \mp e2~( \tuplet 3/2 { e2\>^\startTextSpan g4~ } | %053
+      \time 2/2 \after 4. \stopTextSpan g2~ g2\p\fermata) \bar "||" %054
+
+      \sectionLabel \markup { \box \number 55 }
+      \omit Score.BarNumber
+      \tempo "a tempo"
       \after 4 \< R1 | %055
+      \undo \omit Score.BarNumber
       \after 4. \f r2 e'8-. f8-. r4 | %056
       \time 5/4 r4 r8 des8-.\> bes'4( c4.) d8-. | %057
       \time 2/2 a2..\mp aes8~ | %058
@@ -94,9 +100,14 @@
       <bes g'>4\f bes8-> c8~ <c aes'>2 | %064
       \tuplet 3/2 { e,8~\mf <e d'>~ <e d' g>~ } 4 \tuplet 3/2 { ees8~\mp <ees des'>~ <ees des' f>~ } 4 | %065
       \time 7/8 R1*7/8 | %066
-      \time 3/4 fis'4(\> a, b,~ | %067
-      b4. bes8~ bes4)\pp | %068
-      a4\< <e' gis dis'>2~\arpeggio 8 f'8 | %069
+      \time 3/4 fis'4(\> \pocrit a,\startTextSpan b,~ | %067
+      b4. bes8~ bes4)\pp\stopTextSpan | %068
+
+      \sectionLabel \markup { \box \number 69 }
+      \omit Score.BarNumber
+      \tempo "a tempo"
+      r4\< <e gis dis'>2~\arpeggio 8 f'8 | %069
+      \undo \omit Score.BarNumber
       \time 7/8 g8~\mf\> <g b, d,>4 <ges, bes>( <des c'>) | %070
       r4 <ges, aes>8-.\mp r8 r8 g8-. r8 | %071
       \time 2/2 r4 <a cis>8-.\< <b d>-. r4 gis'8-. r8 | %072
@@ -124,23 +135,55 @@
       >>
       \oneVoice a8) c8( f) fis( | %085
       <cis b'>4.) gis'8 \tuplet 3/2 { a4(\mf d, e) } \clef bass | %086
-      \tuplet 3/2 { cis(\>^\markup { "molto rit." } dis) c_( } \tuplet 3/2 { f,) bes,( g~\pp } | %087
-      \time 3/8 g4.) \clef treble \bar "||" %089
-      \tempo \markup { "A tempo"
-          \concat {
-            \rhythm { { 4 } }
-            " = "
-            \rhythm { { 2 } }
-          }
-        } 4. = 64
-      \time 12/8 b'8(\p dis cis) b( dis cis) b( dis cis) b( dis cis) | %090
-      \time 6/8 f( d f) f( d f) | %091
-      \time 12/8 c( bes c) bes( c bes) bes( c bes) bes( c bes) | %092
-      \time 2/4 R1*2/4 \bar "||" %093
-      \time 6/8 e8( g e) e( g e) | %094
-      \time 12/8 aes( ges aes) ges( aes ges) aes( ges aes) ges( aes ges) | %095
-      \time 3/4 \voiceOne a4 r4 r4\fermata | \bar "||" %096
+      \molrit \tuplet 3/2 { cis(\>\startTextSpan dis) c_( } \tuplet 3/2 { f,) bes,( g~\pp } | %087
+      \time 3/8 \after 4 \stopTextSpan g4.) \clef treble \bar "||" %088
 
+      \sectionLabel \markup { \box \number 89 }
+      \tempo \markup { "Andante"
+          \concat { \rhythm { { 4 } } " = " \rhythm { { 2 } } }
+        } 4. = 64
+      \omit Score.BarNumber
+      \time 12/8 b'8(\p dis cis) b( dis cis) b( dis cis) b( dis cis) | %089
+      \undo \omit Score.BarNumber
+      \time 6/8 f( d f) d( f d) | %090
+      \time 12/8 c( bes c) bes( c bes) c( bes c) bes( c bes) | %091
+      \time 2/4 R1*2/4 | %092
+      \time 6/8 e8(\p g e) g( e g) | %093
+      \time 12/8 aes( ges aes) ges( aes ges)\< aes( ges aes) ges( aes ges)\! | %094
+      \time 6/8 \voiceOne a4. r4. | %095
+      \time 7/8 \oneVoice b8([\mp\> cis, b']) cis,([ b' cis, b']) | %096
+      <<
+        {
+          \voiceOne
+          \time 12/8 c8_(\p f, c') f,_( c' f,) c'( f, c') f,( c' f,) | %097
+          \time 7/8 ges8[_- r8 ges]_- r8 ges_- r8 ees_- | %098
+          s2. r4. fis'4.~(^\mf | %099
+          8. | %100
+          f!2.) | %101
+          b,2.~ b2.~ 4. \mark \markup { \smaller \musicglyph "scripts.ufermata" } | %102
+        }
+        \new Voice \relative {
+          \voiceTwo
+          s2. r8 des'4\mf des4.(-> | %097
+          aes2.)\< s8 | %098
+          \time 12/8 e'^(\mp a e) a^( e a) e(\< a e) a( e a) | %099
+          \time 3/16 s8. | %100
+          \time 6/8 g8(\mf bes, g') bes,( g' bes,) | %101
+          \time 15/8 \molrit gis'(\>\startTextSpan d gis) d( gis d) gis( d gis) d( gis d) gis(\pp d gis)\stopTextSpan | %102
+        }
+      >>
+      \oneVoice
+
+      \sectionLabel \markup { \box \number 103 }
+      \tempo 2 = 48
+      \time 2/2 \acepoc r2\startTextSpan f'8( b-.) r4 | %103
+      \time 5/8 r4 c,8([\< fis-.]) r8 | %104
+      \time 2/2 r8 bes,8( f'4) r8 ees8( a8-.) r8 | %105
+      r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8\stopTextSpan \bar "||" %106
+      \tempo 2 = 96
+      \time 7/8 <fis, a,>8-.\mf r8 \clef bass <f, bes,>8-. r4 r4 |
+      \time 2/2 <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-. |
+      \time 5/4 r2 <g aes,>8-. r8 r8 c,8-. des8-. r8 |
 
     }
 
@@ -151,7 +194,8 @@
 
     \clef bass
     \set Staff.pedalSustainStyle = #'mixed
-    \override Score.SpacingSpanner.strict-grace-spacing = ##t
+    \omit Staff.SectionLabel
+    \omit Staff.RehearsalMark
     \relative {
 
       \numericTimeSignature
@@ -242,9 +286,9 @@
       \time 7/8 R1*7/8 | %066
       \time 3/4 aes4.(\sustainOn\> d4. | %067
       f4\sustainOff\sustainOn a, c,)\p | %068
-      \time 2/2 R1\sustainOff | %069
+      \time 2/2 a''4\sustainOff r4 r2 | %069
       \time 7/8 R1*7/8 | %070
-      r4 ees4-.\mp r8 bes8-. r8 | %071
+      r4 ees,4-.\mp r8 bes8-. r8 | %071
       \time 2/2 r4 e8-.\< e-. r8 f-. fis-. r8 | %072
       b,8-. r8 r4 r8 des'8-.\mf r4 | %073
       R1 | %074
@@ -264,37 +308,65 @@
         {
           \voiceOne
           fis4\> gis2 b4~\\ | %087
-          \time 3/8 4. \bar "||" %089
+          \time 3/8 4. \bar "||" %088
         }
         \new Voice \relative {
           \voiceTwo
           r4 a,4\> a d4~\pp | %087
-          \time 3/8 d4. \bar "||" %089
+          \time 3/8 d4. \bar "||" %088
         }
       >>
       \oneVoice
-      \time 12/8 fis,8.(\p\sustainOn e) fis( e) fis( e) fis( bes) | %090
+      \time 12/8 fis,8.(\p\sustainOn e) fis( e) fis( e) fis( bes) | %089
       <<
         {
           \voiceOne
-          \time 6/8 r4. r8 g'4( | %091
-          \time 12/8 f2.~ f4.~ f8) f4( | %092
-          \time 2/4 a2) \bar "||" %093
-          \time 6/8 s4 s4 s4 | %094
-          \time 12/8 s4 s4 s4 \change Staff = "u" \voiceTwo bes2.~ | %095
-          \time 3/4 bes8 d( ees c~ c4) \bar "||" %096
+          \time 6/8 r4. \revert Staff.DynamicText.stencil r8 g'4(^\mf | %090
+          \time 12/8 f2.~ f4.~ f8) f4( | %091
+          \time 2/4 a2) | %092
+          \time 6/8 s4 s4 s4 | %093
+          \time 12/8 s4 s4 s4 \U \voiceTwo bes2.~ | %094
+          \time 6/8 bes8 bes8(\< d ees8 c4)\f | %095
         }
         \new Voice \relative {
           \voiceTwo
-          \time 6/8 a,8.(\sustainOff\sustainOn c,) a'( c,) | %091
-          \time 12/8 aes'(\sustainOff\sustainOn ees) aes( ees) aes( ees) aes( ees) | %092
-          \time 2/4 s2\sustainOff \bar "||" %093
-          \time 6/8 b'8.(\sustainOn d,) b'( d,) | %094
-          \time 12/8 des'(\sustainOff\sustainOn f,) des'( f,) des'( f,) des'( f,) | %095
-          \time 3/4 r8.\sustainOff\sustainOn g16~ g4~ 4\fermata \bar "||" %096
+          \time 6/8 a,8.(\p\sustainOff\sustainOn c,) a'( c,) | %090
+          \time 12/8 aes'(\sustainOff\sustainOn ees) aes( ees) aes( ees) aes( ees) | %091
+          \time 2/4 s2\sustainOff | %092
+          \override Staff.DynamicText.stencil = ##f
+          \time 6/8 b'8.(\sustainOn d,) b'( d,) | %093
+          \time 12/8 des'(\sustainOff\sustainOn f,) des'( f,) des'( f,) des'( f,) | %094
+          \time 6/8 r8.\sustainOff g8.~ g4. | %095
         }
       >>
-
+      \D
+      \oneVoice
+      \time 7/8 e,,8.(\p\sustainOn gis,) e'( gis,~ gis8) | %096
+      \time 12/8 a'8.(\sustainOff\sustainOn bes,) a'( bes,) a'( bes,) a'( bes,) | %097
+      \time 7/8 b'(\sustainOff\sustainOn d,) b'( d,~ d8) | %098
+      \time 12/8 g8.(\mp\sustainOff\sustainOn c,) g'( c,) g'(\< c,) g'( c,) | %099
+      \time 3/16 des8.\mf\sustainOff | %100
+      \time 6/8 r8.\sustainOn ees,8. r ees | %101
+      \time 15/8 eis'(\sustainOff\sustainOn fis,)\> eis'( fis,) eis'( fis,) eis'( fis,) eis'( fis,)\pp | %102
+      <<
+        {
+          \voiceOne
+          r2\sustainOff <des'' bes'>4\< r4 |
+          \time 5/8 r4 d8([ <g b>]) r8 |
+          r8 <f a>8~ 4 r4 <e c'>4\mp |
+        }
+        \new Voice \relative {
+          \voiceTwo
+          \time 2/2 aes,,2.\< r4 |
+          \time 5/8 a4~ a4 r8 |
+          \time 2/2 d2 r4 r8 fis8-.\mp |
+        }
+      >>
+      \oneVoice
+      g,4(\mp\< <ces' ees>2) e,,4 |
+      \time 7/8  r8 ees8-.\mf r8 r4 r8 b8-. |
+      \time 2/2 r4 r8 c-. a8-. r8 r4 |
+      \time 5/4 <des des,>4( <f f,>) r2 <bes, bes,>8-. r8 |
 
     }
 

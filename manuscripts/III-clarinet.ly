@@ -4,8 +4,8 @@
   instrumentName = \markup { clarinet in \concat { \bold "B" \tiny \flat " " } }
   shortInstrumentName = \markup { cl }
   \override DynamicLineSpanner.staff-padding = \sods
-  fontSize = #-1
-  \override StaffSymbol.staff-space = #(magstep -1)
+  fontSize = #-2
+  \override StaffSymbol.staff-space = #(magstep -2)
   \consists Text_mark_engraver
 }
 \transpose bes c' \relative {
