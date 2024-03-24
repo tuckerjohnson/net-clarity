@@ -127,6 +127,17 @@
   \time 7/8 d,8-.) des''8[-- c,]( aes-.)[ g''-. aes(\f d,-.]) | %107
   \time 2/2 cis,( a-.) f''( ees-.) bes,( g-.) bes''( f-.) | %108
   \time 5/4 b,,( fis-.) c''-- d,,( e-.) b''( a-.) ees,( f-.) ges'-. | %109
+  \time 2/2 a,-. c-. ees-. f'~( 8 des'8--) fes,,-. ges-. | %110
+  bes,8-. ges''4-- aes,,8-.  des-. d-. b-. r8 | %111
+  g-. f-. r8 fes''( aes2) | %112
+  ees'4-- g,,,8-. fis-. c'-. a-. r4 | %113
+  bes8-. des-. ces-. ees-. d-. r8 f,-. a''~( | %114
+  \time 7/8 a[ b c) ees,,,]-. r8 ees4( | %115
+  \time 2/2 fes2) r2 | %116
+  bes''2~( bes8 d,4 g8~ | %117
+  g4) r4 r2 | %118
+
+
 
 
 }

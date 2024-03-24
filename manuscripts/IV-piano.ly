@@ -181,9 +181,32 @@
       \time 2/2 r8 bes,8( f'4) r8 ees8( a8-.) r8 | %105
       r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8\stopTextSpan \bar "||" %106
       \tempo 2 = 96
-      \time 7/8 <fis, a,>8-.\mf r8 \clef bass <f, bes,>8-. r4 r4 |
-      \time 2/2 <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-. |
-      \time 5/4 r2 <g aes,>8-. r8 r8 c,8-. des8-. r8 |
+      \time 7/8 <fis, a,>8-.\mf r8 \clef bass <f, bes,>8-. r4 r4 | %107
+      \time 2/2 <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-. | %108
+      \time 5/4 r2 <g aes,>8-. r8 r8 c,8-. des8-. r8 \clef treble | %109
+      \time 2/2 d''2 r2 | %110
+      dis8( e4.~ e2) | %112
+      c,2 des2~ | %113
+      des4
+      <<
+        {
+          \voiceOne
+          s4 r4 f'4 | %114
+          ges2 g2~ | %115
+          \time 7/8 g4 aes8-. r8 a4. | %116
+          \time 2/2 r8 bes4.
+        }
+        \new Voice \relative {
+          \voiceTwo
+          d'!2. | %114
+          \tuplet 3/2 { r4 ees2 } \tuplet 3/2 { r4 e2~ } | %115
+          \time 7/8 e4 f8-. r8 r8 fis4 | %116
+          g2
+        }
+      >>
+      \oneVoice b2 | %117
+      aes,2 a4. c'8 | %118
+      cis 2. r4 | %119
 
     }
 
@@ -351,22 +374,42 @@
       <<
         {
           \voiceOne
-          r2\sustainOff <des'' bes'>4\< r4 |
-          \time 5/8 r4 d8([ <g b>]) r8 |
-          r8 <f a>8~ 4 r4 <e c'>4\mp |
+          r2\sustainOff <des'' bes'>4\< r4 | %103
+          \time 5/8 r4 d8([ <g b>]) r8 | %104
+          r8 <f a>8~ 4 r4 <e c'>4\mp | %105
         }
         \new Voice \relative {
           \voiceTwo
-          \time 2/2 aes,,2.\< r4 |
-          \time 5/8 a4~ a4 r8 |
-          \time 2/2 d2 r4 r8 fis8-.\mp |
+          \time 2/2 aes,,2.\< r4 | %103
+          \time 5/8 a4~ a4 r8 | %104
+          \time 2/2 d2 r4 r8 fis8-.\mp | %105
         }
       >>
       \oneVoice
-      g,4(\mp\< <ces' ees>2) e,,4 |
-      \time 7/8  r8 ees8-.\mf r8 r4 r8 b8-. |
-      \time 2/2 r4 r8 c-. a8-. r8 r4 |
-      \time 5/4 <des des,>4( <f f,>) r2 <bes, bes,>8-. r8 |
+      g,4(\mp\< <ces' ees>2) e,,4 | %106
+      \time 7/8  r8 ees8-.\mf r8 r4 r8 b8-. | %107
+      \time 2/2 r4 r8 c-. a8-. r8 r4 | %108
+      \time 5/4 <des des,>4( <f f,>) r2 <bes, bes,>4-- | %109
+      \time 2/2 r4\sustainOn bes''8( g,) r8 b'8(\sustainOff\sustainOn gis,4~ | %110
+      gis2)\sustainOff a2~ | %111
+      a2 bes2 | %112
+      b1 | %113
+      r2 r4 c4~ | %114
+      \time 7/8 c4 r8 cis8~ cis4. | %115
+      <<
+        {
+          \voiceOne
+          \time 2/2 r4 r4 cis'4( fis,8 g) | %116
+          c( f,!4) d'8~ d8 bes4 bes8~ | %117
+          bes a8( b dis8~ dis4 <e gis>4) | %118
+        }
+        \new Voice \relative {
+          \voiceTwo
+          \time 2/2 r4 d4~ d8 r8 r8 ees8~ | %116
+          ees2 e8( f4.) | %117
+          fis2. r4 | %118
+        }
+      >>
 
     }
 

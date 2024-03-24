@@ -1,4 +1,4 @@
-% net-clarity project
+% net clarity project
 
 \new Staff \with {
   instrumentName = \markup { clarinet in \concat { \bold "B" \tiny \flat " " } }

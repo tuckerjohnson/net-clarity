@@ -1,4 +1,4 @@
-% clarity project
+% net clarity project
 
 \new PianoStaff \with {
   instrumentName = \markup { "piano " }
