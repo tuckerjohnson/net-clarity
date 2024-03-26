@@ -176,15 +176,17 @@
 
       \sectionLabel \markup { \box \number 103 }
       \tempo 2 = 48
-      \time 2/2 \acepoc r2\startTextSpan f'8( b-.) r4 | %103
-      \time 5/8 r4 c,8([\< fis-.]) r8 | %104
+      \time 2/2 \acepoc r2 f'8( b-.) r4 | %103
+      \time 5/8 r4\startTextSpan c,8([\< fis-.]) r8 | %104
       \time 2/2 r8 bes,8( f'4) r8 ees8( a8-.) r8 | %105
-      r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8\stopTextSpan \bar "||" %106
+      r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8 | %106
+      <fis, a,>8-.\mf r8 r4 \clef bass <f, bes,>8-. r8 \after 8 \stopTextSpan r4 \bar "||" | %107
       \tempo 2 = 96
-      \time 7/8 <fis, a,>8-.\mf r8 \clef bass <f, bes,>8-. r4 r4 | %107
-      \time 2/2 <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-. | %108
-      \time 5/4 r2 <g aes,>8-. r8 r8 c,8-. des8-. r8 \clef treble | %109
-      \time 2/2 d''2 r2 | %110
+      <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-. | %108
+      \time 3/4 r2 <g aes,>8-. r8 | %109
+      \time 5/8 \tuplet 3/2 { \ace r8\startTextSpan c,8-. des8-. } \after 4 \stopTextSpan r4. \clef treble | %110
+      \tempo 2 = 104
+      \time 2/2 d''2 r2 | %111
       dis8( e4.~ e2) | %112
       c,2 des2~ | %113
       des4
@@ -207,6 +209,18 @@
       \oneVoice b2 | %117
       aes,2 a4. c'8 | %118
       cis 2. r4 | %119
+      r2 c,4( b8-.) r8 |
+      r2 fis8-. <d g>-.\arpeggio r4 |
+      r8 <d g>-. r4 r8 cis'( a4~ |
+      a4. c,8-.) r4 ees'4( |
+      f2 e8) g,-. d-. r8 |
+      r2 r4 bes''8( aes~ |
+      aes2) r2 |
+      R1 |
+      r8 d,,8-. r8 ees-. r2 |
+      r2 c'8-. r8 r8 g-. |
+      R1 |
+      \time 3/4 R1*3/4 |
 
     }
 
@@ -380,36 +394,52 @@
         }
         \new Voice \relative {
           \voiceTwo
-          \time 2/2 aes,,2.\< r4 | %103
+          \time 2/2 aes,,2.\pp\< r4 | %103
           \time 5/8 a4~ a4 r8 | %104
           \time 2/2 d2 r4 r8 fis8-.\mp | %105
         }
       >>
       \oneVoice
       g,4(\mp\< <ces' ees>2) e,,4 | %106
-      \time 7/8  r8 ees8-.\mf r8 r4 r8 b8-. | %107
-      \time 2/2 r4 r8 c-. a8-. r8 r4 | %108
-      \time 5/4 <des des,>4( <f f,>) r2 <bes, bes,>4-- | %109
-      \time 2/2 r4\sustainOn bes''8( g,) r8 b'8(\sustainOff\sustainOn gis,4~ | %110
-      gis2)\sustainOff a2~ | %111
-      a2 bes2 | %112
-      b1 | %113
-      r2 r4 c4~ | %114
-      \time 7/8 c4 r8 cis8~ cis4. | %115
+      r4 ees8-.\mf r8 r4 r8 b8-. | %107
+      r4 r8 c-. a8-. r8 r4 | %108
+      \time 3/4 <des des,>4( <f f,>) r4 %109
+      \time 5/8 r4 <bes, bes,>4-- r8 | %110
+      \time 2/2 r4\sustainOn bes''8( g,) r8 b'8(\sustainOff\sustainOn gis,4~ | %111
+      gis2)\sustainOff a2~ | %112
+      a2 bes2 | %113
+      b1 | %114
+      r2 r4 c4~ | %115
+      \time 7/8 c4 r8 cis8~ cis4. | %116
       <<
         {
           \voiceOne
-          \time 2/2 r4 r4 cis'4( fis,8 g) | %116
-          c( f,!4) d'8~ d8 bes4 bes8~ | %117
-          bes a8( b dis8~ dis4 <e gis>4) | %118
+          \time 2/2 r4 r4 cis'4(\f fis,8 g) | %117
+          c( f,!4) d'8~ d8 bes4 bes8~ | %118
+          bes a8( b dis8~ dis4 <e gis>4~ | %119
+          \stemDown 2)
         }
         \new Voice \relative {
           \voiceTwo
-          \time 2/2 r4 d4~ d8 r8 r8 ees8~ | %116
-          ees2 e8( f4.) | %117
-          fis2. r4 | %118
+          \time 2/2 r4 d4~ d8 r8 r8 ees8~ | %117
+          ees2 e8( f4.) | %118
+          fis2. r4 | %119
+          s2
         }
       >>
+      \oneVoice
+      a,4~ a8 r8 |
+      bes8-. r8 r4 b,8-. r8 r4 |
+      r4 r8 bes( aes2~ |
+      aes4 e2.~ |
+      e2 e4.) fis8-. |
+      r8 f'4.~ f2 |
+      r4 r8 a,8-. cis-. r8 r4 |
+      r4 f8-. ees8~\> ees2~ |
+      ees4 aes,4~ aes8 <des des,>4.~ |
+      8 <ges, ges,>4.~ 2 |
+      <b b,>2~ 8 <e, e,>4.~\p |
+      \time 3/4 2. |
 
     }
 

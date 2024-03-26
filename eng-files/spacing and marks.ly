@@ -35,6 +35,12 @@ ppsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine
 #:transparent "f" #:normal-text #:italic "sempre" ) )
 
+ppsubito =
+    #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine
+#:transparent "f" #:normal-text #:italic "subito" ) )
+
+
+
 doubleSeparator = \markup {
   \left-column {
   \vcenter \combine

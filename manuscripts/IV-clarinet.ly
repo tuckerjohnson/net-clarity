@@ -118,26 +118,37 @@
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 103 }
-  \time 2/2 \acepoc r8\startTextSpan ges,8( ees8) r8 r4 r8 g8(\< | %103
+  \time 2/2 \acepoc r8 ges,8( ees8) r8 r4 r8 g8(\< | %103
   \undo \omit Score.BarNumber
-  \time 5/8 e8) r8 r4 c'8( | %104
+  \time 5/8 e8)\startTextSpan r8 r4 c'8( | %104
   \time 2/2 a4) r8 cis8( gis4) r4 | %105
-  r4 r8 bes8( f8-.) r8 r8 b8(\stopTextSpan \bar "||" %106
+  r4 r8 bes8( f8-.) r8 r8 b8( | %106
+  d,8-.) des''8-- r8 c,( aes-.) g''-. aes(\f\stopTextSpan d,-.) \bar "||" | %107
   \tempo 2 = 96
-  \time 7/8 d,8-.) des''8[-- c,]( aes-.)[ g''-. aes(\f d,-.]) | %107
-  \time 2/2 cis,( a-.) f''( ees-.) bes,( g-.) bes''( f-.) | %108
-  \time 5/4 b,,( fis-.) c''-- d,,( e-.) b''( a-.) ees,( f-.) ges'-. | %109
-  \time 2/2 a,-. c-. ees-. f'~( 8 des'8--) fes,,-. ges-. | %110
-  bes,8-. ges''4-- aes,,8-.  des-. d-. b-. r8 | %111
-  g-. f-. r8 fes''( aes2) | %112
-  ees'4-- g,,,8-. fis-. c'-. a-. r4 | %113
-  bes8-. des-. ces-. ees-. d-. r8 f,-. a''~( | %114
-  \time 7/8 a[ b c) ees,,,]-. r8 ees4( | %115
-  \time 2/2 fes2) r2 | %116
-  bes''2~( bes8 d,4 g8~ | %117
-  g4) r4 r2 | %118
-
-
-
+  cis,( a-.) f''( ees-.) bes,( g-.) bes''( f-.) | %108
+  \time 3/4 b,,( fis-.) c''-- d,,( e-.) b''( | %109
+  \time 5/8 \ace a-.)\startTextSpan r8 ees,( f-.) ges'-.\<\stopTextSpan | %110
+  \tempo 2=104
+  \time 2/2 a-. c-. ees-. f~( 8 des'8--)\ff fes,,-.\> ges-. | %111
+  bes,8-. ges''4-- aes,,8-.  des-. d-. b-. r8 | %112
+  g-. f-.\mp r8 fes''(\< aes4 fes8 aes8) | %113
+  ees'4--\f g,,,8-.\> fis-. c'-. a-.\mf r4 | %114
+  bes8-. des-. ces-. ees-. d-. r8 f,-. a''~(\f | %115
+  \time 7/8 a[ b c) ees,,,]-. r8 ees4(\> | %116
+  \time 2/2 fes2)\! r2 | %117
+  bes''2~(\mf bes8 d,4 g8~ | %118
+  g4) r4 r2 | %119
+  r8 e8-. ees-. g~ g4 ges,,8-. f-. | %120
+  d''-. cis-. gis'4~(\< gis8 a4.)\f | %121
+  c,8-. f-. r8 e,,-.-> ees-.-> r8 r8 ges''-. | %122
+  r2 r8 b,-.\< g'-. bes,-. | %123
+  aes'-. d,,,-.-> r8 cis'-. a'-. r8 r4 | %124
+  b'8-. r8 c-. r8 des-.->\ff r8 r8 ees-.-> | %125
+  r8 g,,,4(\f aes8) r8 e'''-. d-. fis,-. | %126
+  b2(\> bes8 c4) a,,8-. | %127
+  g''-.\! r8 r4 b,,8-. r8 bes-.\> e'~( | %128
+  e4 f2.)\mf | %129
+  r8 a8-. d,4(\< ees) aes8-. ees8~ | %130
+  \time 3/4 ees8 c,-. des'--\f f-. r4 |
 
 }
