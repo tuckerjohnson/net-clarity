@@ -182,20 +182,20 @@
       r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8 | %106
       <fis, a,>8-.\mf r8 r4 \clef bass <f, bes,>8-. r8 \after 8 \stopTextSpan r4 \bar "||" | %107
       \tempo 2 = 96
-      <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-. | %108
-      \time 3/4 r2 <g aes,>8-. r8 | %109
+      <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-.\< | %108
+      \time 3/4 r2 <g aes,>8-.\f r8 | %109
       \time 5/8 \tuplet 3/2 { \ace r8\startTextSpan c,8-. des8-. } \after 4 \stopTextSpan r4. \clef treble | %110
       \tempo 2 = 104
-      \time 2/2 d''2 r2 | %111
+      \time 2/2 d''2\mf\> r2 | %111
       dis8( e4.~ e2) | %112
-      c,2 des2~ | %113
-      des4
+      c,2\mp des2~ | %113
+      des4\<
       <<
         {
           \voiceOne
           s4 r4 f'4 | %114
           ges2 g2~ | %115
-          \time 7/8 g4 aes8-. r8 a4. | %116
+          \time 7/8 g4 aes8-. r8\mf a4. | %116
           \time 2/2 r8 bes4.
         }
         \new Voice \relative {
@@ -208,19 +208,51 @@
       >>
       \oneVoice b2 | %117
       aes,2 a4. c'8 | %118
-      cis 2. r4 | %119
-      r2 c,4( b8-.) r8 |
-      r2 fis8-. <d g>-.\arpeggio r4 |
-      r8 <d g>-. r4 r8 cis'( a4~ |
-      a4. c,8-.) r4 ees'4( |
-      f2 e8) g,-. d-. r8 |
-      r2 r4 bes''8( aes~ |
-      aes2) r2 |
+      cis2. r4 | %119
+      r2 c,4(\mp b8-.) r8 | %120
+      r2 fis8-. <d g>-.\arpeggio r4 | %121
+      r8 <d g>-.\< r4 r8 cis'( a4~ | %122
+      a4. c,8-.) r4 ees'4( | %123
+      f2\f e8) g,-. d-. r8 | %124
+      r2 r4 bes''8( aes~ | %125
+      aes2) r2 | %126
+      R1 | %127
+      r8 d,,8-. r8 ees-. r2\> | %128
+      r2 c'8-. r8 r8 g-. | %129
+      R1\! |
       R1 |
-      r8 d,,8-. r8 ees-. r2 |
-      r2 c'8-. r8 r8 g-. |
       R1 |
-      \time 3/4 R1*3/4 |
+      R1 |
+      R1 |
+      <c, a' c>8 <d d'>-. r4 r4 r8 <f b f'>8( |
+      <aes aes'>-.) r8 r4 r4 <e c' e>4~ |
+      8 r8 bes4~ bes \tuplet 3/2 { d'8 bes g } |
+      e4 \tuplet 3/2 { fis8 cis' gis' } ees'8 f b, c |
+      a1 |
+      r2 r4 des,,4~ |
+      des2 ges,2 |
+      ces1 |
+      <<
+        {
+          \voiceOne
+          r8 d''8~ d2. |
+          des4~ 4. |
+          r4 r4 \tuplet 3/2 { r8 r8 c8~ } |
+          c8 s8
+        }
+        \new Voice \relative {
+          \voiceTwo
+          <ces' ges' f'>1~\arpeggio |
+          4 <c g' e'>4.\arpeggio |
+          <cis gis' dis'>2.\arpeggio |
+          d4
+        }
+      >>
+      \oneVoice
+      \tuplet 3/2 { r8 ees,,8 r8 } \tuplet 3/2 { r4 <a d b'>4\arpeggio <e cis' g'>\arpeggio } |
+      c'2->
+
+
 
     }
 
@@ -414,9 +446,9 @@
       <<
         {
           \voiceOne
-          \time 2/2 r4 r4 cis'4(\f fis,8 g) | %117
+          \time 2/2 r4 r4 cis'4(\f^\markup { \tiny \italic "piu" \dynamic f } fis,8 g) | %117
           c( f,!4) d'8~ d8 bes4 bes8~ | %118
-          bes a8( b dis8~ dis4 <e gis>4~ | %119
+          bes a8( b dis8~ dis4 <e gis>4~\arpeggio | %119
           \stemDown 2)
         }
         \new Voice \relative {
@@ -439,7 +471,34 @@
       ees4 aes,4~ aes8 <des des,>4.~ |
       8 <ges, ges,>4.~ 2 |
       <b b,>2~ 8 <e, e,>4.~\p |
-      \time 3/4 2. |
+      1 |
+      R1 |
+      R1 |
+      R1 |
+      <a a'>8-. <ees ees'>-. r4 r4 r8 b'8( |
+      g8-.) r8 r4 r4 <c c,>4~ |
+      8 r8 <ges des'>4~ 4 r8 a'8~ |
+      a2. r8 <g d>8( |
+      <dis e,>1) |
+      r2 <f f,>2~ |
+      2 r4 bes,4  |
+      aes1 |
+      aes1~\arpeggio |
+      <<
+        {
+          \voiceOne
+          \time 5/8 aes4 a4.\arpeggio |
+        }
+        \new Voice \relative {
+          \voiceTwo
+          \time 5/8 r4 r8 f,8( bes,) |
+        }
+      >>
+      \oneVoice
+      \time 3/4 R1*3/4 |
+      \time 2/2 \tuplet 3/2 { r8\sustainOn g,8 bes'\sustainOff\sustainOn } \tuplet 3/2 { aes,[ \U ees''' \D f,] } ges,,2\sustainOff
+      R1 |
+
 
     }
 

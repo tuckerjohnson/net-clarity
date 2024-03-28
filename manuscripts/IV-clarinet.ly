@@ -148,7 +148,24 @@
   b2(\> bes8 c4) a,,8-. | %127
   g''-.\! r8 r4 b,,8-. r8 bes-.\> e'~( | %128
   e4 f2.)\mf | %129
-  r8 a8-. d,4(\< ees) aes8-. ees8~ | %130
-  \time 3/4 ees8 c,-. des'--\f f-. r4 |
+  r8 a8-.\< d,4( ees) aes8-. ees8~\f | %130
+  ees8\> c,-. des'4-- f8-.\! r8 r4 |
+  R1 |
+  r2 d8 c b a |
+  fis dis ais g e b'4 f'8 |
+  g, bes fis gis cis d a' r8 |
+  ees' c e cis bes[ ges'] \tuplet 3/2 { b, d g } |
+  a4 ees8( g aes, c4) r8 |
+  R1 |
+  r4 gis'4( cis fis~ |
+  fis4 b,) \tuplet 3/2 { bes( g e) } |
+  \tuplet 3/2 { c_( a f) } d2 |
+  ees1 \bar "||" |
+  \tempo 4 = 104
+  r4 r8 bes8~ bes8 bes4->( ees8~ |
+  \time 5/8 ees4~ 4.~ |
+  \time 3/4 8.) e16( fis' a, b8~ b4~ |
+  \time 2/2 b2.) r4 |
+  r1
 
 }
