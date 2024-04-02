@@ -27,8 +27,8 @@
   \time 7/8 4. b4(\> e |
   \time 3/4 cis'2)\p r8 g8(\< |
   \time 7/8 a4. ges,2)\mp |
-  \time 4/4 r8^\markup { "poco accel." } f4.~\p\< 8 ges8_( aes'4~ |
-  aes8) r8 c,4~-> c8 b8~->\f \tuplet 3/2 { 8 d8_(\> g8 } \bar "||"
+  \time 4/4 \pocAce r8\startTextSpan f4.~\p\< 8 ges8_( aes'4~ |
+  aes8) r8 c,4~-> c8 b8~->\f \tuplet 3/2 { 8 d8_(\> g8\stopTextSpan } \bar "||"
 
   \sectionLabel \markup { \box \number 15 }
 
@@ -40,7 +40,7 @@
   bes,1)\p |
   r2 a'2~(\mp |
   a4 e,2.) |
-  \time 3/4 gis,4.(\<^\markup { "rit." } fis'8 cis'4)\f \bar "||"
+  \time 3/4 \rit gis,4.(\<\startTextSpan fis'8 \after 8 \stopTextSpan cis'4)\f \bar "||"
 
   \sectionLabel \markup { \box \number 23 }
 
@@ -82,7 +82,7 @@
   8)[\< c8]( a' d,~\> 2) |
   g8( ees~\! 2) e4~ |
   e4. cis'8(\f gis8 b8~ 4) |
-  fis16( a d,8~ 4) f(^\markup { "rit." } ees8.) fes,16( |
+  fis16( a d,8~ 4) f(\startTextSpan ees8.) fes,16(\stopTextSpan |
 
   \sectionLabel \markup { \box \number 48 }
 
@@ -100,7 +100,7 @@
   \time 3/4 r4 r4 r8 c8~\f |
   \time 4/4 c2.\> g4(\mp |
   \time 3/4 b2.~\< |
-  \time 4/4 8)\mf r8 r4 r2^\markup { "molto rit." } |
+  \time 4/4 8)\mf r8 \molRit r4 \after 4. \stopTextSpan r2\startTextSpan |
 
   \sectionLabel \markup { \box \number 55 }
 

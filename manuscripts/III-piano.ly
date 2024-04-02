@@ -28,20 +28,20 @@
         \time 7/8 gis4.)\p b,4^(~ <b e>4) |
         \time 3/4 cis'4.(\< d,8~ 8)[ g]( |
         \time 7/8 a4. ges,8~[\mp <ges c>~] 4) |
-        \time 4/4 r8\p\<^\markup { "poco accel." }_\markup { \tiny \italic "quasi-waltz" } f8( fis cis') r8 bes( aes' ees~\mf |
-        2)\mp\< r4 \tuplet 3/2 { r8 a,(\f\> e') } \bar "||"
+        \time 4/4 \pocAce r8\p\<\startTextSpan_\markup { \tiny \italic "quasi-waltz" } f8( fis cis') r8 bes( aes' ees~\mf |
+        2)\mp\< r4 \tuplet 3/2 { r8 a,(\f\> e')\stopTextSpan } \bar "||"
 
         \sectionLabel \markup { \box \number 15 }
 
         \tempo "Piu Mosso" 4=65
         r2\mf \tuplet 3/2 { r8 c'4~-> } 8 \clef bass e,,8 |
-        <d g>1~\arpeggio |
+        r8 d16~ <d g>16~ 2.~ |
         1 |
         R1 |
         r2 ees2~\p |
         4 \clef treble <fis cis' gis'>2.~\mp\arpeggio |
         1 |
-        \time 3/4 r4\mf^\markup { "rit." } a'2 \bar "||"
+        \time 3/4 \rit r4\mf\startTextSpan \after 4. \stopTextSpan a'2 \bar "||"
 
         \sectionLabel \markup { \box \number 23 }
 
@@ -84,7 +84,7 @@
         4 <cis e b'>2.) |
         r8 <bes ges'>8~ 2 \ottava #0 r8 \clef bass <d,, a>8~\mf |
         <d a c,>1 |
-        g,4. \clef treble des''16(\> c \tuplet 3/2 { aes4)^\markup { "rit." } bes8( } g8) b8 \bar "||"
+        g,4. \clef treble des''16(\> c \rit \tuplet 3/2 { aes4)\startTextSpan bes8( } g8) \after 16 \stopTextSpan b8 \bar "||"
 
         \sectionLabel \markup { \box \number 48 }
 
@@ -102,7 +102,7 @@
         \time 3/4 d\< a d a d a |
         d\f\> a d a d a d a |
         \time 3/4 d\< e, d' e, d' e, |
-        d'\mf\> e, d' e, d'^\markup { "molto rit." } e, d \clef bass e, \bar "||"
+        d'\mf\> e, d' e, \molRit d'\startTextSpan e, d \clef bass e,\stopTextSpan \bar "||"
 
         \sectionLabel \markup { \box \number 55 }
 
@@ -196,9 +196,9 @@
 
         \tempo "Piu Mosso" 4=65
         b,2~-> \tuplet 3/2 { 8 a'4~-> } 8 r8 |
-        <bes, f'>1~\arpeggio |
+        bes,16~ <bes f'>8.~ 2.~ |
         1 |
-        r2 <c g'>2~^\mp\arpeggio |
+        r2 \tuplet 3/2 { c16~^\mp <c g'>8~ } 4.~ |
         1~ |
         4 d,2.~ |
         4~ <d b''>2.

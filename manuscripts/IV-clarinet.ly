@@ -21,7 +21,7 @@
   \time 5/4 R1*5/4 |
   \time 4/4 R1*13 |
   \time 3/4 R1*3/4*7 |
-  \time 5/8 R1*5/8 \molrit \after 4 \startTextSpan R1*5/8 |
+  \time 5/8 R1*5/8 \molRit \after 4 \startTextSpan R1*5/8 |
   \time 2/8 \after 8. \stopTextSpan R1*2/8 |
   \once \override Hairpin.circled-tip = ##t
   \time 3/4 c'2.~\fermata\< \bar "||" %031
@@ -51,7 +51,7 @@
   \time 5/4 bes1\mp\> aes'8(\pp fes8 | %050
   \time 2/2 ees2.) r4 | %051
   f8[-.->\f r8 f8-.-> cis8]]-.-> r4 cis4~\> | %052
-  \time 3/2 \after 2 \mp cis2. r4 \molrit r2\startTextSpan | %053
+  \time 3/2 \after 2 \mp cis2. r4 \molRit r2\startTextSpan | %053
   \time 2/2 \after 4. \stopTextSpan r2 r2\fermata | %054
 
   \omit Score.BarNumber
@@ -69,7 +69,7 @@
   a4) d4.->\f f,8~-> f4 | %064
   \tuplet 3/2 { fis4( b, a'\> } \tuplet 3/2 { bes, aes' c, } | %065
   \time 7/8 g'2~\mp 8) r8 cis,8( | %066
-  \pocrit
+  \pocRit
   \time 3/4 \after 4 \startTextSpan  e,2.\> | %067
   \after 2 \p \after 2 \stopTextSpan ees2.) \bar "||" %068
 
@@ -95,7 +95,7 @@
   f' g4.~\f 4) \breathe | %084
   \time 2/2 e,,,4.--\mp aes''8(\f\> d, ees a,8)\! r8 | %085
   cis,4.--\mp bes'8_(\f\< f' c'\! b-.) g,,-- | %086
-  \molrit fis4\>\startTextSpan gis2 b4\p \breathe | %087
+  \molRit fis4\>\startTextSpan gis2 b4\p \breathe | %087
   \time 3/8 cis''8(\mf e,) fis,(\stopTextSpan \bar "||" %088
 
   \omit Score.BarNumber
@@ -118,7 +118,7 @@
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 103 }
-  \time 2/2 \acepoc r8 ges,8( ees8) r8 r4 r8 g8(\< | %103
+  \time 2/2 \acePoc r8 ges,8( ees8) r8 r4 r8 g8(\< | %103
   \undo \omit Score.BarNumber
   \time 5/8 e8)\startTextSpan r8 r4 c'8( | %104
   \time 2/2 a4) r8 cis8( gis4) r4 | %105

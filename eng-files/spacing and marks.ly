@@ -16,12 +16,13 @@ rst =  \override TextSpanner.bound-details.right.text = " st"
 lord =  \override TextSpanner.bound-details.left.text = "ord"
 rord =  \override TextSpanner.bound-details.right.text = " ord"
 rit =  \override TextSpanner.bound-details.left.text = \markup { \upright "rit. " }
-ritpoc =  \override TextSpanner.bound-details.left.text = \markup { \upright "ritardando poco a poco " }
-molrit =  \override TextSpanner.bound-details.left.text = \markup { \upright "molto rit. " }
-pocrit =  \override TextSpanner.bound-details.left.text = \markup { \upright "poco rit. " }
+ritPoc =  \override TextSpanner.bound-details.left.text = \markup { \upright "ritardando poco a poco " }
+molRit =  \override TextSpanner.bound-details.left.text = \markup { \upright "molto rit. " }
+pocRit =  \override TextSpanner.bound-details.left.text = \markup { \upright "poco rit. " }
 ace =  \override TextSpanner.bound-details.left.text = \markup { \upright "accel. " }
-acepoc =  \override TextSpanner.bound-details.left.text = \markup { \upright "accelerando poco a poco " }
-molace =  \override TextSpanner.bound-details.left.text = \markup { \upright "molto accel. " }
+pocAce =  \override TextSpanner.bound-details.left.text = \markup { \upright "poco accel. " }
+acePoc =  \override TextSpanner.bound-details.left.text = \markup { \upright "accelerando poco a poco " }
+molAce =  \override TextSpanner.bound-details.left.text = \markup { \upright "molto accel. " }
 
 ffsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "ff" #:combine

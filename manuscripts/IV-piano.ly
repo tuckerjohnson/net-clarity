@@ -50,7 +50,7 @@
       bes16\f ees8.~ ees8 d8~ d4~ | %026
       d8) r8 aes4 f'8-. c16-.\> g16-. | %027
       \time 5/8 \after 4.. \mp R1*5/8 | %028
-      f'16(\< bes,8.) \molrit g16[(\startTextSpan d'16 fis16 e16 cis'16 a16]) | %029
+      f'16(\< bes,8.) \molRit g16[(\startTextSpan d'16 fis16 e16 cis'16 a16]) | %029
       \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\> <aes, aes'>8-> <b b'>8->\stopTextSpan } | %030
       \time 3/4 <c c'>2.\mf\fermata \clef bass | %031
 
@@ -100,7 +100,7 @@
       <bes g'>4\f bes8-> c8~ <c aes'>2 | %064
       \tuplet 3/2 { e,8~\mf <e d'>~ <e d' g>~ } 4 \tuplet 3/2 { ees8~\mp <ees des'>~ <ees des' f>~ } 4 | %065
       \time 7/8 R1*7/8 | %066
-      \time 3/4 fis'4(\> \pocrit a,\startTextSpan b,~ | %067
+      \time 3/4 fis'4(\> \pocRit a,\startTextSpan b,~ | %067
       b4. bes8~ bes4)\pp\stopTextSpan | %068
 
       \sectionLabel \markup { \box \number 69 }
@@ -135,7 +135,7 @@
       >>
       \oneVoice a8) c8( f) fis( | %085
       <cis b'>4.) gis'8 \tuplet 3/2 { a4(\mf d, e) } \clef bass | %086
-      \molrit \tuplet 3/2 { cis(\>\startTextSpan dis) c_( } \tuplet 3/2 { f,) bes,( g~\pp } | %087
+      \molRit \tuplet 3/2 { cis(\>\startTextSpan dis) c_( } \tuplet 3/2 { f,) bes,( g~\pp } | %087
       \time 3/8 \after 4 \stopTextSpan g4.) \clef treble \bar "||" %088
 
       \sectionLabel \markup { \box \number 89 }
@@ -169,14 +169,14 @@
           \time 12/8 e'^(\mp a e) a^( e a) e(\< a e) a( e a) | %099
           \time 3/16 s8. | %100
           \time 6/8 g8(\mf bes, g') bes,( g' bes,) | %101
-          \time 15/8 \molrit gis'(\>\startTextSpan d gis) d( gis d) gis( d gis) d( gis d) gis(\pp d gis)\stopTextSpan | %102
+          \time 15/8 \molRit gis'(\>\startTextSpan d gis) d( gis d) gis( d gis) d( gis d) gis(\pp d gis)\stopTextSpan | %102
         }
       >>
       \oneVoice
 
       \sectionLabel \markup { \box \number 103 }
       \tempo 2 = 48
-      \time 2/2 \acepoc r2 f'8( b-.) r4 | %103
+      \time 2/2 \acePoc r2 f'8( b-.) r4 | %103
       \time 5/8 r4\startTextSpan c,8([\< fis-.]) r8 | %104
       \time 2/2 r8 bes,8( f'4) r8 ees8( a8-.) r8 | %105
       r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8 | %106
