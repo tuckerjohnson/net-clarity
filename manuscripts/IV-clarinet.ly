@@ -166,6 +166,10 @@
   \time 5/8 ees4~ 4.~ |
   \time 3/4 8.) e16( fis' a, b8~ b4~ |
   \time 2/2 b2.) r4 |
-  r1
+  \time 3/4 R1*3/4 |
+  \time 4/4 r2 gis'2 |
+  cis2 \tuplet 3/2 { d4( g, c,~ } |
+  c2 f,) |
+  f1\fermata \bar "|." |
 
 }

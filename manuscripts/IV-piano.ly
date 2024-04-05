@@ -250,7 +250,23 @@
       >>
       \oneVoice
       \tuplet 3/2 { r8 ees,,8 r8 } \tuplet 3/2 { r4 <a d b'>4\arpeggio <e cis' g'>\arpeggio } |
-      c'2->
+      \time 3/4 c'4->
+      <<
+        {
+          \voiceOne
+          \tuplet 3/2 { r8 aes'8_( <ges bes>) } r4
+          \time 4/4 s2 bes,8 <g' e'>4 f'8 |
+        }
+        \new Voice \relative {
+          \voiceTwo
+          <ees' f>4 r4 |
+          fis2-> des8 c b d |
+        }
+      >>
+      \oneVoice
+      <fis gis,>4. a,8~ <a ees'>2 |
+      <ais,, gis>2 r4 <a'' b>4 |
+      R1 |
 
 
 
@@ -497,7 +513,33 @@
       \oneVoice
       \time 3/4 R1*3/4 |
       \time 2/2 \tuplet 3/2 { r8\sustainOn g,8 bes'\sustainOff\sustainOn } \tuplet 3/2 { aes,[ \U ees''' \D f,] } ges,,2\sustainOff
-      R1 |
+      <<
+        {
+          \voiceOne
+          r4 r4 b'16 c d e |
+        }
+        \new Voice \relative {
+          \voiceTwo
+          \time 3/4 r4 des,4 r16 a'8. |
+        }
+      >>
+      \oneVoice
+      r4 r8 ees,8~ 4 a'4 |
+      r2 <bes f'>4.
+      <<
+        {
+          \voiceOne
+          s8 \tuplet 3/2 { dis,4_( fis cis) } r8 e8~ 4 |
+          e1\fermata |
+        }
+        \new Voice \relative {
+          \voiceTwo
+          e,8~ |
+          e2 <d g>2 |
+          <c g'>1 |
+        }
+      >>
+
 
 
     }
