@@ -161,15 +161,16 @@
   fis4 b,) \tuplet 3/2 { bes( g e) } |
   \tuplet 3/2 { c_( a f) } d2 |
   ees1 \bar "||" |
-  \tempo 4 = 104
+  \tempo "rubato" 4 = 104
   r4 r8 bes8~ bes8 bes4->( ees8~ |
   \time 5/8 ees4~ 4.~ |
   \time 3/4 8.) e16( fis' a, b8~ b4~ |
-  \time 2/2 b2.) r4 |
+  \time 2/2 \rit \after 4 \startTextSpan b2.) \after 8 \stopTextSpan r4 |
+  \tempo "meno mosso"
   \time 3/4 R1*3/4 |
   \time 4/4 r2 gis'2 |
-  cis2 \tuplet 3/2 { d4( g, c,~ } |
+  \rit cis2\startTextSpan \tuplet 3/2 { d4( g, c,~ } |
   c2 f,) |
-  f1\fermata \bar "|." |
+  f1\stopTextSpan\fermata \bar "|." |
 
 }

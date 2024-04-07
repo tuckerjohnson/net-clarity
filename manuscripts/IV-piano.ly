@@ -249,7 +249,8 @@
         }
       >>
       \oneVoice
-      \tuplet 3/2 { r8 ees,,8 r8 } \tuplet 3/2 { r4 <a d b'>4\arpeggio <e cis' g'>\arpeggio } |
+      \rit \tuplet 3/2 { r8\startTextSpan ees,,8 r8 } \tuplet 3/2 { r4 <a d b'>4\arpeggio \after 8 \stopTextSpan <e cis' g'>\arpeggio } |
+      \tempo "meno mosso"
       \time 3/4 c'4->
       <<
         {
@@ -264,9 +265,9 @@
         }
       >>
       \oneVoice
-      <fis gis,>4. a,8~ <a ees'>2 |
-      <ais,, gis>2 r4 <a'' b>4 |
-      R1 |
+      \rit <fis gis,>4.\startTextSpan a,8~ <a ees'>2 |
+      <ais,, gis>2 r2  |
+      r2\stopTextSpan <b'' a'>2\fermata |
 
 
 
@@ -529,7 +530,7 @@
       <<
         {
           \voiceOne
-          s8 \tuplet 3/2 { dis,4_( fis cis) } r8 e8~ 4 |
+          s8 \tuplet 3/2 { dis,4_( fis cis) } e2 |
           e1\fermata |
         }
         \new Voice \relative {
