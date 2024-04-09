@@ -149,7 +149,14 @@
   g''-.\! r8 r4 b,,8-. r8 bes-.\> e'~( | %128
   e4 f2.)\mf | %129
   r8 a8-.\< d,4( ees) aes8-. ees8~\f | %130
-  ees8\> c,-. des'4-- f8-.\! r8 r4 |
+  ees8\> c,-. des'4-- f8-.\! r8 c,8-. des'8~-- |
+  des8 fes8-. r8 ees,8( aes,-.) e'( a,-.) f'( |
+  \time 7/8 bes,-.)[ g'( b,-.) d~--] d[ aes'( ees)] |
+  \time 2/2 \tuplet 3/2 { e8[( fis) g-.] } \tuplet 3/2 { a[( b) cis(] } d2) |
+  r8 c,8-. f'4-- bes8-. r8 ees,,,8-. des''~-- |
+  des4 fis8( a, b2) |
+  c,8-. r8 r8 g''8-. aes,-. f'-. r8 e,-. |
+  d,-. r8 r4 r2 |
   R1 |
   r2 d8 c b a |
   fis dis ais g e b'4 f'8 |
