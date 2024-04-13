@@ -10,7 +10,7 @@
   \consists Text_mark_engraver
 }
 
-%\transpose bes c'
+\transpose bes c'
 \relative {
 
   \numericTimeSignature
@@ -149,16 +149,73 @@
   g''-.\! r8 r4 b,,8-. r8 bes-.\> e'~( | %128
   e4 f2.)\mf | %129
   r8 a8-.\< d,4( ees) aes8-. ees8~\f | %130
-  ees8\> c,-. des'4-- f8-.\! r8 c,8-. des'8~-- |
-  des8 fes8-. r8 ees,8( aes,-.) e'( a,-.) f'( |
-  \time 7/8 bes,-.)[ g'( b,-.) d~--] d[ aes'( ees)] |
-  \time 2/2 \tuplet 3/2 { e8[( fis) g-.] } \tuplet 3/2 { a[( b) cis(] } d2) |
-  r8 c,8-. f'4-- bes8-. r8 ees,,,8-. des''~-- |
-  des4 fis8( a, b2) |
-  c,8-. r8 r8 g''8-. aes,-. f'-. r8 e,-. |
-  d,-. r8 r4 r2 |
-  R1 |
-  r2 d8 c b a |
+  ees8\> c,-. des'4-- f8-. r8 c,8-. des'8~ | %131
+  des8 fes8-.\! r8 ees,8(\p\< aes,-.) e'( a,-.) f'( | %132
+  \time 7/8 bes,-.)[ g'( b,-.) d~--] d[ aes'( ees)] | %133
+  \time 2/2 \tuplet 3/2 { e8[(\f\> fis g] } \tuplet 3/2 { a[ b cis] } d2)\mf | %134
+  r8 c,8-. f'4--\< bes8-. r8 ees,,,8-. des''~-- | %135
+  des4\f fis8(\> \pocRit a,\startTextSpan b2)\! | %136
+  c,8-.\mf\> r8 r8 g''8-. aes,-. f'-. r8 e,-.\stopTextSpan \bar"||" | %137
+
+  \sectionLabel \markup { \box \bold \italic CADENZA }
+  \omit Score.BarNumber
+  \override Score.TimeSignature.stencil = ##f
+  \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f ais'4(\mp b8) |
+  \omit Staff.BarLine
+  \time 4/4 b1-- |
+  \time 9/16 \override Beam.grow-direction = #RIGHT \featherDurations 1/2 { b'16( cis,\< gis') dis'( b e) dis( fis b) } |
+  \time 5/8 \once \override Staff.Stem.stencil = ##f e4(\f\> \once \override Staff.Stem.stencil = ##f \after 8 \! cis) e,8 |
+  \time 4/4 \after 4 \> f,1( \once \override Staff.Stem.stencil = ##f
+  \time 3/8 c'4)\! a,8-.\sf |
+  \time 5/4 d'1\p r4\shortfermata |
+  \time 5/8 bes,8-- 8-> \once \override Staff.Stem.stencil = ##f g''4(\< d8-.) |
+  \override Beam.grow-direction = #'()
+  \time 7/16 d'16([\mf\> c bes a g f e]) |
+  \time 2/1 e,,1(\p \once \override Hairpin.circled-tip = ##t \after 2.. \! d)\>\fermata \breathe |
+  \time 18/8 b'16([\pp aes f d f aes b aes f d f aes b aes f d f aes b aes f d f aes b aes f d f aes b aes f d\< f aes]) |
+  \time 7/16 b[( des ges bes ges bes des]) |
+  \time 2/4 \override Beam.grow-direction = #LEFT \featherDurations 2/1 { bes[(\f des ges) bes,( des ges)] } g8--\sf \breathe |
+  \override Beam.grow-direction = #'()
+  \time 5/2 ees16([\> c a g a c ees g ees\pp c a g a c ees g ees c a g a c ees g ees c a g a c ees g ees c a g a c\< ees g]) |
+  \time 6/16 \override Beam.grow-direction = #LEFT \featherDurations 2/1 { ees[( c a g e! b] } |
+  \override Beam.grow-direction = #'()
+  \time 7/16 \once \override Staff.Stem.stencil = ##f fis4)\ff e''16([\< b' fis')]\!\breathe |
+  \time 2/1 g1\> aes,1\mf\fermata( |
+  \time 6/16 g16[\> f ees des c bes)]\pp |
+  \time 7/8 r4\shortfermata c8[ bes]( \once \override Staff.Stem.stencil = ##f a'4) d,,,8-. |
+  \time 5/2 f'1 c'8( g ees' f bes1)\fermata |
+  \time 3/8 ees,,,8-. s4 \breathe |
+  \time 7/16 cis'16([ b fis' e' d gis a-.]) |
+  fes,([ ees beses' aes' ges c des-.]) |
+  d!([ f, b, g bes, aes ees-.]) |
+  fis'([ e b' a' g cis d-.]) \breathe |
+  \time 2/4 s16 c16([ f bes--]) s4 |
+  \time 5/4 \once \override Staff.Stem.stencil = ##f a,4( \once \override Staff.Stem.stencil = ##f fis, \once \override Staff.Stem.stencil = ##f ees' des2) |
+  c8( d \once \override Staff.Stem.stencil = ##f e4) f,,8( aes \once \override Staff.Stem.stencil = ##f g2) |
+  \time 3/4 \once \override Staff.Stem.stencil = ##f b''4( \once \override Staff.Stem.stencil = ##f bes,4) r4\shortfermata |
+  \time 3/8 \once \override Staff.Stem.stencil = ##f ais,4( b8) |
+  \time 4/4 b1 |
+  \time 3/8 dis,8 \once \override Staff.Stem.stencil = ##f cis'4( |
+  \time 4/4 e1) |
+  \time 5/4 ais,8-. gis'8( fis1) \breathe |
+  \time 4/4 g8( d'8) c( g' \override Beam.grow-direction = #RIGHT \featherDurations 1/2 { bes16--) a( d) c( bes a g f } |
+  e1\fermata |
+  \time 2/4 e'8-.) 8-- \breathe \once \override Staff.Stem.stencil = ##f d,,,4( |
+  \override Beam.grow-direction = #'()
+  \time 33/16 f16[ aes b aes f d f aes b aes f d f aes b aes f d f aes b aes f d f aes b aes f d f aes b] |
+  \time 3/16 d[ des bes!] | %138
+  \time 5/4 ges1)\fermata r4\shortfermata \bar "||"
+  \undo \omit Staff.BarLine
+
+  \sectionLabel \markup { \box \number 139 }
+  \undo \omit Score.BarNumber
+  \tempo 2=72
+  \set Score.currentBarNumber = #139
+  \time 2/2 ees8-- \ace a'(\startTextSpan c) g,( fis) e''( b' bes |
+  aes) ees,, g''( f) des, c''( a) d,,,\stopTextSpan |
+  \tempo 2=96
+  bes'''( g f ees) c'( d cis b |
+  a gis fis e) d8( c b a) |
   fis dis ais g e b'4 f'8 |
   g, bes fis gis cis d a' r8 |
   ees' c e cis bes[ ges'] \tuplet 3/2 { b, d g } |

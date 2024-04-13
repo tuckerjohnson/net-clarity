@@ -4,8 +4,33 @@
   line-width = 120
   first-page-number = -1
   print-page-number = ##f
-  oddHeaderMarkup = \markup { \tiny { "  " } }
-  evenHeaderMarkup = \markup { \tiny { "  " } }
+  oddHeaderMarkup = \markup {
+    \concat { \if \on-page #5 \oddhead }
+    \concat { \if \on-page #7 \oddhead }
+    \concat { \if \on-page #9 \oddhead }
+    \concat { \if \on-page #11 \oddhead }
+    \concat { \if \on-page #13 \oddhead }
+    \concat { \if \on-page #15 \oddhead }
+    \concat { \if \on-page #17 \oddhead }
+    \concat { \if \on-page #19 \oddhead }
+    \concat { \if \on-page #21 \oddhead }
+    \concat { \if \on-page #23 \oddhead }
+    \concat { \if \on-page #25 \oddhead }
+
+  }
+  evenHeaderMarkup = \markup {
+    \concat { \if \on-page #4 \evhead }
+    \concat { \if \on-page #6 \evhead }
+    \concat { \if \on-page #8 \evhead }
+    \concat { \if \on-page #10 \evhead }
+    \concat { \if \on-page #12 \evhead }
+    \concat { \if \on-page #14 \evhead }
+    \concat { \if \on-page #16 \evhead }
+    \concat { \if \on-page #18 \evhead }
+    \concat { \if \on-page #20 \evhead }
+    \concat { \if \on-page #22 \evhead }
+
+  }
   oddFooterMarkup = \markup {
     \concat { \if \on-page #3 \fill-line { \null \xcr \null } }
     \concat { \if \on-page #5 \oddfoot }
@@ -36,18 +61,19 @@
     \concat { \if \on-page #26 \evfoot }
   }
 
-  #(set-paper-size "letter")
+  #(set-paper-size "arch a")
   print-all-headers = ##t
-  top-margin = 0.8\cm
-  bottom-margin = 0.8\cm
-  left-margin = 2\cm
-  right-margin = 2\cm
-  indent = 1.3\cm
+  top-margin = 0.5\in
+  bottom-margin = 0.5\in
+  left-margin = 0.9\in
+  right-margin = 0.9\in
+  indent = 0.75\in
   short-indent = 0\cm
   #(define fonts (set-global-fonts #:music "haydn" #:brace "haydn" #:roman "Junicode" #:sans "syne"))
-  max-systems-per-page = #8
-  system-system-spacing = #'((basic-distance . 5) (minimum-distance . 5) (padding . 8))
-  score-system-spacing = #'((basic-distance . 4) (minimum-distance . 4) (padding . 5))
+  max-systems-per-page = #10
+  system-system-spacing = #'((basic-distance . 10) (minimum-distance . 8) (padding . 12))
+  score-system-spacing = #'((basic-distance . 4) (minimum-distance . 2) (padding . 2))
+  last-bottom-spacing = #'((basic-distance . 5) (minimum-distance . 5) (padding . 0))
   tocTitleMarkup = \markup { \null }
   tocItemMarkup = \markup {
     \center-column {
