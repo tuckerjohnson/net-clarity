@@ -158,11 +158,12 @@
   c,8-.\mf\> r8 r8 g''8-. aes,-. f'-. r8 e,-.\stopTextSpan \bar"||" | %137
 
   \sectionLabel \markup { \box \bold \italic CADENZA }
+  \phrasingSlurDashed
   \omit Score.BarNumber
   \override Score.TimeSignature.stencil = ##f
   \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f ais'4(\mp b8) |
   \omit Staff.BarLine
-  \time 4/4 b1-- |
+  \time 4/4 b1 \breathe |
   \time 9/16 \override Beam.grow-direction = #RIGHT \featherDurations 1/2 { b'16( cis,\< gis') dis'( b e) dis( fis b) } |
   \time 5/8 \once \override Staff.Stem.stencil = ##f e4(\f\> \once \override Staff.Stem.stencil = ##f \after 8 \! cis) e,8 |
   \time 4/4 \after 4 \> f,1( \once \override Staff.Stem.stencil = ##f
@@ -179,12 +180,12 @@
   \time 5/2 ees16([\> c a g a c ees g ees\pp c a g a c ees g ees c a g a c ees g ees c a g a c ees g ees c a g a c\< ees g]) |
   \time 6/16 \override Beam.grow-direction = #LEFT \featherDurations 2/1 { ees[( c a g e! b] } |
   \override Beam.grow-direction = #'()
-  \time 7/16 \once \override Staff.Stem.stencil = ##f fis4)\ff e''16([\< b' fis')]\!\breathe |
+  \time 7/16 \once \override Staff.Stem.stencil = ##f fis4)\ff e''16([\> b' fis')]\!\breathe |
   \time 2/1 g1\> aes,1\mf\fermata( |
   \time 6/16 g16[\> f ees des c bes)]\pp |
   \time 7/8 r4\shortfermata c8[ bes]( \once \override Staff.Stem.stencil = ##f a'4) d,,,8-. |
   \time 5/2 f'1 c'8( g ees' f bes1)\fermata |
-  \time 3/8 ees,,,8-. s4 \breathe |
+  \time 2/8 ees,,,8-. s8 \breathe |
   \time 7/16 cis'16([ b fis' e' d gis a-.]) |
   fes,([ ees beses' aes' ges c des-.]) |
   d!([ f, b, g bes, aes ees-.]) |
