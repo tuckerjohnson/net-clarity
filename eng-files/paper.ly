@@ -15,7 +15,6 @@
     \concat { \if \on-page #19 \oddhead }
     \concat { \if \on-page #21 \oddhead }
     \concat { \if \on-page #23 \oddhead }
-    \concat { \if \on-page #25 \oddhead }
 
   }
   evenHeaderMarkup = \markup {
@@ -43,7 +42,6 @@
     \concat { \if \on-page #19 \oddfoot }
     \concat { \if \on-page #21 \oddfoot }
     \concat { \if \on-page #23 \oddfoot }
-    \concat { \if \on-page #25 \oddfoot }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }
@@ -57,8 +55,6 @@
     \concat { \if \on-page #18 \evfoot }
     \concat { \if \on-page #20 \evfoot }
     \concat { \if \on-page #22 \evfoot }
-    \concat { \if \on-page #24 \evfoot }
-    \concat { \if \on-page #26 \evfoot }
   }
 
   #(set-paper-size "arch a")
