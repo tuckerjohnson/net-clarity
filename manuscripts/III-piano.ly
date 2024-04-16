@@ -367,7 +367,7 @@
             \time 5/4 r2 fis2. |
             r8 e8~ 4~ <e a,>2. |
             \time 4/4 r2 c2 |
-            \time 5/4 r4 r4 <ges'>4~ 2 |
+            \time 5/4 r4 r4 r4 <ges'>2 |
             r4 r8 dis'8~ 4~ 2\fermata |
           }
           \new Voice \relative {

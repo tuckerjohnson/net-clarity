@@ -40,6 +40,10 @@ ppsubito =
     #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine
 #:transparent "f" #:normal-text #:italic "subito" ) )
 
+psubito =
+    #(make-dynamic-script (markup #:combine #:transparent "f" "p" #:combine
+#:transparent "f" #:normal-text #:italic "subito" ) )
+
 
 
 doubleSeparator = \markup {

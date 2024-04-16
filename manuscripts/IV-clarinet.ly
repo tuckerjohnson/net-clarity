@@ -161,11 +161,11 @@
   \phrasingSlurDashed
   \omit Score.BarNumber
   \override Score.TimeSignature.stencil = ##f
-  \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f ais'4(\mp b8) |
+  \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f bes'4(\mp ces8) |
   \omit Staff.BarLine
-  \time 4/4 b1 \breathe |
-  \time 9/16 \override Beam.grow-direction = #RIGHT \featherDurations 1/2 { b'16( cis,\< gis') dis'( b e) dis( fis b) } |
-  \time 5/8 \once \override Staff.Stem.stencil = ##f e4(\f\> \once \override Staff.Stem.stencil = ##f \after 8 \! cis) e,8 |
+  \time 4/4 ces1 \breathe |
+  \time 9/16 \override Beam.grow-direction = #RIGHT \featherDurations 1/2 { ces'16( des,\< aes') ees'( ces fes) ees( ges ces) } |
+  \time 5/8 \once \override Staff.Stem.stencil = ##f fes4(\f\> \once \override Staff.Stem.stencil = ##f \after 8 \! des) e,8 |
   \time 4/4 \after 4 \> f,1( \once \override Staff.Stem.stencil = ##f
   \time 3/8 c'4)\! a,8-.\sf |
   \time 5/4 d'1\p r4\shortfermata |
@@ -210,31 +210,33 @@
 
   \sectionLabel \markup { \box \number 139 }
   \undo \omit Score.BarNumber
+  \revert Score.TimeSignature.stencil
   \tempo 2=72
   \set Score.currentBarNumber = #139
-  \time 2/2 ees8-- \ace a'(\startTextSpan c) g,( ges) fes''( ces' bes |
-  aes) ees,, g''( f) des, c''( a) d,,,\stopTextSpan |
+  \time 2/2 ees8--\p \ace a'(\startTextSpan c)\< g,( ges) fes''( ces' bes |
+  aes) ees,,-. g''( f) des,-. c''( a) d,,,-.\stopTextSpan |
   \tempo 2=96
-  bes'''( g f ees) c'( d cis b |
+  bes'''( g f ees) c'(\f d cis b |
   a gis fis e) d8( c b a) |
-  fis dis ais g e b'4 f'8 |
-  g, bes fis gis cis d a' r8 |
-  ees' c e cis bes[ ges'] \tuplet 3/2 { b, d g } |
-  a4 ees8( g aes, c4) r8 |
+  ges(\< ees bes) g( e b'4)\ff \breathe f'8( |
+  \time 7/8 g,)[ bes( ges\psubito\< aes)] cis([ d a']) |
+  \time 2/2 ees'([->\mf\< c]) \tuplet 3/2 { fes(-> des bes) } ges'(->\ff\> ces,) d( g |
+  a4)\mf ees8(\f\> g aes, \after 4 \! c4.) |
   R1 |
-  r4 gis'4( cis fis~ |
-  fis4 b,) \tuplet 3/2 { bes( g e) } |
-  \tuplet 3/2 { c_( a f) } d2 |
-  ees1 \bar "||" |
+  r4 aes'4(\p\< des ges~\mf\> |
+  ges4 ces,)\! bes8(\< g e) c( a f) d4\f\> \after 4 \! ees2 \bar "||" |
+  \omit Score.BarNumber
+
+  \sectionLabel \markup { \box \number 151 }
+  \undo \omit Score.BarNumber
   \tempo "rubato" 4 = 104
-  r4 r8 bes8~ bes8 bes4->( ees8~ |
+  r4 r8 bes8~\mp bes8 bes4->( ees8~ |
   \time 5/8 ees4~ 4.~ |
-  \time 3/4 8.) e16( fis' a, b8~ b4~ |
-  \time 2/2 \rit \after 4 \startTextSpan b2.) \after 8 \stopTextSpan r4 |
-  \tempo "meno mosso"
-  \time 3/4 R1*3/4 |
-  \time 4/4 r2 gis'2 |
-  \rit cis2\startTextSpan \tuplet 3/2 { d4( g, c,~ } |
+  \time 3/4 8.) e16(\mf\> fis' a, b8~ b4~ |
+  \time 2/2 \rit \after 4 \startTextSpan b2.)\p r4 |
+  \time 3/4 \after 1*11/16 \stopTextSpan R1*3/4 |
+  \time 4/4 r2 gis'2\mp\< |
+  \rit cis2\startTextSpan \tuplet 3/2 { d4(\f g, c,~ } |
   c2 f,) |
   f1\stopTextSpan\fermata \bar "|." |
 

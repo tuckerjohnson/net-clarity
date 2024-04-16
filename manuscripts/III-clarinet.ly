@@ -128,7 +128,7 @@
 
   \sectionLabel \markup { \box \number 72 }
 
-  \tuplet 3/2 { c8_(\p\<^\markup { \tiny \italic "fioritura" } b' e~ } 4)\mf \tuplet 3/2 { g,8(\> d a~ } 4~\p |
+  \tuplet 3/2 { c8_(\p\<^\markup { \tiny \italic "blooming" } b' e~ } 4)\mf \tuplet 3/2 { g,8(\> d a~ } 4~\p |
   8) fis4( g8~ 4 cis4~ |
   \time 3/4 8)[ r16 des16(]\< aes'4 c,4 |
   \time 7/8 f bes d4.~\mf |

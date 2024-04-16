@@ -267,20 +267,19 @@
       R1 |
       R1 |
       R1 |
-      <c, a' c>8 <d d'>-. r4 r4 r8 <f b f'>8( |
-      <aes aes'>-.) r8 r4 r4 <e c' e>4~ |
-      8 r8 bes4~ bes \tuplet 3/2 { d'8 bes g } |
-      e4 \tuplet 3/2 { fis8 cis' gis' } ees'8 f b, c |
-      a1 |
-      r2 r4 des,,4~ |
-      des2 ges,2 |
-      ces1 |
+      \time 7/8 <c, a' c>8[-.\f\> <d d'>]-.\! r4 r8 r8 <f b f'>8(\mf |
+      \time 2/2 <aes aes'>-.) r8 r4 r4 <e c' e>4~ |
+      8 r8 bes4~\f bes \tuplet 3/2 { d'8( bes g } |
+      e8) ges8(\< des' aes') ees'8( f\ff\> b, c) |
+      a1\mf |
+      r2 \tuplet 3/2 { r8\mp\< r8 cis,,8~ } 4~ |
+      cis4 fis,4\f\> b2 |
       <<
         {
           \voiceOne
-          r8 d''8~ d2. |
-          des4~ 4. |
-          r4 r4 \tuplet 3/2 { r8 r8 c8~ } |
+          r8\p d''8~ d2. |
+          des4~ 4.\< |
+          r4\mf r4 \tuplet 3/2 { r8 r8 c8~\f } |
           c8 s8
         }
         \new Voice \relative {
@@ -292,25 +291,25 @@
         }
       >>
       \oneVoice
-      \rit \tuplet 3/2 { r8\startTextSpan ees,,8 r8 } \tuplet 3/2 { r4 <a d b'>4\arpeggio \after 8 \stopTextSpan <e cis' g'>\arpeggio } |
-      \tempo "meno mosso"
-      \time 3/4 c'4->
+      \rit \tuplet 3/2 { r8\startTextSpan ees,,8 r8 } \tuplet 3/2 { r4\> <a d b'>4\arpeggio <e cis' g'>\arpeggio } |
+      \time 3/4 c'4->\mp
       <<
         {
           \voiceOne
-          \tuplet 3/2 { r8 aes'8_( <ges bes>) } r4
-          \time 4/4 s2 bes,8 <g' e'>4 f'8 |
+          \tuplet 3/2 { r8 aes'8_( <ges bes>) } \after 8. \stopTextSpan r4 \bar "||" |
+          \tempo "meno mosso"
+          \time 4/4 s2\mf \tuplet 3/2 { bes,4 \stemDown <g' e'>4 f'4 } |
         }
         \new Voice \relative {
           \voiceTwo
           <ees' f>4 r4 |
-          fis2-> des8 c b d |
+          fis2-> des8 \D \stemUp c b d \U |
         }
       >>
       \oneVoice
-      \rit <fis gis,>4.\startTextSpan a,8~ <a ees'>2 |
+      \rit <fis gis,>4.\<\startTextSpan a,8~ <a ees'>2 |
       <ais,, gis>2 r2  |
-      r2\stopTextSpan <b'' a'>2\fermata |
+      r2\f\stopTextSpan <b'' a'>2\fermata |
 
 
 
@@ -578,14 +577,13 @@
       R1 |
       R1 |
       R1 |
-      <a a'>8-. <ees ees'>-. r4 r4 r8 b'8( |
-      g8-.) r8 r4 r4 <c c,>4~ |
+      \time 7/8 <a a'>8[-. <ees ees'>]-. r4 r8 r8 b'8( |
+      \time 2/2 g8-.) r8 r4 r4 <c c,>4~ |
       8 r8 <ges des'>4~ 4 r8 a'8~ |
       a2. r8 <g d>8( |
       <dis e,>1) |
       r2 <f f,>2~ |
-      2 r4 bes,4  |
-      aes1 |
+      4. ais,8 gis2  |
       aes1~\arpeggio |
       <<
         {
@@ -626,8 +624,6 @@
           <c g'>1 |
         }
       >>
-
-
 
     }
 
