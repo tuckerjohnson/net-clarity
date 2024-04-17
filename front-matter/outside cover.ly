@@ -25,7 +25,7 @@ outcover = \markuplist {
 	    \line { \fontsize #2 \sans \concat { "for " \xinst } }
       }
     }
-    \vspace #22
+    \vspace #26.25
     \fill-line {
       \line { \null }
       \line { \null }

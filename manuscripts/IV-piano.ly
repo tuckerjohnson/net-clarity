@@ -324,54 +324,48 @@
     \set Staff.pedalSustainStyle = #'mixed
     \omit Staff.SectionLabel
     \omit Staff.RehearsalMark
+    \override Score.Footnote.annotation-line = ##f
     \relative {
 
       \numericTimeSignature
       \tempo 4=104
-      \time 5/4 r16 f'16-.^\pp aes,16-. r16 r8 fis16-. r16 dis'16[-. r8
-      cis16]-. r4 r4 | %001
-      \time 4/4 b8-.^\markup { \tiny \parenthesize \italic "sempre staccatiss." }
-      r8 a8-. c,8-. g'8-. e16-. d16-. r8. bes'16-. | %002
-      cis16-.^\< gis8-. b16-. r8. a16-. r4 r16 e'16-. r8 | %003
-      r16 d16-. g,16-. c16-.^\p r4 bes16-.^\> ees,16-. f8-. ges8-. r8 | %004
+      \time 5/4 r16[ f'16-.^\pp aes,16-. r16] r8[ ges16-. r16] ees'16[-. r16 r16 des16]-. r4 r4 | %001
+      \time 4/4 b8-.
+      \footnote \markup \tiny "*" #'(0.01 . 0.01) \markup \tiny "*Maintain 16th note length for staccato notes."
+      ^\markup { \tiny { \italic { "sempre staccatiss." } } }
+      r8 a8-. c,8-. g'8-. e16-. d16-. r8.[ ais'16]-. | %002
+      cis16-.^\< gis8-. b16-. r8.[ a16]-. r4 r16[ e'16-. r8] | %003
+      r16[ d16-. g,16-. c16]-.^\p r4 bes16-.^\> ees,16-. f8-. ges8-. r8 | %004
       b16-. a-. g8-.\pp r8 e'8-. cis[-. r16 d16]-. c8-. r8 | %005
-      \clef treble ees16-. f8-. fis16-. gis8-. ais8( b)-. c16(^\< d16~ 16 e a,
-      g16~ | %006
+      \clef treble ees16-. f8-. fis16-. gis8-. ais8( b)-. c16(^\< d16~ d e a, g16~ | %006
       \time 5/4 g8. ges16~ 8 f8~\mp 2.) | \clef bass %007
-      \time 4/4 r8 cis16-.^\pp dis16-. r16  ais16-.[ \set stemLeftBeamCount = #1
-      \set stemRightBeamCount = #1 r16 gis16]-. r16 a16[-. \set
-      stemLeftBeamCount = #1 \set stemRightBeamCount = #1 r16 b16]-. e,-. d'8-.
-      des16-. | %008
+      \time 4/4 r8[ cis16-.^\pp dis16]-. r16[  ais16-. r16 gis16]-. r16[ a16-. r16 b16]-. e,-. d'8-. cis16-. | %008
       fis,16(^\mp aes8. g16)-. f-.^\pp^\< ees8-. c16-. bes8-. a16-.^\mp r4 | %009
-      r4 r16 des16-.^\pp g-. ges-. bes,8-. ees8(^\< d8. c16~ | %010
-      16 b8.~\mp 4) r8 gis8-.^\pp r8 e'8-. | %011
-      r8. f16-. cis8-. fis8-. r16 b8.(^\< e16 ees8.~ | %012
-      16 f8 g16^\mf d8-.) a-.^\p r16 bes,16-. c8-. r16 des16-. ees-. f16-. | %013
-      ges-. aes-. r8 r8. b16-. e-. c8-. d16-. r16 a16-. r8 | %014
-      r2 r16 bes16-. r8 r16 g16-.^\< aes-. bes-. | %015
-      r16 c,-. des-. f-. ees8-. r8 d-. e-. fis16-. g8.(^\mf | %016
+      r4 r16[ des16-.^\pp g-. ges]-. bes,8-. ees8(^\< d8. c16~ | %010
+      c b8.~\mp 4) r8 gis8-.^\pp r8 e'8-. | %011
+      r8.[ f16]-. cis8-. fis8-. r16 b8.(^\< e16 ees8.~ | %012
+      ees16 f8 g16^\mf d8-.) a-.^\p r16[ bes,16-. c8]-. r16[ des16-. ees-. f16]-. | %013
+      ges[-. aes-. r8] r8.[ b16]-. e-. c8-. d16-. r16[ a16-. r8] | %014
+      r2 r16[ bes16-. r8] r16[ g16-.^\< aes-. bes]-. | %015
+      r16[ c,-. des-. f]-. ees8-. r8 d-. e-. fis16-. g8.(^\mf | %016
       a,2) b8.( g'16~ 8) bes,16-.^\p e-. | %017
-      r16 ges[-. \set stemLeftBeamCount = #1 \set stemRightBeamCount = #1 r16
-      c,]-. r8. des16-. ees,2~^\mf | %018
-      8. a16(^\> d8 f8~ 16 b16)-.^\p r8 r8. fis,16-.^\< | %019
-      g16-. c16-. d16-. e16-. a16-. bes8.--^\mf r16 ees,16[-.^\< r16 f16]-.
-      aes8[-. r16 ces16]-. | %020
+      r16[ ges-. r16 c,]-. r8.[ des16]-. ees,2~^\mf | %018
+      8. a16(^\> d8 f8~ 16[ b16)-.^\p r8] r8.[ fis,16]-.^\< | %019
+      g16-. c16-. d16-. e16-. a16-. bes8.--^\mf r16[ ees,16-.^\< r16 f16]-. aes8[-. r16 ces16]-. | %020
       \override Staff.Hairpin.stencil = ##f
       \override Staff.DynamicText.stencil = ##f
       \time 3/4 des8-.\f r8 a16-.\pp gis16-. f8-. b,16( cis8.) |  %021
       d8.-- <ees ees,>16~->\mf <ees ees,>2 | %022
       r8 fis16(\mp\< c16 g8~\mf <g e'>8~ <g e'>16) bes8(\> f16 | %023
       cis8 gis'8 fis16 b,8-.) c16( d8-.)\mp bes16-. e16-. | %024
-      r16 g16[-. \set stemLeftBeamCount = #1 \set stemRightBeamCount = #1 r16
-      ees16]-. a,4(\< aes4 | %025
+      r16[ g16-. r16 ees16]-. a,4(\< aes4 | %025
       g16\f c8.~ c8) f16_(~ <f a'>16~ <f bes a'>4~ | %026
       <f bes a'>16) cis'16( dis8~ <dis e,>8.) fis,16-. d'8-.\> r8 | %027
-      \time 5/8 a'16-. e16-. r8 b16[-. \set stemRightBeamCount = #1 fis16-.
-      \set stemLeftBeamCount = #1 \set stemRightBeamCount = #1 r16 cis16]-.\p
-      r8 | %028
+      \time 5/8 a'16[-. e16-. r8] b16[-. fis8-. cis16-.\p r8] | %028
       c16[(\< ees8.]~ ees8) <bes bes'>4-> | %029
       \time 2/8 <f f'>8[->\f\> <d' d'>8]-> | %030
       \time 3/4 <g, g'>2.\mf\fermata | %031
+
       \tempo 2=96
       \time 2/2 b8-.\p r8 r4  r8 d8-. g8-. r8 | %032
       e8-. f8-. r4 r8 ees8-. r4 | %033

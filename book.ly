@@ -87,6 +87,7 @@
           \remove Mark_engraver
           \override TextSpanner.bound-details.left-broken.text = " "
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
           \override BarNumber.font-size = #1
           \override Hairpin.to-barline = ##f
         }

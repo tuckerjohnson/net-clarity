@@ -3,6 +3,7 @@
 \paper {
   line-width = 120
   first-page-number = -1
+  footnote-separator-markup = \markup { \left-column { \vspace #0.5 \draw-line #'(6 . 0) } }
   print-page-number = ##f
   oddHeaderMarkup = \markup {
     \concat { \if \on-page #5 \oddhead }
@@ -68,7 +69,7 @@
   #(define fonts (set-global-fonts #:music "haydn" #:brace "haydn" #:roman "Junicode" #:sans "syne"))
   max-systems-per-page = #10
   system-system-spacing = #'((basic-distance . 10) (minimum-distance . 8) (padding . 12))
-  score-system-spacing = #'((basic-distance . 4) (minimum-distance . 2) (padding . 2))
+  score-system-spacing = #'((basic-distance . 2) (minimum-distance . 1) (padding . 0))
   last-bottom-spacing = #'((basic-distance . 5) (minimum-distance . 5) (padding . 0))
   tocTitleMarkup = \markup { \null }
   tocItemMarkup = \markup {
