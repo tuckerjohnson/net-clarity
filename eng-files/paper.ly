@@ -15,7 +15,6 @@
     \concat { \if \on-page #17 \oddhead }
     \concat { \if \on-page #19 \oddhead }
     \concat { \if \on-page #21 \oddhead }
-    \concat { \if \on-page #23 \oddhead }
 
   }
   evenHeaderMarkup = \markup {

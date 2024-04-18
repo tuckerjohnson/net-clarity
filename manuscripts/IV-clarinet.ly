@@ -7,6 +7,7 @@
   \override DynamicLineSpanner.staff-padding = \sods
   fontSize = #-2
   \override StaffSymbol.staff-space = #(magstep -2)
+  \override Score.Footnote.annotation-line = ##f
   \consists Text_mark_engraver
 }
 
@@ -50,13 +51,13 @@
   a4. d,8~(\> d4 aes) | %049
   \time 5/4 bes1\mp\> aes'8(\pp fes8 | %050
   \time 2/2 ees2.) r4 | %051
-  f8[-.->\f r8 f8-.-> cis8]]-.-> r4 cis4~\> | %052
-  \time 3/2 \after 2 \mp cis2. r4 \molRit r2\startTextSpan | %053
+  f8-.->\f r8 f8-.-> des8-.-> r4 des4~\> | %052
+  \time 3/2 \after 2 \mp des2. r4 \molRit r2\startTextSpan | %053
   \time 2/2 \after 4. \stopTextSpan r2 r2\fermata | %054
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 55 }
-  r8 b'8~->\f b2~ b8 bes-. | %055
+  r8 ces'8~->\f ces2~ ces8 bes-. | %055
   \undo \omit Score.BarNumber
   a8-. b-. c2. | %056
   \time 5/4 ges8-. aes-. f1~\> | %057
@@ -65,36 +66,36 @@
   \after 2 \p cis1 | %060
   r2 r4 r8 c'8(\mf | %061
   d bes aes ges~ ges4) r8 e'8( | %062
-  g8 f4)\< ees8~( ees des8 b' a~ | %063
-  a4) d4.->\f f,8~-> f4 | %064
+  g8 f4)\< ees!8~( ees cis8 b' a~ | %063
+  a4) d4~->\f d8 f,4.-> | %064
   \tuplet 3/2 { fis4( b, a'\> } \tuplet 3/2 { bes, aes' c, } | %065
-  \time 7/8 g'2~\mp 8) r8 cis,8( | %066
+  \time 7/8 g'2~\mp 8) r8 des8( | %066
   \pocRit
-  \time 3/4 \after 4 \startTextSpan  e,2.\> | %067
+  \time 3/4 \after 4 \startTextSpan  fes,2.\> | %067
   \after 2 \p \after 2 \stopTextSpan ees2.) \bar "||" %068
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 69 }
   \tempo "a tempo"
-  \time 2/2 g8(\mf\< d' b fis' bes des4) c8( | %069
+  \time 2/2 g8(\mf\< d' ces ges' bes des4) c8( | %069
   \undo \omit Score.BarNumber
   \time 7/8 e4\f a,8) ees([ f]\> aes,4) | %070
   des,8([\mp\< c e a,] d[ b f'] | %071
-  \time 2/2 ees aes g fis\mf bes,) c(\mp\< des ees! | %072
-  d8 e f g8~\mf g) r8 aes8-.\< fis8-. | %073
-  b8( bes a-.)\f r8 \tuplet 3/2 { g4( c e) } | %074
-  \time 3/4 gis16(\< ais b cis) \tuplet 3/2 { d8( eis fis~ } fis8.) a,16( | %075
-  \time 2/2 dis2)\ff r8 e8( fis b,8) | %076
+  \time 2/2 ees aes g ges\mf bes,) c(\mp\< des ees | %072
+  d8 e f g8~\mf g) r8 aes8-.\< ges8-. | %073
+  ces8( bes a-.)\f r8 \tuplet 3/2 { g4( c e) } | %074
+  \time 3/4 aes16(\< bes ces des) \tuplet 3/2 { eeses8( f ges~ } ges8.) a,16( | %075
+  \time 2/2 ees'2)\ff r8 e8( fis b,8) | %076
   g( f\> ees bes'~ bes) a8(\f aes4\> | %077
   des4) r8 d8( \after 8 \mf c4.) e8( | %078
   \time 3/4 d b a-.) c,,(\< ees,-.)\ff des'''(^\mp | %079
   bes c g-.) bes,,-.->\ff aes''(^\< ges | %080
-  \time 2/4 f8 ees4--)^\f \breathe d8_(^\mp | %081
+  \time 2/4 f8 ees4--)^\f \breathe d8(^\mp | %081
   \time 3/4 e a cis-.) f,,,(\< a-.)\ff ees''(^\< | %082
   ges b c-.)\mf d,,,-.->_\ff aes'''(^\< bes  | %083
   f' g4.~\f 4) \breathe | %084
-  \time 2/2 e,,,4.--\mp aes''8(\f\> d, ees a,8)\! r8 | %085
-  cis,4.--\mp bes'8_(\f\< f' c'\! b-.) g,,-- | %086
+  \time 2/2 fes,,,4.--\mp aes''8(\f\> d, ees a,8)\! r8 | %085
+  des,4.--\mp bes'8(\f\< f' c'\! b-.) g,,_- | %086
   \molRit fis4\>\startTextSpan gis2 b4\p \breathe | %087
   \time 3/8 cis''8(\mf e,) fis,(\stopTextSpan \bar "||" %088
 
@@ -106,7 +107,7 @@
   \time 12/8 g2.~\mf 4.) r8 d4~( | %091
   \time 2/4 d8\> fis8 cis4)\p | %092
   \time 6/8 R1*6/8 | %093
-  \time 12/8 r4 c8~\< c4.~ c4 c4( ees~ | %094
+  \time 12/8 r4 c!8~\< c4.~ c4 c4( ees~ | %094
   \time 6/8 ees8) f8( bes,8~\mf 4 a8~ | %095
   \time 7/8 \after 4. \! a4.)\> r8 fis'4(\p ees8\< | %096
   \time 12/8 \after 2 \> g2.~\mp g8 e4~\pp e4.~ | %097
@@ -138,9 +139,9 @@
   \time 2/2 fes2)\! r2 | %117
   bes''2~(\mf bes8 d,4 g8~ | %118
   g4) r4 r2 | %119
-  r8 e8-. ees-. g~ g4 ges,,8-. f-. | %120
+  r8 fes8-. ees-. g~ g4 ges,,8-. f-. | %120
   d''-. cis-. gis'4~(\< gis8 a4.)\f | %121
-  c,8-. f-. r8 e,,-.-> ees-.-> r8 r8 ges''-. | %122
+  c,8-. f-. r8 fes,,-.-> ees-.-> r8 r8 ges''-. | %122
   r2 r8 b,-.\< g'-. bes,-. | %123
   aes'-. d,,,-.-> r8 cis'-. a'-. r8 r4 | %124
   b'8-. r8 c-. r8 des-.->\ff r8 r8 ees-.-> | %125
@@ -161,7 +162,13 @@
   \phrasingSlurDashed
   \omit Score.BarNumber
   \override Score.TimeSignature.stencil = ##f
-  \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f bes'4(\mp ces8) |
+  \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f
+  \footnote \markup \huge "*" #'(0 . 4) \markup \tiny \left-column {
+    \line { "*Cadenza notation should be interpreted freely, though Music should be" } \vspace #-0.4
+    \line { "continuous between breath marks and rests. Breath marks indicate a short" } \vspace #-0.4
+    \line { "break, while rests are longer." }
+  }
+  bes'4(\mp ces8) |
   \omit Staff.BarLine
   \time 4/4 ces1 \breathe |
   \time 9/16 \override Beam.grow-direction = #RIGHT \featherDurations 1/2 { ces'16( des,\< aes') ees'( ces fes) ees( ges ces) } |
