@@ -147,10 +147,11 @@
       }
     >>
   }
+
   \new Staff = "d" \with { \consists "Merge_rests_engraver" }
   {
     \clef bass
-    \set Staff.pedalSustainStyle = #'mixed
+    \set Staff.pedalSustainStyle = #'bracket
     \override Score.SpacingSpanner.strict-grace-spacing = ##t
     \override DynamicLineSpanner.staff-padding = \phds
     \relative {

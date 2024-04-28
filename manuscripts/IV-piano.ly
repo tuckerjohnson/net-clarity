@@ -329,7 +329,9 @@
 
       \numericTimeSignature
       \tempo 4=104
-      \time 5/4 r16[ f'16-.^\pp aes,16-. r16] r8[ ges16-. r16] ees'16[-. r16 r16 des16]-. r4 r4 | %001
+      \override Rest.staff-position = #0
+      \time 5/4 \override Staff.Beam.positions = #'(-4 . -4) r16[ f'16-.^\pp aes,16-. r16] r8[ ges16-. r16]  ees'16[-. r16 r16 des16]-. r4 r4 | %001
+      \revert Staff.Beam.positions
       \time 4/4 b8-.
       \footnote \markup "*" #'(0.01 . 0.01) \markup \tiny "*Maintain 16th note length for staccato notes."
       ^\markup { \tiny { \italic { "sempre staccatiss." } } }
