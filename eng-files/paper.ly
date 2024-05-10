@@ -75,7 +75,7 @@
     \center-column {
       \fill-line {
         \left-column { \concat { "                                " "       " \bold \fromproperty #'toc:text } }
-        \right-column { \concat { \fromproperty #'toc:page "                                " "       " } }
+        \right-column { \concat { \tiny \number { \fromproperty #'toc:page } "                                " "       " } }
       }
     }
   }
