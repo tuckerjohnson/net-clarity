@@ -335,13 +335,13 @@
       \time 4/4 b8-.
       \footnote \markup "*" #'(0.01 . 0.01) \markup \tiny "*Maintain 16th note length for staccato notes."
       ^\markup { \tiny { \italic { "sempre staccatiss." } } }
-      r8 a8-. c,8-. g'8-. e16-. d16-. r8.[ ais'16]-. | %002
-      cis16-.^\< gis8-. b16-. r8.[ a16]-. r4 r16[ e'16-. r8] | %003
-      r16[ d16-. g,16-. c16]-.^\p r4 bes16-.^\> ees,16-. f8-. ges8-. r8 | %004
-      b16-. a-. g8-.\pp r8 e'8-. cis[-. r16 d16]-. c8-. r8 | %005
+      r8 a8-. c,8-. g'8-. e16-. d16-. \once \override Staff.Beam.positions = #'(-3 . -2) r8.[ ais'16]-. | %002
+      cis16-.^\< gis8-. b16-. \once \override Staff.Beam.positions = #'(-3 . -2) r8.[ a16]-. r4 \once \override Staff.Beam.positions = #'(-4 . -4) r16[ e'16-. r8] | %003
+      \once \override Staff.Beam.positions = #'(-4 . -2) r16[ d16-. g,16-. c16]-.^\p r4 bes16-.^\> ees,16-. f8-. ges8-. r8 | %004
+      b16-. a-. g8-.\pp r8 e'8-. \once \override Staff.Beam.positions = #'(-4 . -4) cis[-. r16 d16]-. c8-. r8 | %005
       \clef treble ees16-. f8-. fis16-. gis8-. ais8( b)-. c16(^\< d16~ d e a, g16~ | %006
       \time 5/4 g8. ges16~ 8 f8~\mp 2.) | \clef bass %007
-      \time 4/4 r8[ cis16-.^\pp dis16]-. r16[  ais16-. r16 gis16]-. r16[ a16-. r16 b16]-. e,-. d'8-. cis16-. | %008
+      \time 4/4 r8 cis16[-.^\pp dis16]-. \override Staff.Beam.positions = #'(-4 . -4) r16[  ais16-. r16 gis16]-. r16[ a16-. r16 b16]-. \revert Staff.Beam.positions e,-. d'8-. cis16-. | %008
       fis,16(^\mp aes8. g16)-. f-.^\pp^\< ees8-. c16-. bes8-. a16-.^\mp r4 | %009
       r4 r16[ des16-.^\pp g-. ges]-. bes,8-. ees8(^\< d8. c16~ | %010
       c b8.~\mp 4) r8 gis8-.^\pp r8 e'8-. | %011
