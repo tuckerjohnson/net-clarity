@@ -330,25 +330,25 @@
       \numericTimeSignature
       \tempo 4=104
       \override Rest.staff-position = #0
-      \time 5/4 \override Staff.Beam.positions = #'(-4 . -4) r16[ f'16-.^\pp aes,16-. r16] r8[ ges16-. r16]  ees'16[-. r16 r16 des16]-. r4 r4 | %001
+      \time 5/4 \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ f'16-.^\pp aes,16-. r16] r8[ ges16-. r16]  ees'16[-. r16 r16 des16]-. r4 r4 | %001
       \revert Staff.Beam.positions
       \time 4/4 b8-.
       \footnote \markup "*" #'(0.01 . 0.01) \markup \tiny "*Maintain 16th note length for staccato notes."
       ^\markup { \tiny { \italic { "sempre staccatiss." } } }
       r8 a8-. c,8-. g'8-. e16-. d16-. \once \override Staff.Beam.positions = #'(-3 . -2) r8.[ ais'16]-. | %002
-      cis16-.^\< gis8-. b16-. \once \override Staff.Beam.positions = #'(-3 . -2) r8.[ a16]-. r4 \once \override Staff.Beam.positions = #'(-4 . -4) r16[ e'16-. r8] | %003
-      \once \override Staff.Beam.positions = #'(-4 . -2) r16[ d16-. g,16-. c16]-.^\p r4 bes16-.^\> ees,16-. f8-. ges8-. r8 | %004
-      b16-. a-. g8-.\pp r8 e'8-. \once \override Staff.Beam.positions = #'(-4 . -4) cis[-. r16 d16]-. c8-. r8 | %005
+      cis16-.^\< gis8-. b16-. \once \override Staff.Beam.positions = #'(-3 . -2) r8.[ a16]-. r4 \once \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ e'16-. r8] | %003
+      \once \override Staff.Beam.positions = #'(-3.85 . -2) r16[ d16-. g,16-. c16]-.^\p r4 bes16-.^\> ees,16-. f8-. ges8-. r8 | %004
+      b16-. a-. g8-.\pp r8 e'8-. \once \override Staff.Beam.positions = #'(-3.85 . -3.85) cis[-. r16 d16]-. c8-. r8 | %005
       \clef treble ees16-. f8-. fis16-. gis8-. ais8( b)-. c16(^\< d16~ d e a, g16~ | %006
       \time 5/4 g8. ges16~ 8 f8~\mp 2.) | \clef bass %007
-      \time 4/4 r8 cis16[-.^\pp dis16]-. \override Staff.Beam.positions = #'(-4 . -4) r16[  ais16-. r16 gis16]-. r16[ a16-. r16 b16]-. \revert Staff.Beam.positions e,-. d'8-. cis16-. | %008
+      \time 4/4 r8 cis16[-.^\pp dis16]-. \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[  ais16-. r16 gis16]-. r16[ a16-. r16 b16]-. \revert Staff.Beam.positions e,-. d'8-. cis16-. | %008
       fis,16(^\mp aes8. g16)-. f-.^\pp^\< ees8-. c16-. bes8-. a16-.^\mp r4 | %009
-      r4 r16[ des16-.^\pp g-. ges]-. bes,8-. ees8(^\< d8. c16~ | %010
+      r4 \once \override Staff.Beam.positions = #'(-3.85 . -3) r16[ des16-.^\pp g-. ges]-. bes,8-. ees8(^\< d8. c16~ | %010
       c b8.~\mp 4) r8 gis8-.^\pp r8 e'8-. | %011
-      r8.[ f16]-. cis8-. fis8-. r16 b8.(^\< e16 ees8.~ | %012
-      ees16 f8 g16^\mf d8-.) a-.^\p r16[ bes,16-. c8]-. r16[ des16-. ees-. f16]-. | %013
-      ges[-. aes-. r8] r8.[ b16]-. e-. c8-. d16-. r16[ a16-. r8] | %014
-      r2 r16[ bes16-. r8] r16[ g16-.^\< aes-. bes]-. | %015
+      \once \override Staff.Beam.positions = #'(-3 . -2.5) r8.[ f16]-. cis8-. fis8-. r16 b8.(^\< e16 ees8.~ | %012
+      ees16 f8 g16^\mf d8-.) a-.^\p \once \override Staff.Beam.positions = #'(3 . 3) r16[ bes,16-. c8]-. r16[ des16-. ees-. f16]-. | %013
+      ges[-. aes]-. r8 \once \override Staff.Beam.positions = #'(-3 . -2.5) r8.[ b16]-. e-. c8-. d16-. \once \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ a16-. r8] | %014
+      r2 \once \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ bes16-. r8] \once \override Staff.Beam.positions = #'(-3.85 . -2.5) r16[ g16-.^\< aes-. bes]-. | %015
       r16[ c,-. des-. f]-. ees8-. r8 d-. e-. fis16-. g8.(^\mf | %016
       a,2) b8.( g'16~ 8) bes,16-.^\p e-. | %017
       r16[ ges-. r16 c,]-. r8.[ des16]-. ees,2~^\mf | %018
