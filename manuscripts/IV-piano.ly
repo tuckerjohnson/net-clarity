@@ -1,7 +1,7 @@
 % net clarity project
 
 \new PianoStaff \with {
-  instrumentName = \markup { "piano " }
+  instrumentName = \markup { "piano" }
   shortInstrumentName = \markup { "pno " }
   \consists Text_mark_engraver
   \consists Metronome_mark_engraver

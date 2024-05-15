@@ -1,7 +1,7 @@
 % net clarity project
 
 \new PianoStaff \with {
-  instrumentName = \markup { "piano " }
+  instrumentName = \markup { "piano" }
   shortInstrumentName = \markup { "pno " }
   \consists Text_mark_engraver
 }
@@ -233,17 +233,17 @@
         <<
           \relative {
             \voiceOne
-            \time 7/4 a8[^\mf^\>\sustainOff\sustainOn c, a' c, a' c,^\!^\< a' c,] a'[ c, a' c, a' c,] |
+            \time 7/4 c8[^\mf^\>\sustainOff\sustainOn a' c, a' c,^\!^\< a' c, a'] c,[ a' c, a' c, a'] |
             \undo \omit Score.BarNumber
-            g'8[^\mf^\>\sustainOff\sustainOn b, g' b, g' b,^\!^\< g' b,] g'[ b, g' b, g' b,] |
-            ges'8[ aes,^\f^\>\sustainOff\sustainOn ges' aes, ges' aes, ges' aes,] ges'[^\!^\< aes, ges' aes, ges' aes,] |
-            f'8[^\f^\>\sustainOff\sustainOn bes, f' bes, f' bes, f' bes,] f'[ bes, f']^\mp r8 r4 |
+            b,8[^\mf^\>\sustainOff\sustainOn g' b, g' b,^\!^\< g' b, g'] b,[ g' b, g' b, g'] |
+            aes,[^\f^\>\sustainOff\sustainOn ges' aes, ges' aes, ges' aes, ges']^\!^\< aes,[ ges' aes, ges' aes, ges'] |
+            bes,[^\f^\>\sustainOff\sustainOn f' bes, f' bes, f' bes, f'] bes,[ f' bes,]^\mp r8 r4 |
           }
           \new Voice \relative {
             \voiceTwo
-            \time 7/4 e,2.~-> 8 8->~ 2. |
+            \time 7/4 e,1-> 2.-> |
             d2.-> d1~-> |
-            d8 ees8->~ 2.~ 8 8~-> 2 |
+            d4 ees2.~-> 4 2~-> |
             des2.->~ 8 8->~ 2. |
           }
         >>

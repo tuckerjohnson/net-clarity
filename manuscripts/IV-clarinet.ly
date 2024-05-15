@@ -5,8 +5,8 @@
   instrumentName = \markup { clarinet in \concat { \bold "B" \tiny \flat " " } }
   shortInstrumentName = \markup { cl }
   \override DynamicLineSpanner.staff-padding = \sods
-  fontSize = #-2
-  \override StaffSymbol.staff-space = #(magstep -2)
+  fontSize = #-1 % rm parts
+  \override StaffSymbol.staff-space = #(magstep -1) % rm parts
   \override Score.Footnote.annotation-line = ##f
   \consists Text_mark_engraver
 }

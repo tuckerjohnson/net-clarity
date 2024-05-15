@@ -32,7 +32,6 @@
         \context {
           \Score
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override BarNumber.font-size = #1
           \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
           \override Hairpin.to-barline = ##f
         }
@@ -55,7 +54,6 @@
         \context {
           \Score
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override BarNumber.font-size = #1
           \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
           \override Hairpin.to-barline = ##f
         }
@@ -80,7 +78,6 @@
           \Score
           \remove Text_mark_engraver
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override BarNumber.font-size = #1
           \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
           \override Hairpin.to-barline = ##f
         }
@@ -110,7 +107,6 @@
           \override TextSpanner.bound-details.left-broken.text = " "
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
           \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
-          \override BarNumber.font-size = #1
           \override Hairpin.to-barline = ##f
           \override Stem.stemlet-length = #0.75
         }
