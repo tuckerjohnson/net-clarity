@@ -24,17 +24,17 @@
       1~ | %006
       \time 5/4 4~ 16 c8.~ 16 g'8.~^\mp 2) | %007
       \time 4/4 R1 | %008
-      r2 r4 r16[ d16(^\pp e8] | %009
+      r2 r4 r16 d16(^\pp e8 | %009
       b1~ | %010
       4~ 8) 8~(^\mf 8. a16~ 4~ | %011
-      4) r8.[ d16](^\> a4~ 8 bes8 | %012
+      4) r8. d16(^\> a4~ 8 bes8 | %012
       c1)^\mp | %013
       r4 g'2( f8^\< e8~ | %014
       e8 fis16 dis16 b8 gis'8 cis,2~^\mf | %015
       cis2) r4 r8 b8(~ | %016
       b8. cis16 f8 d8~ d8 ees8~ ees4~ | %017
       ees8) r8 a16(^\f gis8.~  gis4) g8 e8 | %018
-      c4-- r16 bes8.~^\mp bes16[ bes16-. r8] r4 | %019
+      c4-- r16 bes8.~^\mp bes16 bes16-. r8 r4 | %019
       r4 r16 ges'8.~^\mf ges4~ ges8 ges8--^\f | %020
 
       \sectionLabel \markup { \box \number 21 }

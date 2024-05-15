@@ -5,6 +5,28 @@
   first-page-number = -1
   footnote-separator-markup = \markup { \left-column { \vspace #0.5 \draw-line #'(6 . 0) } }
   print-page-number = ##f
+  #(set-paper-size "arch a")
+  print-all-headers = ##t
+  top-margin = 0.5\in
+  bottom-margin = 0.5\in
+  left-margin = 0.9\in
+  right-margin = 0.9\in
+  indent = 0.75\in
+  short-indent = 0\cm
+  #(define fonts (set-global-fonts #:music "scorlatti" #:brace "scorlatti" #:roman "Junicode" #:sans "syne"))
+  max-systems-per-page = #10
+  system-system-spacing = #'((basic-distance . 10) (minimum-distance . 8) (padding . 12))
+  score-system-spacing = #'((basic-distance . 2) (minimum-distance . 1) (padding . 0))
+  last-bottom-spacing = #'((basic-distance . 5) (minimum-distance . 5) (padding . 0))
+  tocTitleMarkup = \markup { \null }
+  tocItemMarkup = \markup {
+    \center-column {
+      \fill-line {
+        \left-column { \concat { "                                " "       " \bold \fromproperty #'toc:text } }
+        \right-column { \concat { \tiny \number { \fromproperty #'toc:page } "                                " "       " } }
+      }
+    }
+  }
   oddHeaderMarkup = \markup {
     \concat { \if \on-page #5 \oddhead }
     \concat { \if \on-page #7 \oddhead }
@@ -57,26 +79,5 @@
     \concat { \if \on-page #22 \evfoot }
   }
 
-  #(set-paper-size "arch a")
-  print-all-headers = ##t
-  top-margin = 0.5\in
-  bottom-margin = 0.5\in
-  left-margin = 0.9\in
-  right-margin = 0.9\in
-  indent = 0.75\in
-  short-indent = 0\cm
-  #(define fonts (set-global-fonts #:music "haydn" #:brace "haydn" #:roman "Junicode" #:sans "syne"))
-  max-systems-per-page = #10
-  system-system-spacing = #'((basic-distance . 10) (minimum-distance . 8) (padding . 12))
-  score-system-spacing = #'((basic-distance . 2) (minimum-distance . 1) (padding . 0))
-  last-bottom-spacing = #'((basic-distance . 5) (minimum-distance . 5) (padding . 0))
-  tocTitleMarkup = \markup { \null }
-  tocItemMarkup = \markup {
-    \center-column {
-      \fill-line {
-        \left-column { \concat { "                                " "       " \bold \fromproperty #'toc:text } }
-        \right-column { \concat { \tiny \number { \fromproperty #'toc:page } "                                " "       " } }
-      }
-    }
-  }
+
 }
