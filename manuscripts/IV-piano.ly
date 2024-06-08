@@ -44,9 +44,10 @@
       \undo \omit Score.BarNumber
       \omit Staff.SectionLabel
       fis,8.-- g16~->\mf\> g8 bes16-. c16-. e,16-. gis8( cis16)-.\p | %022
-      r8[ d16(\< a16] b4)\mf b8 ees,8~\> | %023
-      ees4 ees8-- r8 f8[-.\mp r16 f16]-. | %024
-      r8 a8-. r16[\< cis16( e,8] b'8. fis16 | %025
+      r8 d16(\< a16 b4)\mf b8 ees,8~\> | %023
+      ees4 ees8-- r8 \once \override Staff.Beam.positions = #'(2.65 . 2.65) f8[-.\mp \override Rest.staff-position = #0 r16 f16]-. | %024
+      \revert Rest.staff-position
+      r8 a8-. r16\< cis16( e,8 b'8. fis16 | %025
       bes16\f ees8.~ ees8 d8~ d4~ | %026
       d8) r8 aes4 f'8-. c16-.\> g16-. | %027
       \time 5/8 \after 4.. \mp R1*5/8 | %028
@@ -151,32 +152,32 @@
       \time 6/8 e8(\p g e) g( e g) | %093
       \time 12/8 aes( ges aes) ges( aes ges)\< aes( ges aes) ges( aes ges)\! | %094
       \time 6/8 \voiceOne a4. r4. | %095
-      \time 7/8 \oneVoice b8([\mp\> cis, b']) cis,([ b' cis, b']) | %096
+      \time 7/8 \oneVoice b8([\mp\> cis b]) cis([ b cis b]) | %096
       <<
         {
           \voiceOne
-          \time 12/8 c8_(\p f, c') f,_( c' f,) c'( f, c') f,( c' f,) | %097
-          \time 7/8 ges8[_- r8 ges]_- r8 ges_- r8 ees_- | %098
-          s2. r4. fis'4.~(^\mf | %099
-          8. | %100
-          f!2.) | %101
-          b,2.~ b2.~ 4. \mark \markup { \smaller \musicglyph "scripts.ufermata" } | %102
+          \time 12/8 c8_(\p f c) f_( c f) c( f c) f( c f) | %097
+          \time 7/8 ges8[_-\< r8 ges]_- r8 ges_- r8 ees_- | %098
+          \time 12/8 e_(\mp a e) a_( e a) e(\< a e) a( e a) | %099
+          \time 3/16 s8. | %100
+          \time 6/8 bes8(\mf g bes) g( bes g) | %101
+          \time 15/8 \molRit d'(\>\startTextSpan gis, d') gis,( d' gis,) d'( gis, d') gis,( d' gis,) d'(\pp gis, d')\stopTextSpan | %102
         }
         \new Voice \relative {
           \voiceTwo
-          s2. r8 des'4\mf des4.(-> | %097
-          aes2.)\< s8 | %098
-          \time 12/8 e'^(\mp a e) a^( e a) e(\< a e) a( e a) | %099
-          \time 3/16 s8. | %100
-          \time 6/8 g8(\mf bes, g') bes,( g' bes,) | %101
-          \time 15/8 \molRit gis'(\>\startTextSpan d gis) d( gis d) gis( d gis) d( gis d) gis(\pp d gis)\stopTextSpan | %102
+          s2. r4 des'4\mf des4(-> | %097
+          aes'2.) s8 | %098
+          s2. r4. fis'4.~(\mf | %099
+          8. | %100
+          f!2.) | %101
+          r8 b,8~ b2~ b2.~ 4. \mark \markup { \smaller \musicglyph "scripts.ufermata" } | %102
         }
       >>
       \oneVoice
 
       \sectionLabel \markup { \box \number 103 }
       \tempo 2 = 48
-      \time 2/2 \acePoc r2 f'8( b-.) r4 | %103
+      \time 2/2 \acePoc r2 f,8( b-.) r4 | %103
       \time 5/8 r4\startTextSpan c,8([\< fis-.]) r8 | %104
       \time 2/2 r8 bes,8( f'4) r8 ees8( a8-.) r8 | %105
       r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8 | %106
@@ -303,7 +304,7 @@
         \new Voice \relative {
           \voiceTwo
           <ees' f>4 r4 |
-          fis2-> des8 \D \stemUp c b d \U |
+          fis2-> des8[ \D \stemUp c] b[ d] \U |
         }
       >>
       \oneVoice
@@ -341,7 +342,7 @@
       b16-. a-. g8-.\pp r8 e'8-. \once \override Staff.Beam.positions = #'(-3.85 . -3.85) cis[-. r16 d16]-. c8-. r8 | %005
       \clef treble ees16-. f8-. fis16-. gis8-. ais8( b)-. c16(^\< d16~ d e a, g16~ | %006
       \time 5/4 g8. ges16~ 8 f8~\mp 2.) | \clef bass %007
-      \time 4/4 r8 cis16[-.^\pp dis16]-. \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[  ais16-. r16 gis16]-. r16[ a16-. r16 b16]-. \revert Staff.Beam.positions e,-. d'8-. cis16-. | %008
+      \time 4/4 r8 cis16[-.^\pp dis16]-. \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[  ais16-. r16 gis16]-. r16[ a16-. r16 b16]-. \revert Staff.Beam.positions e,-. d'8-. cis!16-. | %008
       fis,16(^\mp aes8. g16)-. f-.^\pp^\< ees8-. c16-. bes8-. a16-.^\mp r4 | %009
       r4 \once \override Staff.Beam.positions = #'(-3.85 . -3) r16[ des16-.^\pp g-. ges]-. bes,8-. ees8(^\< d8. c16~ | %010
       c b8.~\mp 4) r8 gis8-.^\pp r8 e'8-. | %011
@@ -351,25 +352,26 @@
       r2 \once \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ bes16-. r8] \once \override Staff.Beam.positions = #'(-3.85 . -2.5) r16[ g16-.^\< aes-. bes]-. | %015
       r16[ c,-. des-. f]-. ees8-. r8 d-. e-. fis16-. g8.(^\mf | %016
       a,2) b8.( g'16~ 8) bes,16-.^\p e-. | %017
-      r16[ ges-. r16 c,]-. r8.[ des16]-. ees,2~^\mf | %018
-      8. a16(^\> d8 f8~ 16[ b16)-.^\p r8] r8.[ fis,16]-.^\< | %019
-      g16-. c16-. d16-. e16-. a16-. bes8.--^\mf r16[ ees,16-.^\< r16 f16]-. aes8[-. r16 ces16]-. | %020
+      \once \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ ges-. r16 c,]-. r8.[ des16]-. ees,2~^\mf | %018
+      8. a16(^\> d8 f8~ 16[ b16)]-.^\p r8 \once \override Staff.Beam.positions = #'(2.5 . 1) r8.[ fis,16]-.^\< | %019
+      g16-. c16-. d16-. e16-. a16-. bes8.--^\mf \once \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ ees,16-.^\< r16 f16]-. \once \override Staff.Beam.positions = #'(-3.85 . -3.85) aes8[-. r16 ces16]-. | %020
 
       \override Staff.Hairpin.stencil = ##f
       \time 3/4 des8-.\f r8 a16-.^\pp gis16-. f8-. b,16( cis8.) |  %021
       \override Staff.DynamicText.stencil = ##f
       d8.-- <ees ees,>16~->\mf <ees ees,>2 | %022
-      r8[ fis16(\mp\< c16] g8~\mf <g e'>8~ <g e'>16) bes8(\> f16 | %023
+      r8 fis16(\mp\< c16 g8~\mf <g e'>8~ <g e'>16) bes8(\> f16 | %023
       cis8 gis'8 fis16 b,8-.) c16( d8-.)\mp bes16-. e16-. | %024
-      r16[ g16-. r16 ees16]-. a,4(\< aes4 | %025
+      \once \override Staff.Beam.positions = #'(2.65 . 2.65) r16[ g16-. r16 ees16]-. a,4(\< aes4 | %025
       g16\f c8.~ c8) f16_(~ <f a'>16~ <f bes a'>4~ | %026
       <f bes a'>16) cis'16( dis8~ <dis e,>8.) fis,16-. d'8-.\> r8 | %027
-      \time 5/8 a'16[-. e16-. r8] b16[-. fis8-. cis16-.\p r8] | %028
+      \time 5/8 a'16-. e16-. r8 b16[-. fis8-. cis16]-.\p r8 | %028
       c16[(\< ees8.]~ ees8) <bes bes'>4-> | %029
       \time 2/8 <f f'>8[->\f\> <d' d'>8]-> | %030
       \time 3/4 <g, g'>2.\mf\fermata | %031
 
       \tempo 2=96
+      \revert Rest.staff-position
       \time 2/2 b8-.\p r8 r4  r8 d8-. g8-. r8 | %032
       e8-. f8-. r4 r8 ees8-. r4 | %033
       r2 ges8-. bes,-. r8 des-. | %034
@@ -377,7 +379,7 @@
       \time 3/2 a8-.\mf r8 r4 r4 c2.( | %036
       \time 2/2 bes8-.)\< r8 e'8( d cis b a gis) | %037
       r2\f r8 c8-. r4 | %038
-      \time 3/4 ees8-.\> f-. fis( g) e-. d-. | %039
+      \time 3/4 ees8[-.\> f]-. fis[( g]) e[-. d]-. | %039
       \time 2/2 cis2..\mp f8-.\p | %040
       ees(\< aes) g( c)\mf r2\sustainOn | %041
       R1 | %042

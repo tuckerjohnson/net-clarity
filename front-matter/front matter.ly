@@ -24,6 +24,13 @@ front-matter = \markuplist {
       \override #'(thickness . 5) \draw-squiggle-line #0.5 #'(20 . 0) ##t
     }
 
-    \column { \null }
+    \right-column {
+        \vspace #-0.5
+        \right-column \fontsize #-1 {
+        \line { \fontsize #-2 \typewriter { \shortHash - \subject } }
+        \line { \fontsize #-2 \typewriter { \commitDate } }
+      }
+      \vspace #2
+    }
   }
 }

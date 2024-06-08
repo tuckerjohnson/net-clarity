@@ -39,7 +39,7 @@
     }
   }
 
-   \bookpart {
+  \bookpart {
     \tocItem \markup { "II. " }
     \score {
       \header {

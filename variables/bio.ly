@@ -16,53 +16,5 @@ xbio = \markup {
       teaching.
     }
     \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
-      Tucker's music has been concertized and honored at festivals and events,
-      including the Dot-The-Line new music festival (Seoul), Longy Divergent
-      Studio (Boston), soundSCAPE Festival (Cesena), Composing in the
-      Wilderness (Prince William Sound & NYC), Shastra Rhythm Workshop (New
-      Jersey), and the Penn State New Music Festival (State College). In 2021,
-      he was awarded the Marjorie Jane Brewster Memorial Music Scholarship,
-      given to one graduating Penn State student each year to pay for graduate
-      studies at another institution. Additional honors include the Belle S.
-      Gitelman Prize, Peter T. Luckie Award, and Warren Benson Scholarship.
-    }
-    \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
-      A consistent supporter of new music, Tucker has helped organize many
-      events, festivals, and concerts and served various music organizations
-      throughout his academic career. Currently, he serves as technical
-      director of OSSIA New Music, a student-run organization at the Eastman
-      School of Music committed to performing the works of contemporary
-      composers. He has also worked with the Hochstein School, WXXI Classical,
-      Penn State's Living Music, and the New Music Consortium. Additionally,
-      Tucker serves as a sound engineer, technician, and teaching assistant
-      with the Electronic Music Studios at Eastman (EMuSE) and has produced and
-      performed dozens of electroacoustic works in this position with artists
-      such as Alan Pierson, percussionist Dan Druckman, and soprano Jamie
-      Jordan.
-    }
-    \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
-      In his research, he has worked to develop approaches to music composition
-      and collaborative improvisation using mathematics, networked computer
-      instruments, machine listening, ambisonics, and other computer-assisted
-      methods, with a tendency to favor recycled and reclaimed computer
-      hardware. Listeners can hear this work in improvised performances with
-      Belgian saxophonist Floris Van Der Veken, recordings with
-      percussionist/guitarist John McGovern, and performances with Ossia New
-      Music.
-    }
-    \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
-      He holds the MA and Catherine Filene Shouse Arts Leadership Certificate
-      from the Eastman School of Music and the BM from Penn State University.
-      He also studied at the University of South Florida. He has studied with
-      Robert Morris, Matthew Barber, David Liptak, Baljinder Sekhon, Sarah
-      Genevieve Burghart Rice, and Susanna Hancock. Tucker serves as instructor
-      of the Penn State Young Composers Institute, a virtual program for high
-      school students running in the fall and spring.
-    }
-    \vspace #0.8
-  }
+ }
 }

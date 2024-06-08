@@ -64,6 +64,7 @@
     \concat { \if \on-page #19 \oddfoot }
     \concat { \if \on-page #21 \oddfoot }
     \concat { \if \on-page #23 \oddfoot }
+    \concat { \if \on-page #25 \fill-line { \null \tiny \typewriter \longHash \null } }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }

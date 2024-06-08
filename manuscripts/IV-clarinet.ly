@@ -88,11 +88,11 @@
   \time 2/2 ees'2)\ff r8 e8( fis b,8) | %076
   g( f\> ees bes'~ bes) a8(\f aes4\> | %077
   des4) r8 d8( \after 8 \mf c4.) e8( | %078
-  \time 3/4 d b a-.) c,,(\< ees,-.)\ff des'''(^\mp | %079
-  bes c g-.) bes,,-.->\ff aes''(^\< ges | %080
+  \time 3/4 d[ b a]-.) c,,[(\< ees,]-.)\ff des'''(^\mp | %079
+  bes[ c g]-.) bes,,-.->\ff aes''[(^\< ges] | %080
   \time 2/4 f8 ees4--)^\f \breathe d8(^\mp | %081
-  \time 3/4 e a cis-.) f,,,(\< a-.)\ff ees''(^\< | %082
-  ges b c-.)\mf d,,,-.->_\ff aes'''(^\< bes  | %083
+  \time 3/4 e[ a cis]-.) f,,,[(\< a]-.)\ff ees''(^\< | %082
+  ges[ b c]-.)\mf d,,,-.->_\ff aes'''[(^\< bes]  | %083
   f' g4.~\f 4) \breathe | %084
   \time 2/2 fes,,,4.--\mp aes''8(\f\> d, ees a,8)\! r8 | %085
   des,4.--\mp bes'8(\f\< f' c'\! b-.) g,,_- | %086
@@ -127,7 +127,7 @@
   d,8-.) des''8-- r8 c,( aes-.) g''-. aes(\f\stopTextSpan d,-.) \bar "||" | %107
   \tempo 2 = 96
   cis,( a-.) f''( ees-.) bes,( g-.) bes''( f-.) | %108
-  \time 3/4 b,,( fis-.) c''-- d,,( e-.) b''( | %109
+  \time 3/4 b,,[( fis]-.) c''[-- d,,]( e[-.) b'']( | %109
   \time 5/8 \ace a-.)\startTextSpan r8 ees,( f-.) ges'-.\<\stopTextSpan | %110
   \tempo 2=104
   \time 2/2 a-. c-. ees-. f~( 8 des'8--)\ff fes,,-.\> ges-. | %111
