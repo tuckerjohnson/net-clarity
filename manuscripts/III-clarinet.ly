@@ -1,39 +1,51 @@
-% net clarity project
+% root = ../net-clarity.ly
 
 \new Staff \with {
   instrumentName = \markup { clarinet in \concat { \bold "B" \tiny \flat " " } }
   shortInstrumentName = \markup { cl }
   \override DynamicLineSpanner.staff-padding = \sods
-  fontSize = #-1
-  \override StaffSymbol.staff-space = #(magstep -1)
+  fontSize = \clarinetFont
+  \override StaffSymbol.staff-space = \clarinetMagstep
   \consists Text_mark_engraver
+  \consists Mark_engraver
 }
 \transpose bes c' \relative {
+  \compressEmptyMeasures
   \numericTimeSignature
   \clef treble
   \tempo \markup { "Lento, poco rubato" } 4=50
   \time 5/4 R1*5/4 | %1
   \time 4/4 R1 | %2
-  \time 5/4 R1*5/4 | %3
-  R1*5/4 | %4
-  R1*5/4 | %5
+  \time 5/4 R1*5/4*3 | %3
   \time 4/4 R1 | %6
-  \time 3/4 R1*3/4 | %7
+  <<
+    { \time 3/4 R1*3/4 \cueClefUnset | } %7
+    \tag #'part  {
+        \new CueVoice \relative {
+          \cueClef "bass" \stemUp fis,8[\laissezVibrer cis']\laissezVibrer <gis'\laissezVibrer a>[ <b e,>]~ 4 \stemNeutral  |
+        }
+    }
+  >>
+  \resetRelativeOctave c
 
   \sectionLabel \markup { \box \number 8 }
 
-  \time 4/4 d'4(\pp\< c2.~ | %8
+  \omit Score.BarNumber
+  \time 4/4 \clef treble d'4(\pp\< c2.~ | %8
+  \undo \omit Score.BarNumber
   \time 3/4 c8)\mp r8 r4 r8 ees8~-> | %9
-  \time 7/8 4. b4(\> e |
-  \time 3/4 cis'2)\p r8 g8(\< |
+  \time 7/8 4. b4(\p\< e |
+  \time 3/4 cis'2)\! r8 g8(\< |
   \time 7/8 a4. ges,2)\mp |
   \time 4/4 \pocAce r8\startTextSpan f4.~\p\< 8 ges8_( aes'4~ |
   aes8) r8 c,4~-> c8 b8~->\f \tuplet 3/2 { 8 d8_(\> g8\stopTextSpan } \bar "||"
 
   \sectionLabel \markup { \box \number 15 }
 
+  \omit Score.BarNumber
   \tempo "Piu Mosso" 4=65
   fis'2~\mf 8) r8 r8 des8(\> |
+  \undo \omit Score.BarNumber
   ees,1 |
   aes2.)\mp r8. f'16~(\mf |
   1\> |
@@ -44,8 +56,10 @@
 
   \sectionLabel \markup { \box \number 23 }
 
+  \omit Score.BarNumber
   \tempo "A tempo" 4=50
   r8 f,,4(\p ees8 bes'4~\< |
+  \undo \omit Score.BarNumber
   8) a4( d8 g,[ c8~]\mf |
   8) r8 r8 b8( e,4~ |
   \time 4/4 e4) fis4.(\f cis'8~\> 8.[ ees16] |
@@ -55,6 +69,7 @@
 
   \sectionLabel \markup { \box \number 30 }
 
+  \omit Score.BarNumber
   \tempo \markup {
     \concat {
       \rhythm { \tuplet 3/2 { 8 } }
@@ -63,15 +78,25 @@
     }
   } 4 = 75
   \time 7/4 1) r2. |
-  R1*7/4 |
-  R1*7/4 |
-  R1*7/4 |
-  \time 4/4 r2 r4 \tuplet 5/4 { r8. ees'16(\ff\> aes) } |
-  f'2.~\mf 8 r8 |
+  \undo \omit Score.BarNumber
+  R1*7/4*3 |
+  <<
+    { \override Rest.staff-position = #0 \time 4/4 r2 r4 \tuplet 5/4 { r8. ees'16(\< aes) } | }
+    \tag #'part  {
+      \new CueVoice \relative {
+        \stemUp \tuplet 3/2 { f'8 bes4~ } 16 a cis d e8 fis16 g b8 \stemNeutral s8 |
+      }
+    }
+  >>
+  \resetRelativeOctave c''
+  \revert Rest.staff-position
+  f'2.~\f 8 r8 |
 
   \sectionLabel \markup { \box \number 36 }
 
+  \omit Score.BarNumber
   bes,1-- |
+  \undo \omit Score.BarNumber
   r2 r4 \tuplet 3/2 { r8 r8 fis'8~\f } |
   fis2. r4 |
   R1 |
@@ -86,8 +111,10 @@
 
   \sectionLabel \markup { \box \number 48 }
 
+  \omit Score.BarNumber
   \tempo 4=50
-  des'1\> |
+  des'1)\> |
+  \undo \omit Score.BarNumber
   \tempo \markup {
     \concat {
       \rhythm { \tuplet 3/2 { 8 } }
@@ -95,7 +122,7 @@
       \rhythm { { 8 } }
     }
   } 4 = 75
-  aes4\mf bes2.~ |
+  aes4(\mf bes2.~ |
   bes2~\> 8)\p r8 r4 |
   \time 3/4 r4 r4 r8 c8~\f |
   \time 4/4 c2.\> g4(\mp |
@@ -104,8 +131,10 @@
 
   \sectionLabel \markup { \box \number 55 }
 
+  \omit Score.BarNumber
   \tempo "A tempo" 4=50
   r8 f,8~(\pp^\markup { \tiny \italic "lontano; sotto voce" } 2. |
+  \undo \omit Score.BarNumber
   des'2. ees4~ |
   8) r8 r4 r2 |
   R1 |
@@ -115,20 +144,42 @@
 
   \sectionLabel \markup { \box \number 62 }
 
-  R1*3/4
-  \time 4/4 R1
-  \time 3/4 R1*3/4
-  \time 4/4 R1
-  \time 3/4 R1*3/4
-  \time 4/4 R1
-  \time 3/4 R1*3/4
-  \time 4/4 R1
-  \time 3/4 R1*3/4
-  \time 4/4 R1 |
+  \omit Score.BarNumber
+  <<
+    {
+      R1*3/4
+      \undo \omit Score.BarNumber
+      \time 4/4 R1
+      \time 3/4 R1*3/4
+      \time 4/4 R1
+      \time 3/4 R1*3/4
+      \time 4/4 R1
+      \time 3/4 R1*3/4
+      \time 4/4 R1
+      \time 3/4 R1*3/4
+      \time 4/4 R1 |
+    }
+    \tag #'part  {
+      \new CueVoice \relative {
+        ees,8[\laissezVibrer bes']\laissezVibrer  f'[\laissezVibrer  c']\laissezVibrer  g'[\laissezVibrer d'8]~ |
+        \time 4/4 d8\fermata f8~ 2 f8 ees |
+        \time 3/4 bes'2. |
+        \time 4/4 r8 bes8~ 4 aes4. e8 |
+        \time 3/4 b'2. |
+        \time 4/4 fis4. cis'8~ 4. a8~ |
+        \time 3/4 a2. |
+        \time 4/4 r8 g8~ 4 d'2 |
+        \time 3/4 c2. |
+        \time 4/4 <ges, f' bes>2.\arpeggio <ees aes des>4 |
+      }
+    }
+  >>
 
   \sectionLabel \markup { \box \number 72 }
 
+  \omit Score.BarNumber
   \tuplet 3/2 { c8_(\p\<^\markup { \tiny \italic "blooming" } b' e~ } 4)\mf \tuplet 3/2 { g,8(\> d a~ } 4~\p |
+  \undo \omit Score.BarNumber
   8) fis4( g8~ 4 cis4~ |
   \time 3/4 8)[ r16 des16(]\< aes'4 c,4 |
   \time 7/8 f bes d4.~\mf |
@@ -140,5 +191,5 @@
   ees'2~\p 8 r8 r2 |
   \time 4/4 r4 r8 bes8~(\mp\> 8 f4.~ |
   \time 5/8 8 c'8~\p 4) r4 r2 |
-  r4 r4 e8_(\pp b'8~ b2)\fermata |
+  r4 r4 e8_(\pp b'8~ b2)\fermata \bar "|."
 }

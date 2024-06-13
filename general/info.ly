@@ -1,6 +1,3 @@
-% net clarity project
-
-%texts
 xtitle = \markup { Net Clarity }
 xsub = \markup { " " }
 xcomp = \markup { Tucker Johnson }

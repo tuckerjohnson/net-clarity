@@ -1,4 +1,4 @@
-% net clarity project
+% root = ../net-clarity.ly
 
 \new PianoStaff \with {
   instrumentName = \markup { "piano " }

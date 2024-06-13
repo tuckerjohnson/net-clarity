@@ -1,5 +1,3 @@
-% net clarity project
-
 U = \change Staff = "u"
 D = \change Staff = "d"
 

@@ -1,22 +1,22 @@
-% net clarity project
+% root = ../net-clarity.ly
 
 \new Staff \with {
-
   instrumentName = \markup { clarinet in \concat { \bold "B" \tiny \flat " " } }
   shortInstrumentName = \markup { cl }
   \override DynamicLineSpanner.staff-padding = \sods
-  fontSize = #-1 % rm parts
-  \override StaffSymbol.staff-space = #(magstep -1) % rm parts
+  fontSize = \clarinetFont
+  \override StaffSymbol.staff-space = \clarinetMagstep
   \override Score.Footnote.annotation-line = ##f
   \consists Text_mark_engraver
 }
 
 \transpose bes c'
 \relative {
+  \compressEmptyMeasures
 
   \numericTimeSignature
   \clef treble
-  \tempo 4=104
+  \tempo "Allegro energico" 4=104
   \time 5/4 R1*5/4 | %001
   \time 4/4 R1*5
   \time 5/4 R1*5/4 |
@@ -57,6 +57,7 @@
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 55 }
+  \tempo "A tempo" 2=96
   r8 ces'8~->\f ces2~ ces8 bes-. | %055
   \undo \omit Score.BarNumber
   a8-. b-. c2. | %056
@@ -76,7 +77,7 @@
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 69 }
-  \tempo "a tempo"
+  \tempo "A tempo" 2=96
   \time 2/2 g8(\mf\< d' ces ges' bes des4) c8( | %069
   \undo \omit Score.BarNumber
   \time 7/8 e4\f a,8) ees([ f]\> aes,4) | %070
@@ -119,13 +120,14 @@
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 103 }
+  \tempo "Lento" 2=48
   \time 2/2 \acePoc r8 ges,8( ees8) r8 r4 r8 g8(\< | %103
   \undo \omit Score.BarNumber
   \time 5/8 e8)\startTextSpan r8 r4 c'8( | %104
   \time 2/2 a4) r8 cis8( gis4) r4 | %105
   r4 r8 bes8( f8-.) r8 r8 b8( | %106
   d,8-.) des''8-- r8 c,( aes-.) g''-. aes(\f\stopTextSpan d,-.) \bar "||" | %107
-  \tempo 2 = 96
+  \tempo "Allegro" 2 = 96
   cis,( a-.) f''( ees-.) bes,( g-.) bes''( f-.) | %108
   \time 3/4 b,,[( fis]-.) c''[-- d,,]( e[-.) b'']( | %109
   \time 5/8 \ace a-.)\startTextSpan r8 ees,( f-.) ges'-.\<\stopTextSpan | %110
@@ -218,11 +220,11 @@
   \sectionLabel \markup { \box \number 139 }
   \undo \omit Score.BarNumber
   \revert Score.TimeSignature.stencil
-  \tempo 2=72
+  \tempo "Ravvivando il tempo" 2=72
   \set Score.currentBarNumber = #139
   \time 2/2 ees8--\p \ace a'(\startTextSpan c)\< g,( ges) fes''( ces' bes |
   aes) ees,,-. g''( f) des,-. c''( a) d,,,-.\stopTextSpan |
-  \tempo 2=96
+  \tempo "Allegro" 2=96
   bes'''( g f ees) c'(\f d cis b |
   a gis fis e) d8( c b a) |
   ges(\< ees bes) g( e b'4)\ff \breathe f'8( |
@@ -236,12 +238,13 @@
 
   \sectionLabel \markup { \box \number 151 }
   \undo \omit Score.BarNumber
-  \tempo "rubato" 4 = 104
+  \tempo "Tempo rubato" 4 = 104
   r4 r8 bes8~\mp bes8 bes4->( ees8~ |
   \time 5/8 ees4~ 4.~ |
   \time 3/4 8.) e16(\mf\> fis' a, b8~ b4~ |
   \time 2/2 \rit \after 4 \startTextSpan b2.)\p r4 |
-  \time 3/4 \after 1*11/16 \stopTextSpan R1*3/4 |
+  \time 3/4 \after 1*11/16 \stopTextSpan R1*3/4 \bar "||"
+  \tempo "Meno mosso"
   \time 4/4 r2 gis'2\mp\< |
   \rit cis2\startTextSpan \tuplet 3/2 { d4(\f g, c,~ } |
   c2 f,) |

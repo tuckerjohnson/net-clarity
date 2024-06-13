@@ -1,6 +1,3 @@
-% project - Scripts
-
-
 to-internal-ts =
 #(define-scheme-function
   (top partial bottom)

@@ -1,9 +1,10 @@
-% net clarity project
+% root = ../net-clarity.ly
 
 \new PianoStaff \with {
   instrumentName = \markup { "piano" }
   shortInstrumentName = \markup { "pno " }
   \consists Text_mark_engraver
+  \consists Metronome_mark_engraver
 }
 <<
   \override PianoStaff.Arpeggio.arpeggio-direction = #UP

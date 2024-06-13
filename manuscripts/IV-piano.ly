@@ -1,4 +1,4 @@
-% net clarity project
+% root = ../net-clarity.ly
 
 \new PianoStaff \with {
   instrumentName = \markup { "piano" }
@@ -15,7 +15,7 @@
     \relative {
 
       \numericTimeSignature
-      \tempo 4=104
+      \tempo "Allegro energico" 4=104
       \time 5/4 R1*5/4 | %001
       \time 4/4 r16 bes'8.~(^\p^\markup { \tiny \italic "cantabile" } 2~ 8 f'8~ | %002
       f2~ 8 ges8~ 4 | %003
@@ -87,7 +87,7 @@
 
       \sectionLabel \markup { \box \number 55 }
       \omit Score.BarNumber
-      \tempo "a tempo"
+      \tempo "A tempo" 2=96
       \after 4 \< R1 | %055
       \undo \omit Score.BarNumber
       \after 4. \f r2 e'8-. f8-. r4 | %056
@@ -106,7 +106,7 @@
 
       \sectionLabel \markup { \box \number 69 }
       \omit Score.BarNumber
-      \tempo "a tempo"
+      \tempo "A tempo" 2=96
       r4\< <e gis dis'>2~\arpeggio 8 f'8 | %069
       \undo \omit Score.BarNumber
       \time 7/8 g8~\mf\> <g b, d,>4 <ges, bes>( <des c'>) | %070
@@ -176,13 +176,13 @@
       \oneVoice
 
       \sectionLabel \markup { \box \number 103 }
-      \tempo 2 = 48
+      \tempo "Lento" 2 = 48
       \time 2/2 \acePoc r2 f,8( b-.) r4 | %103
       \time 5/8 r4\startTextSpan c,8([\< fis-.]) r8 | %104
       \time 2/2 r8 bes,8( f'4) r8 ees8( a8-.) r8 | %105
       r8 d,8( aes'-.) r8 r8 cis,8( g'-.) r8 | %106
       <fis, a,>8-.\mf r8 r4 \clef bass <f, bes,>8-. r8 \after 8 \stopTextSpan r4 \bar "||" | %107
-      \tempo 2 = 96
+      \tempo "Allegro" 2 = 96
       <e fis>8-. r8 r4 d8-. r8 r8 <ees aes>8-.\< | %108
       \time 3/4 r2 <g aes,>8-.\f r8 | %109
       \time 5/8 \tuplet 3/2 { \ace r8\startTextSpan c,8-. des8-. } \after 4 \stopTextSpan r4. \clef treble | %110
@@ -275,6 +275,7 @@
       a1\mf |
       r2 \tuplet 3/2 { r8\mp\< r8 cis,,8~ } 4~ |
       cis4 fis,4\f\> b2 |
+      \tempo "Tempo rubato" 4 = 104
       <<
         {
           \voiceOne
@@ -298,7 +299,7 @@
         {
           \voiceOne
           \tuplet 3/2 { r8 aes'8_( <ges bes>) } \after 8. \stopTextSpan r4 \bar "||" |
-          \tempo "meno mosso"
+          \tempo "Meno mosso"
           \time 4/4 s2\mf \tuplet 3/2 { bes,4 \stemDown <g' e'>4 f'4 } |
         }
         \new Voice \relative {
@@ -329,7 +330,7 @@
     \relative {
 
       \numericTimeSignature
-      \tempo 4=104
+      \tempo "Allegro energico" 4=104
       \override Rest.staff-position = #0
       \time 5/4 \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ f'16-.^\pp aes,16-. r16] r8[ ges16-. r16]  ees'16[-. r16 r16 des16]-. r4 r4 | %001
       \revert Staff.Beam.positions
