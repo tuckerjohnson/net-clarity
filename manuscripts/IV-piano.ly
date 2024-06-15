@@ -27,7 +27,7 @@
       r2 r4 r16 d16(^\pp e8 | %009
       b1~ | %010
       4~ 8) 8~(^\mf 8. a16~ 4~ | %011
-      4) r8. d16(^\> a4~ 8 bes8 | %012
+      4) r8. d16(^\> a4~ 8 bes8 | \break %012
       c1)^\mp | %013
       r4 g'2( f8^\< e8~ | %014
       e8 fis16 dis16 b8 gis'8 cis,2~^\mf | %015
@@ -51,7 +51,7 @@
       bes16\f ees8.~ ees8 d8~ d4~ | %026
       d8) r8 aes4 f'8-. c16-.\> g16-. | %027
       \time 5/8 \after 4.. \mp R1*5/8 | %028
-      f'16(\< bes,8.) \molRit g16[(\startTextSpan d'16 fis16 e16 cis'16 a16]) | %029
+      f'16(\< bes,8.) \molRit g16[(\startTextSpan d'16 fis16 e16 cis'16 a16]) | \break %029
       \time 2/8 \tuplet 3/2 { <ees ees'>8->\f\> <aes, aes'>8-> <b b'>8->\stopTextSpan } | %030
       \time 3/4 <c c'>2.\mf\fermata \clef bass | %031
 
@@ -166,8 +166,8 @@
         \new Voice \relative {
           \voiceTwo
           s2. r4 des'4\mf des4(-> | %097
-          aes'2.) s8 | %098
-          s2. r4. fis'4.~(\mf | %099
+          aes2.) s8 | %098
+          s2. r4. fis''4.~(\mf | %099
           8. | %100
           f!2.) | %101
           r8 b,8~ b2~ b2.~ 4. \mark \markup { \smaller \musicglyph "scripts.ufermata" } | %102

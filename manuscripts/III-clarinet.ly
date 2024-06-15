@@ -79,7 +79,7 @@
   } 4 = 75
   \time 7/4 1) r2. |
   \undo \omit Score.BarNumber
-  R1*7/4*3 |
+  R1*7/4*3 | \tag #'part  { \break }
   <<
     { \override Rest.staff-position = #0 \time 4/4 r2 r4 \tuplet 5/4 { r8. ees'16(\< aes) } | }
     \tag #'part  {
@@ -105,7 +105,7 @@
   4) \tuplet 3/2 { c4( a d~\f\> } 4) |
   fis,2\! r8 f(\p bes,4~ |
   8)[\< c8]( a' d,~\> 2) |
-  g8( ees~\! 2) e4~ |
+  g8( ees~\mp 2) e4~ |
   e4. cis'8(\f gis8 b8~ 4) |
   fis16( a d,8~ 4) f(\startTextSpan ees8.) fes,16(\stopTextSpan |
 
@@ -140,7 +140,7 @@
   R1 |
   \time 3/4 r4 bes2( |
   ges4 aes2) |
-  R1*3/4
+  R1*3/4 \tag #'part  { \pageBreak }
 
   \sectionLabel \markup { \box \number 62 }
 
@@ -161,8 +161,8 @@
     }
     \tag #'part  {
       \new CueVoice \relative {
-        ees,8[\laissezVibrer bes']\laissezVibrer  f'[\laissezVibrer  c']\laissezVibrer  g'[\laissezVibrer d'8]~ |
-        \time 4/4 d8\fermata f8~ 2 f8 ees |
+        ees,8[\laissezVibrer bes'8]\laissezVibrer f'8[\laissezVibrer c']\laissezVibrer g'8[\laissezVibrer <g\laissezVibrer d'>8]~ |
+        \time 4/4 8\fermata f'8~ 2 f8 ees |
         \time 3/4 bes'2. |
         \time 4/4 r8 bes8~ 4 aes4. e8 |
         \time 3/4 b'2. |
@@ -190,6 +190,6 @@
   \time 5/4 r8 a8~ 2 r2 |
   ees'2~\p 8 r8 r2 |
   \time 4/4 r4 r8 bes8~(\mp\> 8 f4.~ |
-  \time 5/8 8 c'8~\p 4) r4 r2 |
+  \time 5/4 8 c'8~\p 4) r4 r2 |
   r4 r4 e8_(\pp b'8~ b2)\fermata \bar "|."
 }

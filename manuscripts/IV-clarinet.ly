@@ -21,10 +21,26 @@
   \time 4/4 R1*5
   \time 5/4 R1*5/4 |
   \time 4/4 R1*13 |
+
+  \omit Score.BarNumber
+  \sectionLabel \markup { \box \number 21 }
   \time 3/4 R1*3/4*7 |
-  \time 5/8 R1*5/8 \molRit \after 4 \startTextSpan R1*5/8 |
-  \time 2/8 \after 8. \stopTextSpan R1*2/8 |
-  \once \override Hairpin.circled-tip = ##t
+  \undo \omit Score.BarNumber
+  <<
+    {
+      \time 5/8 R1*5/8
+      \molRit \after 4 \startTextSpan R1*5/8 |
+      \time 2/8 \after 8. \stopTextSpan R1*2/8 |
+      \once \override Hairpin.circled-tip = ##t
+    }
+    \tag #'part  {
+        \new CueVoice \relative {
+        \time 5/8 s4 s4. | %028
+        f''16 bes,8. g16[ d'16 fis16 e16 cis'16 a16] | %029
+        \time 2/8 \tuplet 3/2 { <ees ees'>8 <aes, aes'>8 <b b'>8 } | %030
+        }
+    }
+  >>
   \time 3/4 c'2.~\fermata\< \bar "||" %031
 
   \omit Score.BarNumber
@@ -40,11 +56,11 @@
   r8 aes8~\mp\< aes2.~ | %038
   \time 3/4 \after 2 \! aes2.\f\> | %039
   \time 2/2 r4 r8 d8~\p\> 2~ | %040
-  d2\mf r4 e4~( | %041
+  d2\mf r4 e4~ | %041
   e1~\> | %042
   e4 cis,2.~\mp | %043
   \tuplet 5/4 { cis2\< a'8~\mf } a2~ | %044
-  \after 2. \p a1)\> | %045
+  \after 2. \p a1\> | %045
   \time 5/4 r4 \after 4 \< bes1~( | %046
   \time 2/2 bes4 b2.)\mf | %047
   r2 c8-.\f g-. a4~ | %048
@@ -166,7 +182,7 @@
   \override Score.TimeSignature.stencil = ##f
   \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f
   \footnote \markup \huge "*" #'(0 . 4) \markup \tiny \left-column {
-    \line { "*Cadenza notation should be interpreted freely, though Music should be" } \vspace #-0.4
+    \line { "* Cadenza notation should be interpreted freely, though music should be" } \vspace #-0.4
     \line { "continuous between breath marks and rests. Breath marks indicate a short" } \vspace #-0.4
     \line { "break, while rests are longer." }
   }

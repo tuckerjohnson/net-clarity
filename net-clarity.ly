@@ -305,7 +305,7 @@ clarinetMagstep = #(magstep -2)
         piece = \markup { \large \bold "IV." }
       }
       <<
-        \include "manuscripts/IV-clarinet.ly"
+        \removeWithTag #'part \include "manuscripts/IV-clarinet.ly"
         \include "manuscripts/IV-piano.ly"
       >>
       %\midi { }
