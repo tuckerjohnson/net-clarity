@@ -180,6 +180,7 @@ clarinetMagstep = #(magstep 0)
       >>
       %\midi { }
       \layout {
+        ragged-last = ##t
         \context {
           \Score
           \remove Text_mark_engraver

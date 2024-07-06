@@ -6,14 +6,12 @@
   \override DynamicLineSpanner.staff-padding = \sods
   fontSize = \clarinetFont
   \override StaffSymbol.staff-space = \clarinetMagstep
-  \override Score.Footnote.annotation-line = ##f
   \consists Text_mark_engraver
 }
 
 \transpose bes c'
 \relative {
   \compressEmptyMeasures
-
   \numericTimeSignature
   \clef treble
   \tempo "Allegro energico" 4=104
@@ -104,7 +102,7 @@
   \time 3/4 aes16(\< bes ces des) \tuplet 3/2 { eeses8( f ges~ } ges8.) a,16( | %075
   \time 2/2 ees'2)\ff r8 e8( fis b,8) | %076
   g( f\> ees bes'~ bes) a8(\f aes4\> | %077
-  des4) r8 d8( \after 8 \mf c4.) e8( | %078
+  des4) r8 d8( c4-.)\mf r8 e8( | %078
   \time 3/4 d[ b a]-.) c,,[(\< ees,]-.)\ff des'''(^\mp | %079
   bes[ c g]-.) bes,,-.->\ff aes''[(^\< ges] | %080
   \time 2/4 f8 ees4--)^\f \breathe d8(^\mp | %081
@@ -124,7 +122,7 @@
   \time 12/8 g2.~\mf 4.) r8 d4~( | %091
   \time 2/4 d8\> fis8 cis4)\p | %092
   \time 6/8 R1*6/8 | %093
-  \time 12/8 r4 c!8~\< c4.~ c4 c4( ees~ | %094
+  \time 12/8 r8 r8 c!8~\< c4.~ c4 c4( ees~ | %094
   \time 6/8 ees8) f8( bes,8~\mf 4 a8~ | %095
   \time 7/8 \after 4. \! a4.)\> r8 fis'4(\p ees8\< | %096
   \time 12/8 \after 2 \> g2.~\mp g8 e4~\pp e4.~ | %097
@@ -132,7 +130,7 @@
   \time 12/8 \after 4. \> d2.~\mf 8)\! r8 r8 r8 b4(\mp\< | %099
   \time 3/16 aes8. | %100
   \time 6/8 \after 4 \> \after 2 \! c2.)\f | %101
-  \time 15/8 r4.\startTextSpan a4.~\> a8 cis4~ cis4.~ \after 4 \stopTextSpan cis4.\pp \mark \markup { \smaller \musicglyph "scripts.ufermata" } \bar "||" %102
+  \time 15/8 r4.\startTextSpan a4.~(\> a8 cis4~ cis4.~ \after 4 \stopTextSpan cis4.)\pp \mark \markup { \smaller \musicglyph "scripts.ufermata" } \bar "||" %102
 
   \omit Score.BarNumber
   \sectionLabel \markup { \box \number 103 }
@@ -181,7 +179,7 @@
   \omit Score.BarNumber
   \override Score.TimeSignature.stencil = ##f
   \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f
-  \footnote \markup \huge "*" #'(0 . 4) \markup \tiny \left-column {
+  \footnote \markup \huge "*" #'(-3 . -1) \markup \tiny \left-column {
     \line { "* Cadenza notation should be interpreted freely, though music should be" } \vspace #-0.4
     \line { "continuous between breath marks and rests. Breath marks indicate a short" } \vspace #-0.4
     \line { "break, while rests are longer." }
@@ -238,32 +236,33 @@
   \revert Score.TimeSignature.stencil
   \tempo "Ravvivando il tempo" 2=72
   \set Score.currentBarNumber = #139
-  \time 2/2 ees8--\p \ace a'(\startTextSpan c)\< g,( ges) fes''( ces' bes |
-  aes) ees,,-. g''( f) des,-. c''( a) d,,,-.\stopTextSpan |
+  \time 2/2 ees8--\p \ace a'(\startTextSpan c)\< g,( ges) fes''( ces' bes | %139
+  aes) ees,,-. g''( f) des,-. c''( a) d,,,-.\stopTextSpan | %140
   \tempo "Allegro" 2=96
-  bes'''( g f ees) c'(\f d cis b |
-  a gis fis e) d8( c b a) |
-  ges(\< ees bes) g( e b'4)\ff \breathe f'8( |
-  \time 7/8 g,)[ bes( ges\psubito\< aes)] cis([ d a']) |
-  \time 2/2 ees'([->\mf\< c]) \tuplet 3/2 { fes(-> des bes) } ges'(->\ff\> ces,) d( g |
-  a4)\mf ees8(\f\> g aes, \after 4 \! c4.) |
-  R1 |
-  r4 aes'4(\p\< des ges~\mf\> |
-  ges4 ces,)\! bes8(\< g e) c( a f) d4\f\> \after 4 \! ees2 \bar "||" |
+  bes'''( g f ees) c'(\f d cis b | %141
+  a gis fis e) d8( c b a) | %142
+  ges(\< ees bes) g( e b'4)\ff \breathe f'8( | %143
+  \time 7/8 g,)[ bes( ges\psubito\< aes)] cis([ d a']) | %144
+  \time 2/2 ees'([->\mf\< c]) \tuplet 3/2 { fes(-> des bes) } ges'(->\ff\> ces,) d( g | %145
+  a4)\mf ees8(\f\> g aes, \after 4 \! c4.) | %146
+  R1 | %147
+  r4 aes'4(\p\< des ges~\mf\> | %148
+  ges4 ces,)\! bes8(\< g e) c( | %149
+  a f) d4\f\> \after 4 \! ees2 \bar "||" | %150
   \omit Score.BarNumber
 
   \sectionLabel \markup { \box \number 151 }
-  \undo \omit Score.BarNumber
   \tempo "Tempo rubato" 4 = 104
-  r4 r8 bes8~\mp bes8 bes4->( ees8~ |
-  \time 5/8 ees4~ 4.~ |
-  \time 3/4 8.) e16(\mf\> fis' a, b8~ b4~ |
-  \time 2/2 \rit \after 4 \startTextSpan b2.)\p r4 |
-  \time 3/4 \after 1*11/16 \stopTextSpan R1*3/4 \bar "||"
+  r4 r8 bes8~\mp bes8 bes4->( ees8~ | %151
+  \undo \omit Score.BarNumber
+  \time 5/8 ees4~ 4.~ | %152
+  \time 3/4 8.) e16(\mf\> fis' a, b8~ b4~ | %153
+  \time 2/2 \rit \after 4 \startTextSpan b2.)\p r4 | %154
+  \time 3/4 \after 1*11/16 \stopTextSpan R1*3/4 \bar "||" | %155
   \tempo "Meno mosso"
-  \time 4/4 r2 gis'2\mp\< |
-  \rit cis2\startTextSpan \tuplet 3/2 { d4(\f g, c,~ } |
-  c2 f,) |
-  f1\stopTextSpan\fermata \bar "|." |
+  \time 4/4 r2 gis'2\mp\< | \tag #'part { \break } %156
+  \rit cis2\startTextSpan \tuplet 3/2 { d4(\f g, c,~ } | %157
+  c2 f,) | %158
+  f1\stopTextSpan\fermata \bar "|." | %159
 
 }

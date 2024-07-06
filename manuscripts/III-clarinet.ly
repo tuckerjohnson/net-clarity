@@ -77,7 +77,7 @@
       \rhythm { { 8 } }
     }
   } 4 = 75
-  \time 7/4 1) r2. |
+  \time 7/4 1) r4 r2 |
   \undo \omit Score.BarNumber
   R1*7/4*3 | \tag #'part  { \break }
   <<
@@ -161,7 +161,10 @@
     }
     \tag #'part  {
       \new CueVoice \relative {
-        ees,8[\laissezVibrer bes'8]\laissezVibrer f'8[\laissezVibrer c']\laissezVibrer g'8[\laissezVibrer <g\laissezVibrer d'>8]~ |
+        \cueClef "bass"
+        ees,8[\laissezVibrer bes'8]\laissezVibrer f'8[\laissezVibrer c']\laissezVibrer
+        \cueClef "treble"
+        g'8[\laissezVibrer <g\laissezVibrer d'>8]~ |
         \time 4/4 8\fermata f'8~ 2 f8 ees |
         \time 3/4 bes'2. |
         \time 4/4 r8 bes8~ 4 aes4. e8 |

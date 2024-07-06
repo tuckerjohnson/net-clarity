@@ -136,15 +136,15 @@
       >>
       \oneVoice a8) c8( f) fis( | %085
       <cis b'>4.) gis'8 \tuplet 3/2 { a4(\mf d, e) } \clef bass | %086
-      \molRit \tuplet 3/2 { cis(\>\startTextSpan dis) c_( } \tuplet 3/2 { f,) bes,( g~\pp } | %087
-      \time 3/8 \after 4 \stopTextSpan g4.) \clef treble \bar "||" %088
+      \molRit \tuplet 3/2 { cis(\>\startTextSpan dis) c_( } f,4) <b d,>4~\pp | %087
+      \time 3/8 \after 4 \stopTextSpan 4. \clef treble \bar "||" %088
 
       \sectionLabel \markup { \box \number 89 }
       \tempo \markup { "Andante"
           \concat { \rhythm { { 4 } } " = " \rhythm { { 2 } } }
         } 4. = 64
       \omit Score.BarNumber
-      \time 12/8 b'8(\p dis cis) b( dis cis) b( dis cis) b( dis cis) | %089
+      \time 12/8 b8(\p_\markup { \tiny \italic "quasi-romantic" } dis cis) b( dis cis) b( dis cis) b( dis cis) | %089
       \undo \omit Score.BarNumber
       \time 6/8 f( d f) d( f d) | %090
       \time 12/8 c( bes c) bes( c bes) c( bes c) bes( c bes) | %091
@@ -326,7 +326,6 @@
     \set Staff.pedalSustainStyle = #'bracket
     \omit Staff.SectionLabel
     \omit Staff.RehearsalMark
-    \override Score.Footnote.annotation-line = ##f
     \relative {
 
       \numericTimeSignature
@@ -335,7 +334,7 @@
       \time 5/4 \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ f'16-.^\pp aes,16-. r16] r8[ ges16-. r16]  ees'16[-. r16 r16 des16]-. r4 r4 | %001
       \revert Staff.Beam.positions
       \time 4/4 b8-.
-      \footnote \markup "*" #'(0.01 . 0.01) \markup \tiny "*Maintain 16th note length for staccato notes."
+      \footnote \markup "*" #'(0.01 . 0.01) \markup \tiny "* Maintain 16th note length for staccato notes."
       ^\markup { \tiny { \italic { "sempre staccatiss." } } }
       r8 a8-. c,8-. g'8-. e16-. d16-. \once \override Staff.Beam.positions = #'(-3 . -2) r8.[ ais'16]-. | %002
       cis16-.^\< gis8-. b16-. \once \override Staff.Beam.positions = #'(-3 . -2) r8.[ a16]-. r4 \once \override Staff.Beam.positions = #'(-3.85 . -3.85) r16[ e'16-. r8] | %003
@@ -435,17 +434,17 @@
       <<
         {
           \voiceOne
-          fis4\> gis2 b4~\\ | %087
-          \time 3/8 4. \bar "||" %088
+          fis4\> gis4~ \tuplet 3/2 { gis4 bes,_( g4_~\pp } | %087
         }
         \new Voice \relative {
           \voiceTwo
-          r4 a,4\> a d4~\pp | %087
-          \time 3/8 d4. \bar "||" %088
+          r4 a,4\> a4 s4\pp | %087
         }
       >>
       \oneVoice
-      \time 12/8 fis,8.(\p\sustainOn e) fis( e) fis( e) fis( bes) | %089
+      \time 3/8 \stemNeutral g4.) \bar "||" %088
+
+      \time 12/8 fis8.(\p\sustainOn e) fis( e) fis( e) fis( bes) | %089
       <<
         {
           \voiceOne
