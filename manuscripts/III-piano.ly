@@ -183,7 +183,7 @@
             c'8~ <c g'>8~ 4~ 2 r4 |
             \time 4/4 a8~ <a e'>8~ 2. |
             \time 3/4 fis8~ <fis cis'>8~ 2 |
-            \time 4/4 ees8 <ees bes'>8~ 2. |
+            \time 4/4 ees8~ <ees bes'>8~ 2. |
             \time 3/4 c'8~ <c g'>8~ 2 |
             \time 7/8 a8[ cis8~ <cis fis>~] 2 |
             \time 3/4 b8~ <b gis'>~ 2 |
