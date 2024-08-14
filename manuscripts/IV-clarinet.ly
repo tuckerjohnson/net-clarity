@@ -122,7 +122,7 @@
   \time 12/8 g2.~\mf 4.) r8 d4~( | %091
   \time 2/4 d8\> fis8 cis4)\p | %092
   \time 6/8 R1*6/8 | %093
-  \time 12/8 r8 r8 c!8~\< c4.~ c4 c4( ees~ | %094
+  \time 12/8 r8 r8 c!8~\< c4.~ c4 c8~( c8 ees4~ | %094
   \time 6/8 ees8) f8( bes,8~\mf 4 a8~ | %095
   \time 7/8 \after 4. \! a4.)\> r8 fis'4(\p ees8\< | %096
   \time 12/8 \after 2 \> g2.~\mp g8 e4~\pp e4.~ | %097

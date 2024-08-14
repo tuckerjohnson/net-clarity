@@ -8,7 +8,7 @@
 }
 <<
   \override PianoStaff.Arpeggio.arpeggio-direction = #UP
-  \new Staff = "u" \with { \consists "Merge_rests_engraver" }
+  \new Staff = "u"
   {
     \clef bass
     \set PianoStaff.connectArpeggios = ##t

@@ -240,15 +240,18 @@ clarinetMagstep = #(magstep -2)
 %  }
 
 %  \bookpart {
-%    \header {
-%      title = ##f subtitle = ##f composer = ##f poet = ##f
-%      piece = \markup { \large \bold "II. " }
-%    }
 %    \tocItem \markup { "II. " }
 %    \score {
+%      \header {
+%        title = \markup { \fontsize #1 \xtitle }
+%        subtitle = \markup { \medium \italic \xsub }
+%        composer = \xcomp
+%        poet = \markup { \xinst }
+%        piece = \markup { \large \bold "II. " }
+%      }
 %      <<
-%        \include "manuscripts/II-clarinet.ly"
-%        \include "manuscripts/II-piano.ly"
+%        \removeWithTag #'part \include "manuscripts/II-clarinet.ly"
+%        \removeWithTag #'part \include "manuscripts/II-piano.ly"
 %      >>
 %      %\midi { }
 %      \layout {
