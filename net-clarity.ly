@@ -200,7 +200,10 @@ clarinetMagstep = #(magstep -2)
         \vspace #-0.5
         \right-column \fontsize #-1 {
           \line { \fontsize #-2 \typewriter { \shortHash - \subject } }
+          \vspace #-0.4
           \line { \fontsize #-2 \typewriter { \commitDate } }
+          \vspace #-0.4
+          \line { \fontsize #-2 \typewriter { \branchName } }
         }
         \vspace #2
       }
