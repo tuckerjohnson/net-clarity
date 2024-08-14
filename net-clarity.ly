@@ -239,40 +239,36 @@ clarinetMagstep = #(magstep -2)
 %    }
 %  }
 
-%  \bookpart {
-%    \tocItem \markup { "II. " }
-%    \score {
-%      \header {
-%        title = \markup { \fontsize #1 \xtitle }
-%        subtitle = \markup { \medium \italic \xsub }
-%        composer = \xcomp
-%        poet = \markup { \xinst }
-%        piece = \markup { \large \bold "II. " }
-%      }
-%      <<
-%        \removeWithTag #'part \include "manuscripts/II-clarinet.ly"
-%        \removeWithTag #'part \include "manuscripts/II-piano.ly"
-%      >>
-%      %\midi { }
-%      \layout {
-%        \context {
-%          \Score
-%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-%          \override Hairpin.to-barline = ##f
-%        }
-%      }
-%    }
-%  }
-
   \bookpart {
-    \tocItem \markup { "III." \bold "Lento, poco rubato" \parenthesize \italic "to Amber Lucas" }
+    \tocItem \markup { "II. " \bold "Vivace" }
     \score {
       \header {
         title = \markup { \fontsize #1 \xtitle }
         subtitle = \markup { \medium \italic \xsub }
         composer = \xcomp
         poet = \markup { \xinst }
+        piece = \markup { \large \bold "II. " }
+      }
+      <<
+        \removeWithTag #'part \include "manuscripts/II-clarinet.ly"
+        \removeWithTag #'part \include "manuscripts/II-piano.ly"
+      >>
+      %\midi { }
+      \layout {
+        \context {
+          \Score
+          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+          \override Hairpin.to-barline = ##f
+        }
+      }
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup { "III." \bold "Lento, poco rubato" \parenthesize \italic "to Amber Lucas" }
+    \score {
+      \header {
         piece = \markup { \large \bold "III. " \parenthesize \italic "to Amber Lucas"  }
       }
       <<
