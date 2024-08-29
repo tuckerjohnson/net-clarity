@@ -14,7 +14,7 @@ clarinetMagstep = #(magstep -2)
   footnote-separator-markup = \markup { \left-column { \vspace #0.5 \draw-line #'(6 . 0) } }
   print-page-number = ##f
   #(set-paper-size "arch a")
-  print-all-headers = ##t
+  print-all-headers = ##f
   top-margin = 0.5\in
   bottom-margin = 0.5\in
   left-margin = 0.9\in
@@ -46,6 +46,8 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #17 \oddhead }
     \concat { \if \on-page #19 \oddhead }
     \concat { \if \on-page #21 \oddhead }
+    \concat { \if \on-page #23 \oddhead }
+    \concat { \if \on-page #25 \oddhead }
 
   }
   evenHeaderMarkup = \markup {
@@ -59,7 +61,8 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #18 \evhead }
     \concat { \if \on-page #20 \evhead }
     \concat { \if \on-page #22 \evhead }
-
+    \concat { \if \on-page #24 \evhead }
+    \concat { \if \on-page #26 \evhead }
   }
   oddFooterMarkup = \markup {
     \concat { \if \on-page #3 \fill-line { \null \xcr \null } }
@@ -73,7 +76,7 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #19 \oddfoot }
     \concat { \if \on-page #21 \oddfoot }
     \concat { \if \on-page #23 \oddfoot }
-    %\concat { \if \on-page #25 \fill-line { \null \tiny \typewriter \longHash \null } }
+    \concat { \if \on-page #25 \oddfoot }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }
@@ -87,6 +90,8 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #18 \evfoot }
     \concat { \if \on-page #20 \evfoot }
     \concat { \if \on-page #22 \evfoot }
+    \concat { \if \on-page #24 \evfoot }
+    \concat { \if \on-page #26 \fill-line { \null \tiny \typewriter \longHash \null } }
   }
 
 }
@@ -213,43 +218,38 @@ clarinetMagstep = #(magstep -2)
   \pageBreak
   \header {
     tagline = "test"
-
   }
 
-%  \bookpart {
-%    \header {
-%      title = \markup { \fontsize #1 \xtitle }
-%      subtitle = \markup { \medium \italic \xsub }
-%      composer = \xcomp
-%      poet = \markup { \xinst }
-%      piece = \markup { \large \bold "I. " }
-%    }
-%    \tocItem \markup { "I. " }
-%    \score {
-%      <<
-%        \include "manuscripts/I-clarinet.ly"
-%        \include "manuscripts/I-piano.ly"
-%      >>
-%      %\midi { }
-%      \layout {
-%        \context {
-%          \Score
-%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
-%          \override Hairpin.to-barline = ##f
-%        }
-%      }
-%    }
-%  }
+  \bookpart {
+    \header {
+      title = \markup { \fontsize #1 \xtitle }
+      subtitle = \markup { \medium \italic \xsub }
+      composer = \xcomp
+      poet = \markup { \xinst }
+      piece = \markup { \large \bold "I. " }
+    }
+    \tocItem \markup { "I. " \bold "Largo - Allegro moderato" }
+    \score {
+      <<
+        \include "manuscripts/I-clarinet.ly"
+        \include "manuscripts/I-piano.ly"
+      >>
+      %\midi { }
+      \layout {
+        \context {
+          \Score
+          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+          \override Hairpin.to-barline = ##f
+        }
+      }
+    }
+  }
 
   \bookpart {
     \tocItem \markup { "II. " \bold "Vivace" }
     \score {
       \header {
-        title = \markup { \fontsize #1 \xtitle }
-        subtitle = \markup { \medium \italic \xsub }
-        composer = \xcomp
-        poet = \markup { \xinst }
         piece = \markup { \large \bold "II. " }
       }
       <<
