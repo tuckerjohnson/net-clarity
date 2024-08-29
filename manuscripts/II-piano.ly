@@ -43,12 +43,12 @@
         \time 6/8 e4. \D ees,,8[ \U r8 fis''8] |
         r8 cis8 a r4. |
         \D c,8 \U f' \D g,, \U bes'' |
-        d2\fermata r4 aes4 |
-        \time 6/8 R1*6/8 |
-        R1*6/8
-        \time 2/4 r8 bes,,8( des  f |
-        \time 5/4 fis1) r4 |
-        \time 4/4 d1 |
+        d2\fermata r4 %aes4 |
+        %\time 6/8 R1*6/8 |
+        %R1*6/8
+        %\time 2/4 r8 bes,,8( des  f |
+        %\time 5/4 fis1) r4 |
+        %\time 4/4 d1 |
 
 
 
@@ -88,11 +88,11 @@
         ges2~ <ges f>8 a4.~-> |
         \time 6/8 a2 b4-> |
         e,4.-> gis~-> |
-        gis2~ gis2\fermata r4 ees,4~
-        ees2. | g8( c,4~ c4.) |
-        R1*2/4 |
-        b4.~( <b gis'>8~ 2.) |
-        R1 |
+        gis2~ gis2\fermata r4 %ees,4~
+        %ees2. | g8( c,4~ c4.) |
+        %R1*2/4 |
+        %b4.~( <b gis'>8~ 2.) |
+        %R1 |
 
       }
     >>

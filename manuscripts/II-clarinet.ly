@@ -41,11 +41,11 @@
   \time 6/8 e4. ees,,8 b' fis'' |
   \grace { b,,8( } e,8) cis'' a gis,4. |
   \time 2/4 \grace { ees8( } c'8) f' g,, bes'' |
-  \time 4/4 d2\fermata r4 aes4( |
-  \time 6/8 b2. |
-  e,4.) d,,8( fis a~ |
-  \time 2/4 a) r8 r4 |
-  \time 5/4 ees''1 c8( f,,) |
-  \time 4/4 \tuplet 3/2 { bes4( g' bes, } \tuplet 3/2 { g' bes, g') }
+  \time 4/4 d2\fermata r4 % aes4( |
+  %\time 6/8 b2. |
+  %e,4.) d,,8( fis a~ |
+  %\time 2/4 a) r8 r4 |
+  %\time 5/4 ees''1 c8( f,,) |
+  %\time 4/4 \tuplet 3/2 { bes4( g' bes, } \tuplet 3/2 { g' bes, g') }
 
 }
