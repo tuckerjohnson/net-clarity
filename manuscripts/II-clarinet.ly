@@ -40,12 +40,14 @@
   aes'4 ees''8 r8 f,,,8 a4 e''8~ |
   \time 6/8 e4. ees,,8 b' fis'' |
   \grace { b,,8( } e,8) cis'' a gis,4. |
-  \time 2/4 \grace { ees8( } c'8) f' g,, bes'' |
-  \time 4/4 d2\fermata r4 % aes4( |
-  %\time 6/8 b2. |
-  %e,4.) d,,8( fis a~ |
-  %\time 2/4 a) r8 r4 |
-  %\time 5/4 ees''1 c8( f,,) |
-  %\time 4/4 \tuplet 3/2 { bes4( g' bes, } \tuplet 3/2 { g' bes, g') }
+  \time 2/4 r8  f'4 bes8 |
+  \time 4/4 d8  r8 r4 r4 aes4( |
+  \time 6/8 b2. |
+  e4.) \breathe d,,8-. fis-. a-. |
+  r8 bes( des f4 fis8) |
+  ees'2. |
+  \time 4/4 f,,8-. c''8( 2.) |
+  \time 2/4 d,8( bes)-. a'4 |
+  des,8-.->
 
 }
