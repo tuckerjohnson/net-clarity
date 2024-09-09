@@ -22,6 +22,10 @@ pocAce =  \override TextSpanner.bound-details.left.text = \markup { \upright "po
 acePoc =  \override TextSpanner.bound-details.left.text = \markup { \upright "accelerando poco a poco " }
 molAce =  \override TextSpanner.bound-details.left.text = \markup { \upright "molto accel. " }
 
+sD = \stemDown
+sU = \stemUp
+sN = \stemNeutral
+
 ffsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "ff" #:combine
 #:transparent "f" #:normal-text #:italic "sempre" ) )

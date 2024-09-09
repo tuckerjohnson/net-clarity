@@ -14,7 +14,7 @@
   {
     <<
       \relative {
-        \tempo "Vivace" 4=144
+        \tempo "Vivace" 4=168
         \time 5/8 s4\f ees'8[ bes'] r8 |
         \override DynamicLineSpanner.staff-padding = \phds
         s4 d a'8( cis4.) |
@@ -60,7 +60,7 @@
     \clef bass
     <<
       \relative {
-        \tempo "Vivace" 4=144
+        \tempo "Vivace" 4=168
         b4 s4 r8 |
         c4 s4 s2 |
         e,8 \U g' \D r8 aes,8~ aes s4 s8 |

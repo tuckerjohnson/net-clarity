@@ -220,31 +220,31 @@ clarinetMagstep = #(magstep -2)
     tagline = "test"
   }
 
-  \bookpart {
-    \header {
-      title = \markup { \fontsize #1 \xtitle }
-      subtitle = \markup { \medium \italic \xsub }
-      composer = \xcomp
-      poet = \markup { \xinst }
-      piece = \markup { \large \bold "I. " }
-    }
-    \tocItem \markup { "I. " \bold "Largo - Allegro moderato" }
-    \score {
-      <<
-        \include "manuscripts/I-clarinet.ly"
-        \include "manuscripts/I-piano.ly"
-      >>
-      %\midi { }
-      \layout {
-        \context {
-          \Score
-          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
-          \override Hairpin.to-barline = ##f
-        }
-      }
-    }
-  }
+%  \bookpart {
+%    \header {
+%      title = \markup { \fontsize #1 \xtitle }
+%      subtitle = \markup { \medium \italic \xsub }
+%      composer = \xcomp
+%      poet = \markup { \xinst }
+%      piece = \markup { \large \bold "I. " }
+%    }
+%    \tocItem \markup { "I. " \bold "Largo - Allegro moderato" }
+%    \score {
+%      <<
+%        \include "manuscripts/I-clarinet.ly"
+%        \include "manuscripts/I-piano.ly"
+%      >>
+%      %\midi { }
+%      \layout {
+%        \context {
+%          \Score
+%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+%          \override Hairpin.to-barline = ##f
+%        }
+%      }
+%    }
+%  }
 
   \bookpart {
     \tocItem \markup { "II. " \bold "Vivace" }
@@ -254,82 +254,82 @@ clarinetMagstep = #(magstep -2)
       }
       <<
         \removeWithTag #'part \include "manuscripts/II-clarinet.ly"
-        \removeWithTag #'part \include "manuscripts/II-piano.ly"
-      >>
-      \midi { }
-      \layout {
-        \context {
-          \Score
-          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-          \override Hairpin.to-barline = ##f
-        }
-      }
-    }
-  }
-
-  \bookpart {
-    \tocItem \markup { "III." \bold "Lento, poco rubato" \parenthesize \italic "to Amber Lucas" }
-    \score {
-      \header {
-        piece = \markup { \large \bold "III. " \parenthesize \italic "to Amber Lucas"  }
-      }
-      <<
-        \removeWithTag #'part \include "manuscripts/III-clarinet.ly"
-        \removeWithTag #'part \include "manuscripts/III-piano.ly"
-      >>
-     %\midi { }
-      \layout {
-        \context {
-          \Score
-          \remove Mark_engraver
-          \remove Text_mark_engraver
-          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-          \override Hairpin.to-barline = ##f
-        }
-        \context {
-          \Staff
-          \RemoveEmptyStaves
-        }
-      }
-    }
-  }
-
-  \bookpart {
-    \tocItem \markup { "IV. " \bold "Allegro energico" }
-    \score {
-      \header {
-        title = ##f
-        subtitle = ##f
-        composer = ##f
-        poet = ##f
-        piece = \markup { \large \bold "IV." }
-      }
-      <<
-        \removeWithTag #'part \include "manuscripts/IV-clarinet.ly"
-        \include "manuscripts/IV-piano.ly"
+        %\removeWithTag #'part \include "manuscripts/II-piano.ly"
       >>
       %\midi { }
       \layout {
         \context {
           \Score
-          \remove Text_mark_engraver
-          \remove Mark_engraver
-          \override TextSpanner.bound-details.left-broken.text = " "
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
           \override Hairpin.to-barline = ##f
-          \override Stem.stemlet-length = #0.75
-        }
-        \context {
-          \Staff
-          \RemoveEmptyStaves
-          \consists Mark_engraver
         }
       }
     }
   }
+%
+%  \bookpart {
+%    \tocItem \markup { "III." \bold "Lento, poco rubato" \parenthesize \italic "to Amber Lucas" }
+%    \score {
+%      \header {
+%        piece = \markup { \large \bold "III. " \parenthesize \italic "to Amber Lucas"  }
+%      }
+%      <<
+%        \removeWithTag #'part \include "manuscripts/III-clarinet.ly"
+%        \removeWithTag #'part \include "manuscripts/III-piano.ly"
+%      >>
+%     %\midi { }
+%      \layout {
+%        \context {
+%          \Score
+%          \remove Mark_engraver
+%          \remove Text_mark_engraver
+%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+%          \override Hairpin.to-barline = ##f
+%        }
+%        \context {
+%          \Staff
+%          \RemoveEmptyStaves
+%        }
+%      }
+%    }
+%  }
+%
+%  \bookpart {
+%    \tocItem \markup { "IV. " \bold "Allegro energico" }
+%    \score {
+%      \header {
+%        title = ##f
+%        subtitle = ##f
+%        composer = ##f
+%        poet = ##f
+%        piece = \markup { \large \bold "IV." }
+%      }
+%      <<
+%        \removeWithTag #'part \include "manuscripts/IV-clarinet.ly"
+%        \include "manuscripts/IV-piano.ly"
+%      >>
+%      %\midi { }
+%      \layout {
+%        \context {
+%          \Score
+%          \remove Text_mark_engraver
+%          \remove Mark_engraver
+%          \override TextSpanner.bound-details.left-broken.text = " "
+%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
+%          \override Hairpin.to-barline = ##f
+%          \override Stem.stemlet-length = #0.75
+%        }
+%        \context {
+%          \Staff
+%          \RemoveEmptyStaves
+%          \consists Mark_engraver
+%        }
+%      }
+%    }
+%  }
 
   \pageBreak
   \markup { \null }
