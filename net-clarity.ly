@@ -254,14 +254,16 @@ clarinetMagstep = #(magstep -2)
       }
       <<
         \removeWithTag #'part \include "manuscripts/II-clarinet.ly"
-        %\removeWithTag #'part \include "manuscripts/II-piano.ly"
+        \removeWithTag #'part \include "manuscripts/II-piano.ly"
       >>
       %\midi { }
       \layout {
         \context {
           \Score
+          \remove Text_mark_engraver
+          \remove Mark_engraver
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/20)
           \override Hairpin.to-barline = ##f
         }
       }
