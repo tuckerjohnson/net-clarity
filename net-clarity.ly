@@ -220,31 +220,31 @@ clarinetMagstep = #(magstep -2)
     tagline = "test"
   }
 
-  \bookpart {
-    \header {
-      title = \markup { \fontsize #1 \xtitle }
-      subtitle = \markup { \medium \italic \xsub }
-      composer = \xcomp
-      poet = \markup { \xinst }
-      piece = \markup { \large \bold "I. " }
-    }
-    \tocItem \markup { "I. " \bold "Largo - Allegro moderato" }
-    \score {
-      <<
-        \include "manuscripts/I-clarinet.ly"
-        \include "manuscripts/I-piano.ly"
-      >>
-      %\midi { }
-      \layout {
-        \context {
-          \Score
-          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
-          \override Hairpin.to-barline = ##f
-        }
-      }
-    }
-  }
+%  \bookpart {
+%    \header {
+%      title = \markup { \fontsize #1 \xtitle }
+%      subtitle = \markup { \medium \italic \xsub }
+%      composer = \xcomp
+%      poet = \markup { \xinst }
+%      piece = \markup { \large \bold "I. " }
+%    }
+%    \tocItem \markup { "I. " \bold "Largo - Allegro moderato" }
+%    \score {
+%      <<
+%        \include "manuscripts/I-clarinet.ly"
+%        \include "manuscripts/I-piano.ly"
+%      >>
+%      %\midi { }
+%      \layout {
+%        \context {
+%          \Score
+%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+%          \override Hairpin.to-barline = ##f
+%        }
+%      }
+%    }
+%  }
 
   \bookpart {
     \tocItem \markup { "II. " \bold "Vivace" }

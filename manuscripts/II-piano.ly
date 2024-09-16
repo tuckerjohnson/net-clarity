@@ -46,8 +46,19 @@
         r8 bes8-.-> des-.-> f-.-> r8 fis-.->\f |
         R1*6/8
         \time 4/4 R1 |
-        \time 2/4 d8-.-> bes a'-.-> r8 |
-        des8
+        d8-.-> bes a'-.-> r8 des,8 ees-.-> g-.-> aes, |
+        c'8-.-> r8 r4 r2 |
+        R1 |
+        \time 9/8 R1*9/8 |
+        \time 4/4 gis8-.-> e-.-> b'-.-> r8 r2 |
+        R1 |
+        \time 7/8 b4.( bes2~
+        \time 4/4 bes1~ |
+        \time 3/4 bes2 a8) e8~ |
+        \time 6/8 e2.( |
+        ees2.~
+        \time 2/4 ees2 |
+        f8) r8
 
       }
     >>
@@ -90,7 +101,20 @@
         8 r8 r8\f r8 \override Staff.DynamicText.stencil = ##t b,8-.^\p r8 |
         r8 gis'4~( gis4. |
         f'8-.) r8 r4 r2 |
-        r4 e,8-. r8 |
+        r4 e,8-. r8 r4 bes8( f'8~ |
+        f1~ |
+        f2~ f8 des8-.) r4 |
+        R1*9/8 |
+        r4 fis4~( fis4. d8 |
+        a8) r8 r4 r2 |
+        g4.~( g4~ g8 aes8~ |
+        aes1~ |
+        aes2 d8) des8~( |
+        des4. ges4.~ |
+        ges2.~ |
+        ges4. c8~ |
+        c8) r8
+
 
       }
     >>

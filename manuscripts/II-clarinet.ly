@@ -47,7 +47,18 @@
   r8 bes(\< des f4 fis8)\f
   ees'2.\p
   \time 4/4 f,,8-.-> c''8( 2.)
-  \time 2/4 d,8(\< bes)-. a'4\f
-  des,8-.->
+  \time 4/4 d,8(\< bes)-. a'4\f des,8-.-> ees( g) aes,-.
+  c'4 r4 r2 |
+  r2 r8 e,,8-.-> a''4(\p |
+  \time 9/8 fis8[) b,,-.-> d''-- g,,,]-.-> b''4 dis,,,8-.-> ais'''( cis)
+  gis,8\f( e b'4) r2 |
+  f'2~\p f8 r8 c,-.-> r8
+  \time 7/8 b'8-> e4 bes8[->\f\< des,-.-> ges,-.->\! c8]-.-> |
+  \time 4/4 ees'4(\p f2.) |
+  \time 3/4 r4 r4 a,8(\f\< e) |
+  \time 6/8 aes,-.->\! r8 r8 b''4.\p |
+  ees,,8\f\< g,-.-> d-.->\! bes'''4.(~\p |
+  \time 2/4 bes4. a8) |
+  f,->
 
 }
