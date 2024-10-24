@@ -5,6 +5,7 @@
   shortInstrumentName = \markup { "pno " }
   \consists Text_mark_engraver
   \consists Metronome_mark_engraver
+  \consists "Merge_rests_engraver"
 }
 <<
   \numericTimeSignature
@@ -46,19 +47,48 @@
         r8 bes8-.-> des-.-> f-.-> r8 fis-.->\f |
         R1*6/8
         \time 4/4 R1 |
-        d8-.-> bes a'-.-> r8 des,8 ees-.-> g-.-> aes, |
+        d8-.->\mf\< bes a'-.-> r8 des,8 ees-.-> g-.->\f aes, |
         c'8-.-> r8 r4 r2 |
         R1 |
         \time 9/8 R1*9/8 |
         \time 4/4 gis8-.-> e-.-> b'-.-> r8 r2 |
         R1 |
-        \time 7/8 b4.( bes2~
-        \time 4/4 bes1~ |
-        \time 3/4 bes2 a8) e8~ |
-        \time 6/8 e2.( |
-        ees2.~
-        \time 2/4 ees2 |
-        f8) r8
+        <<
+          \relative {
+            \voiceOne
+            g''8-. r8 r8 g8-. r8 g8[-. aes]~ |
+            aes1 |
+            r4 r4 d8( des8-.) |
+            r8 r8 des8-. ges,4. |
+            ges4 ges8-. r4. |
+            r4 c8-. r8 c,8-. r8 |
+            c'2.(^\mf |
+            cis,2) d,4~ |
+            \voiceTwo
+            2.~
+            2.~ |
+            d8 aes'4(\f fis4.~ |
+            fis4 g2~ |
+            g2.) |
+          }
+          \new Voice
+            \relative {
+            \voiceTwo
+            \time 7/8 b'8-. r8 r8 bes8-. r8 bes[-. bes]~
+            \time 4/4 bes1 |
+            \time 3/4 r4 r4 a8( e8-.) |
+            \time 6/8 r8 r8 e8-. e4. |
+            ees4 ees8-. r4.
+            \time 3/4 r4 ees8-. r8 f8-. r8 |
+            r8 f'4(\p e4) r8 |
+            s2. |
+            \voiceOne
+            r4 b8-.^\p r8 r4 |
+            s2. |
+            s2. r4 r8 a4(^\mp ees'8~ |
+            ees8) r8 bes8-. r8
+          }
+      >>
 
       }
     >>
@@ -98,22 +128,29 @@
         gis2~ gis8 r8 r4 r4 ees,4~\p |
         \time 6/8  ees2. |
         g8( c,8-.) r8 d'~\mp\< <d fis>~ <d fis a>~ |
-        8 r8 r8\f r8 \override Staff.DynamicText.stencil = ##t b,8-.^\p r8 |
+        8 r8 r8\f r8 b,8-. r8 |
         r8 gis'4~( gis4. |
         f'8-.) r8 r4 r2 |
-        r4 e,8-. r8 r4 bes8( f'8~ |
-        f1~ |
+        r4 e,8-. r8 r4 bes4~ |
+        bes8 r8 r4 r4 r8 f'8~(-> |
         f2~ f8 des8-.) r4 |
         R1*9/8 |
         r4 fis4~( fis4. d8 |
         a8) r8 r4 r2 |
-        g4.~( g4~ g8 aes8~ |
-        aes1~ |
-        aes2 d8) des8~( |
-        des4. ges4.~ |
-        ges2.~ |
-        ges4. c8~ |
-        c8) r8
+        s1*7/8
+        s1
+        s1*3/4
+        s1*6/8
+        s1*6/8
+        s1*3/4
+        s1*3/4
+        r4 ees''8-.^\mp r8 r4 |
+        r4 r4 r8 a8-.
+        r8 bes,8-. r4 r4 |
+        r4 r4 e8-. r8 |
+        f,-. r8 r4 r4 |
+        r4 r8 b8-.
+
 
 
       }
