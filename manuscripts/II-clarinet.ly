@@ -59,12 +59,19 @@
   \time 6/8 aes,-.->\! r8 r8 b''4.\p |
   ees,,8\f\< g,-.-> d-.->\! bes'''4.(~\p |
   \time 3/4 bes4. a8) f,-> r8
-  r4 r4 r8 fis8~(\mp |
-  fis2. |
-  aes2 g8-.) r8 |
-  r4 c4( des,4~ |
-  2.~
-  2.
-  d,2) r4
+  a2.~\pp\<( |
+  a2.~ |
+  a4.\mf\< bes,8-.)\! r4 |
+  ees4 8-. r8 b'-. e,~( |
+  e4 f,8-.) r8 r4 |
+  R1*3/4
+  R1*3/4
+  R1*3/4
+  bes''8-.\mf bes8~\p bes2 |
+  ees,2->\mf( des'8-.) r8
+  r8 des8-.\p r8 b8-.\mf b4~\p |
+  b4 fis'2~->\mf( |
+  fis2~ fis8 a,8-.)|
+  r8 a8-.\p r4 ees8-.\mf r8 |
 
 }

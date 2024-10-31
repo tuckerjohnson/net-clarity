@@ -5,13 +5,14 @@
   shortInstrumentName = \markup { "pno " }
   \consists Text_mark_engraver
   \consists Metronome_mark_engraver
-  \consists "Merge_rests_engraver"
 }
 <<
   \numericTimeSignature
   \set PianoStaff.connectArpeggios = ##t
   \override PianoStaff.Arpeggio.arpeggio-direction = #UP
-  \new Staff = "u"
+  \new Staff = "u" \with {
+    \consists "Merge_rests_engraver"
+  }
   {
     <<
       \relative {
@@ -62,14 +63,6 @@
             r8 r8 des8-. ges,4. |
             ges4 ges8-. r4. |
             r4 c8-. r8 c,8-. r8 |
-            c'2.(^\mf |
-            cis,2) d,4~ |
-            \voiceTwo
-            2.~
-            2.~ |
-            d8 aes'4(\f fis4.~ |
-            fis4 g2~ |
-            g2.) |
           }
           \new Voice
             \relative {
@@ -80,16 +73,49 @@
             \time 6/8 r8 r8 e8-. e4. |
             ees4 ees8-. r4.
             \time 3/4 r4 ees8-. r8 f8-. r8 |
-            r8 f'4(\p e4) r8 |
-            s2. |
-            \voiceOne
-            r4 b8-.^\p r8 r4 |
-            s2. |
-            s2. r4 r8 a4(^\mp ees'8~ |
-            ees8) r8 bes8-. r8
           }
       >>
-
+      \oneVoice
+      r4 r4 r8 c'8~ |
+      c4 c8( d,8~ d4~ |
+      d8 cis'-.) r4 r4 |
+      R1*3/4 |
+      <<
+        \relative {
+          \voiceOne
+          r4 g'''4. g8~( |
+          g4 aes,2~ |
+          aes2 fis'8-.) r8 |
+        }
+        \new Voice
+        \relative {
+          \voiceTwo
+          r4 c''8-. c8~( c4~
+          c2 d,4~ |
+          d4 cis'8-.) r8 r4 |
+        }
+      >>
+      \oneVoice
+      r4 r4 r8 b,8-. |
+      r8 f''8-. r4 r8 ees,8~->( |
+      ees4 c'8-.) r8 c8-. r8
+      r8 c8-. r4 cis,8-. r8 |
+      r4
+      <<
+        \relative {
+          \voiceOne
+          r4 r8 e'''8-. |
+        }
+        \new Voice
+        \relative {
+          \voiceTwo
+          r8 gis''8~( gis4 |
+          ais,8-.)
+        }
+      >>
+      \oneVoice
+      r8 bes8-. r8 r4
+      r8 g'8~->( g8 d'-.) r4 |
       }
     >>
   }
@@ -143,14 +169,19 @@
         s1*6/8
         s1*6/8
         s1*3/4
-        s1*3/4
-        r4 ees''8-.^\mp r8 r4 |
-        r4 r4 r8 a8-.
-        r8 bes,8-. r4 r4 |
-        r4 r4 e8-. r8 |
-        f,-. r8 r4 r4 |
-        r4 r8 b8-.
-
+        r4 e''4(\mf\> f,8-.)\! r8 |
+        r8 b8-. r4 r8 \clef treble g''8~ |
+        g4 g4( fis'4~ |
+        fis8) fis8( aes,8-.) r8 r4 \clef bass |
+        ees,8-. r8 r4 r4 |
+        r8 bes8~( bes2~ |
+        bes8 a'-.) r4 r4 |
+        e,8-. d'4->( g,8-.) r4 |
+        r4 r8 \clef treble ges''8~( ges4~ |
+        ges2.~ |
+        ges8 a'-.) r4 r4 \clef bass |
+        dis,,,8-. r8 r4 r4 |
+        r4 c'8->( f,8-.) r4 |
 
 
       }
