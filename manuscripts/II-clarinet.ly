@@ -39,23 +39,23 @@
   bes,,4 des4~ des8 g'4 ges,,8
   aes'4 ees''4 \breathe f,,,8\< a4 e''8~\mp
   \time 6/8 e4. ees,,8\< b' fis''
-  \grace { b,,8( } e,8) cis'' a gis,4.\f
-  \time 2/4 r8  f'4\> bes8
-  \time 4/4 d8\p  r8 r4 r4 aes'4(\mp
+  e,,8 cis'' a gis,4.\f
+  \time 2/4 r8  f'4\> bes8-.
+  \time 4/4 \after 4 \< d2~\p d8\f r8 aes'4(\mp
   \time 6/8 b2.
   e,4.) \breathe d,,8-.\mf fis-. a-.
   r8 bes(\< des f4 fis8)\f
   ees'2.\p
-  \time 4/4 f,,8-.-> c''8( 2.)
-  \time 4/4 d,8(\< bes)-. a'4\f des,8-.-> ees( g) aes,-.
+  \time 4/4 f,,8-.-> c''8~\< 4~\f\> 2
+  \time 4/4 d,8(\!\< bes)-. a'4\f des,8-.-> ees( g) aes,-.
   c'2~\p\< c8\f r8 r4 |
   r2 r8 e,,8-.-> a''4(\p |
   \time 9/8 fis8[) b,,-.-> d''-- g,,,]-.-> b''4 dis,,,8-.-> ais'''( cis)
-  gis,8\f( e b'4) r2 |
-  f'2~\p f8 r8 c,-.-> r8
+  \time 4/4 gis,8\f( e b'4) r2 |
+  f'2~\p\< f8\mf r8 c,-.-> r8
   \time 7/8 b'8-> e4 bes8[->\f\< des,-.-> ges,-.->\! c8]-.-> |
-  \time 4/4 ees'4(\p f2.) |
-  \time 3/4 r4 r4 a,8(\f\< e) |
+  \time 4/4 ees'4(\p f2.~ |
+  \time 3/4 4~ 8) r8 a,8(\f\< e) |
   \time 6/8 aes,-.->\! r8 r8 b''4.\p |
   ees,,8\f\< g,-.-> d-.->\! bes'''4.(~\p |
   \time 3/4 bes4. a8) f,-> r8
@@ -73,5 +73,9 @@
   b4 fis'2~->\mf( |
   fis2~ fis8 a,8-.)|
   r8 a8-.\p r4 ees8-.\mf r8 |
+  ees8-. r8 r4 r4 |
+  r8 c'8~ c4. c8( |
+  f,8-.) bes8-. r8 aes'8~( 8 des,-.) |
+  r8 g,,8-- g8-. r8 r4 |
 
 }

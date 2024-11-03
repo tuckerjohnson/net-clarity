@@ -58,8 +58,8 @@
           \relative {
             \voiceOne
             g''8-. r8 r8 g8-. r8 g8[-. aes]~ |
-            aes1 |
-            r4 r4 d8( des8-.) |
+            aes1~ |
+            4~ 8 r8 d8( des8-.) |
             r8 r8 des8-. ges,4. |
             ges4 ges8-. r4. |
             r4 c8-. r8 c,8-. r8 |
@@ -68,8 +68,8 @@
             \relative {
             \voiceTwo
             \time 7/8 b'8-. r8 r8 bes8-. r8 bes[-. bes]~
-            \time 4/4 bes1 |
-            \time 3/4 r4 r4 a8( e8-.) |
+            \time 4/4 bes1~ |
+            \time 3/4 4~ 8 r8 a8( e8-.) |
             \time 6/8 r8 r8 e8-. e4. |
             ees4 ees8-. r4.
             \time 3/4 r4 ees8-. r8 f8-. r8 |
@@ -116,6 +116,9 @@
       \oneVoice
       r8 bes8-. r8 r4
       r8 g'8~->( g8 d'-.) r4 |
+      g,,8-. r8 r4 r4 d'4.( e,8-.) r4 |
+      r8 bes''8-. r8 aes'8~( aes des,8-.) |
+      R1*3/4
       }
     >>
   }
@@ -182,6 +185,11 @@
         ges8 a'-.) r4 r4 \clef bass |
         dis,,,8-. r8 r4 r4 |
         r4 c'8->( f,8-.) r4 |
+        R1*3/4 |
+        b,8-. r8 b8-. r8 a'4~ |
+        4 8( fis8-.) r4 |
+        <fis e'>8-. r8 r4 r4 |
+        r4 ees8-. r8 c'4-- |
 
 
       }
