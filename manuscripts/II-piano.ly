@@ -119,12 +119,25 @@
       g,,8-. r8 r4 r4 d'4.( e,8-.) r4 |
       r8 bes''8-. r8 aes'8~( aes des,8-.) |
       R1*3/4
+      r4 r4 b8-. r8 |
+      r4 fis'8( a,8-.) r4 |
+      a8-. r8 r4 r8 c8-. |
+      r4 r4 e,8-. r8 |
+      R1*3/4 |
+      aes,8-. r8 r4 r4 |
+      R1*3/4 |
+      R1*3/4 |
+      R1*3/4 |
+      R1*3/4 |
+      R1*3/4 |
+      R1*3/4 |
       }
     >>
   }
   \new Staff = "d"
   {
     \clef bass
+    \set Staff.pedalSustainStyle = #'bracket
     <<
       \relative {
         \tempo "Vivace" 4=168
@@ -189,7 +202,19 @@
         b,8-. r8 b8-. r8 a'4~ |
         4 8( fis8-.) r4 |
         <fis e'>8-. r8 r4 r4 |
-        r4 ees8-. r8 c'4-- |
+        r4 ees8-. r8 c'4~ |
+        c8 des,8-. des8-. r8 r4 |
+        aes'2~ aes8 <aes c>->( |
+        <f bes>8-.) r8 r4 d8-.^\p\sustainOn r8 |
+        r4 r8 g8-. r4 |
+        r4 r4 r8 fis8-.\sustainOff\sustainOn |
+        r4 bes8-. r8 ees,8-. b-. |
+        des,8-.\sustainOff\sustainOn r8 r4 r4 |
+        r4 r4 r8 f8-. |
+        a8-. r8 r4 r4 |
+        R1*3/4 |
+        r8 d8-.\sustainOff\sustainOn r4 r8 fis,8-. |
+        R1*3/4 |
 
 
       }

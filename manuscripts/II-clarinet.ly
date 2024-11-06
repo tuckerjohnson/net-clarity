@@ -77,5 +77,18 @@
   r8 c'8~ c4. c8( |
   f,8-.) bes8-. r8 aes'8~( 8 des,-.) |
   r8 g,,8-- g8-. r8 r4 |
+  g8-. r8 d4---> b''8-. d,,8( |
+  e'8-.) r8 fis'8->( a,-.) r4 |
+  a8-. r8 \override Hairpin.circled-tip = ##t a,4.\< c'8-.->\f |
+  a,2\< e'8-.->\f \override Hairpin.circled-tip = ##f a,8(~\mp\< |
+  a8 cis4 f8~ f4)\f |
+  aes,8-.-> r8 r4 r4 |
+  r8 b'8( dis,)[ e,,(] c'[) d'8]-.-> |
+  d4--\pp d4-- d4-- |
+  g8-.-> d4-- d4-- d8-- |
+  aes,8--\mf d'-.\< fis-. bes-.\! b,,8-- c'-- |
+  r4 ees,,8---> des''-. f-.-> g,,---> |
+  e''8-.-> f4--\pp\< f4-- f8--\! |
+
 
 }
