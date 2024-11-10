@@ -122,7 +122,7 @@
       r4 r4 b8-. r8 |
       r4 fis'8( a,8-.) r4 |
       a8-. r8 r4 r8 c8-. |
-      r4 r4 e,8-. r8 |
+      r4 \after 8 \p r4 e,8-. r8 |
       R1*3/4 |
       aes,8-. r8 r4 r4 |
       R1*3/4 |
@@ -131,6 +131,13 @@
       R1*3/4 |
       R1*3/4 |
       R1*3/4 |
+      R1*3/4 |
+      R1*3/4 |
+      R1*3/4 |
+      e8-. gis8-. r4 r4 |
+      <bes bes,>8-.\pp r8 r2 |
+
+
       }
     >>
   }
@@ -213,8 +220,16 @@
         r4 r4 r8 f8-. |
         a8-. r8 r4 r4 |
         R1*3/4 |
-        r8 d8-.\sustainOff\sustainOn r4 r8 fis,8-. |
+        r8 d8-.\sustainOff\sustainOn r4 r8 fis8-. |
         R1*3/4 |
+        bes8-. r8 r4 r4 |
+        r4 c8-.\sustainOff\sustainOn r8 r4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4\sustainOff |
+
+
+
 
 
       }
