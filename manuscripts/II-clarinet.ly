@@ -91,8 +91,23 @@
   e''8-.-> f8~\pp\< f2~ |
   f8\mf gis8-. a2~\> |
   a4\!\< a8( b,8)\f d8-. des,---> |
-  b'4. f8-- ees'8-- fis-.-> ees4-- a,8( g'8~ g4\> |
-  bes,8-.)\mp r8 r2  |
+  b'4. f8-- ees'8-- fis-.-> ees4-- a,8( g'8~ g4~\> |
+  g4~ 8\fermata bes,8-.)\mp r4  |
+  bes8-. b( des ees c8-.) r8 |
+  r4 c8-. c( d e) |
+  r4 r8 e8-. r8 e8-. |
+  f8( g) g8( a4) b8( |
+  c d-.) r8 d8-. r8 des8( |
+  ees) ees( e4 fis8) fis( |
+  gis8) gis( bes2) |
+  bes8( b,-.) b( cis8~ cis4) |
+  des8( ees) ees( f~ f4~ |
+  f8) r8 ges8-. ges( aes) g( |
+  a,) a'( bes,2~ |
+  bes4) bes8-. c( d) r8 |
+  d8( e) f,-. f'( g,-.) g'( |
+  a,-.) a'8( ges aes,)-. aes'( bes8-.)
+
 
 
 

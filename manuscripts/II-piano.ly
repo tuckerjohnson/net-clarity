@@ -74,68 +74,83 @@
             ees4 ees8-. r4.
             \time 3/4 r4 ees8-. r8 f8-. r8 |
           }
-      >>
-      \oneVoice
-      r4 r4 r8 c'8~ |
-      c4 c8( d,8~ d4~ |
-      d8 cis'-.) r4 r4 |
-      R1*3/4 |
-      <<
-        \relative {
-          \voiceOne
-          r4 g'''4. g8~( |
-          g4 aes,2~ |
-          aes2 fis'8-.) r8 |
-        }
-        \new Voice
-        \relative {
-          \voiceTwo
-          r4 c''8-. c8~( c4~
-          c2 d,4~ |
-          d4 cis'8-.) r8 r4 |
-        }
-      >>
-      \oneVoice
-      r4 r4 r8 b,8-. |
-      r8 f''8-. r4 r8 ees,8~->( |
-      ees4 c'8-.) r8 c8-. r8
-      r8 c8-. r4 cis,8-. r8 |
-      r4
-      <<
-        \relative {
-          \voiceOne
-          r4 r8 e'''8-. |
-        }
-        \new Voice
-        \relative {
-          \voiceTwo
-          r8 gis''8~( gis4 |
-          ais,8-.)
-        }
-      >>
-      \oneVoice
-      r8 bes8-. r8 r4
-      r8 g'8~->( g8 d'-.) r4 |
-      g,,8-. r8 r4 r4 d'4.( e,8-.) r4 |
-      r8 bes''8-. r8 aes'8~( aes des,8-.) |
-      R1*3/4
-      r4 r4 b8-. r8 |
-      r4 fis'8( a,8-.) r4 |
-      a8-. r8 r4 r8 c8-. |
-      r4 \after 8 \p r4 e,8-. r8 |
-      R1*3/4 |
-      aes,8-. r8 r4 r4 |
-      R1*3/4 |
-      R1*3/4 |
-      R1*3/4 |
-      R1*3/4 |
-      R1*3/4 |
-      R1*3/4 |
-      R1*3/4 |
-      R1*3/4 |
-      R1*3/4 |
-      e8-. gis8-. r4 r4 |
-      <bes bes,>8-.\pp r8 r2 |
+        >>
+        \oneVoice
+        r4 r4 r8 c'8~ |
+        c4 c8( d,8~ d4~ |
+        d8 cis'-.) r4 r4 |
+        R1*3/4 |
+        <<
+          \relative {
+            \voiceOne
+            r4 g'''4. g8~( |
+            g4 aes,2~ |
+            aes2 fis'8-.) r8 |
+          }
+          \new Voice
+          \relative {
+            \voiceTwo
+            r4 c''8-. c8~( c4~
+            c2 d,4~ |
+            d4 cis'8-.) r8 r4 |
+          }
+        >>
+        \oneVoice
+        r4 r4 r8 b,8-. |
+        r8 f''8-. r4 r8 ees,8~->( |
+        ees4 c'8-.) r8 c8-. r8
+        r8 c8-. r4 cis,8-. r8 |
+        r4
+        <<
+          \relative {
+            \voiceOne
+            r4 r8 e'''8-. |
+          }
+          \new Voice
+          \relative {
+            \voiceTwo
+            r8 gis''8~( gis4 |
+            ais,8-.)
+          }
+        >>
+        \oneVoice
+        r8 bes8-. r8 r4
+        r8 g'8~->( g8 d'-.) r4 |
+        g,,8-. r8 r4 r4 d'4.( e,8-.) r4 |
+        r8 bes''8-. r8 aes'8~( aes des,8-.) |
+        R1*3/4
+        r4 r4 b8-. r8 |
+        r4 fis'8( a,8-.) r4 |
+        a8-. r8 r4 r8 c8-. |
+        r4 \after 8 \p r4 e,8-. r8 |
+        R1*3/4 |
+        aes,8-. r8 r4 r4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        e8-. gis8-. r4 r4 |
+        r4 r8\fermata <bes bes,>8-.\pp r4 |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
+        <f' f'>8-.-> <g g'>8-.-> r8 <a a'>-.-> r4 |
+        R1*3/4 |
+        r4 r4 \ottava #1 <fis' fis'>8-.-> r8 |
+        <gis gis'>8-.-> r8 <ais ais'>8-.-> r8 r4 |
+        8-.-> <b, b'>8-.-> r8 <cis cis'>8-.-> r4 |
+        r8 <ees ees'>8-.-> r4 r4 |
+        R1*3/4 |
+        r8 e4( b'8) 8( cis) |
+        8( dis) r8 <c, c'>8-.-> <d d'>8-.-> 8-.-> |
+        r8 <e e'>8-.-> r4 r4 |
+
+
 
 
       }
@@ -227,7 +242,19 @@
         R1*3/4 |
         R1*3/4 |
         R1*3/4\sustainOff |
-
+        R1*3/4 |
+        R1*3/4 | \clef treble
+        r8 ges'8( aes) aes( bes) r8 |
+        R1*3/4 |
+        r8 bes8-. r8 f'8~ 4 |
+        f2.~ |
+        f8 f4 f8( g a8~ |
+        a2) a8( c8-.) |
+        r8 c8-. r8 c8( d8) d8( |
+        e2.) |
+        R1*3/4 |
+        R1*3/4 |
+        R1*3/4 |
 
 
 
