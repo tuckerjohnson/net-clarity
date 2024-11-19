@@ -152,11 +152,6 @@
         \ottava #1 \tuplet 3/2 { f'8\p\< \D <f, g> \U <f' g a> } \tuplet 3/2 { \D ges, \U ges' \D <ges, aes> } \tuplet 3/2 { \U <ges' aes> \D <ges, aes bes>\! \U <ges' aes bes> } \bar "||" | \clef "bass"
         \tempo "A tempo" 4=168
         \ottava #0 s4\f s4 s4\mp |
-        s4 s4 s4 |
-        s4 s4 s4 |
-        s4 s4 s4 |
-        s4 s4 s4 |
-        s4 s4 s4 |
 
 
 
@@ -264,12 +259,7 @@
         R1*3/4 |
         R1*3/4 |
         R1*3/4 | \clef "bass_8"
-        \stemUp d,,,,,8[(^\f g] \U ees'-.)[ \D bes,]-. \U <c' a'>16^( \D bes,\p \U <c' a'> \D bes,
-        \U <c' a'> \D bes, \U <c' a'> \D bes, \U <c' a'> \D bes, \U <c' a'> \D bes, \U <c' a'> \D bes,) \U f''^( \D <aes, b> | |
-        \U f' \D <aes, b> \U f' \D <aes, b> \U f' \D <aes, b> \U f' \D <aes, b> \U f' \D <aes, b> \U f' \D <aes, b>)
-        \D cis,8[( e] \U fis'[-.) d16^( \D a]\p \U d \D a \U d \D a |
-        \U des8-.)[ \D c,](\f \U bes'[ aes']-.) \D ees,( f
-        ges-.) r8 r4 r4 |
+        \stemUp d,,,,,8[(^\f g] \U ees'-.)[ \D bes,]-.
       }
     >>
   }
