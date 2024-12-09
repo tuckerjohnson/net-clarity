@@ -310,7 +310,7 @@ clarinetMagstep = #(magstep -2)
         \removeWithTag #'part \include "manuscripts/IV-clarinet.ly"
         \include "manuscripts/IV-piano.ly"
       >>
-      %\midi { }
+      \midi { }
       \layout {
         \context {
           \Score
