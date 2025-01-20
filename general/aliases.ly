@@ -47,6 +47,12 @@ psubito =
 #:transparent "f" #:normal-text #:italic "subito" ) )
 
 
+niente =
+#(make-dynamic-script
+   (markup
+     (#:normal-text #:abs-fontsize 10 #:bold "n")))
+
+
 
 doubleSeparator = \markup {
   \left-column {

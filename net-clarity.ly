@@ -265,6 +265,9 @@ clarinetMagstep = #(magstep -2)
           \override RehearsalMark.break-visibility = #begin-of-line-invisible
           \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/20)
           \override Hairpin.to-barline = ##f
+          \overrideTimeSignatureSettings 4/4 1/4 1,1,1,1 #'()
+          \overrideTimeSignatureSettings 3/4 1/4 1,1,1 #'()
+          \numericTimeSignature
         }
       }
     }
