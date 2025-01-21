@@ -31,8 +31,8 @@ ffsempre =
 #:transparent "f" #:normal-text #:italic "sempre" ) )
 
 psempre =
-    #(make-dynamic-script (markup #:combine #:transparent "f" "p" #:combine
-#:transparent "f" #:normal-text #:italic "sempre" ) )
+#(make-dynamic-script
+   (markup "p" #:normal-text #:italic "sempre" ))
 
 ppsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine

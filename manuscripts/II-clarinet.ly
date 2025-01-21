@@ -26,6 +26,81 @@
   \time 3/4 g8) b'8 f,4->\f ges'4 | %012
   g''8 bes,,,4 a'4 aes'8-. | %013
   \time 4/4 d,,,8\mp  e''4 c'8-. r8 cis,,4\< b'8 | %014
-  ees'8--\f r8 f,,2\fermata\niente\< f4->\fp | %015
+  ees'8--\f r8 f,,2\niente\< f4->\ff | %015
+
+  \sectionLabel \markup { \box \number 16 }
+  \omit Score.BarNumber
+  \time 3/4 des4(\psempre aes4) d8 c'8~ | \undo \omit Score.BarNumber %016
+  c8 b'4 bes,,8 a''4~ | %017
+  a8 ees4 ges,,4 g''8 | %018
+  e'4 \breathe d,4( f8) des'8 | %019
+  c,,4 bes'4 ges'4 | %020
+  aes,,8 g'4 a'4 b,,8( | %021
+  e,4) \breathe ees'8 d,4 b''8~ | %022
+  b8 c'8 bes,,4 des4~ | %023
+  des8 f'4 \breathe ges,,8 aes'4 | %024
+  ees''4 f,,,8 a4 e''8~ | %025
+  e4. ees,,8\< b'8 fis''8 | %026
+  e,,8 cis''8 a8 gis,4.\f | %027
+  r8 f'8 r8 bes8( d4~ | %028
+  d4~ d8) r8 r8 aes'8~\mp | %029
+
+  \sectionLabel \markup { \box \number 30 }
+  \omit Score.BarNumber
+  aes2. | \undo \omit Score.BarNumber %030
+  e8( g8-.) r8 d,8--\f fis,8-.\mp\< a8-. | %031
+  d8( des f)\f bes,8-. fis'8->-- b'8(\p | %032
+  ees,2.) | %033
+  f,,8-. c''8~\< c2~\f\> | %034
+  c4 d,8-.\mp\< bes8( a4) | %035
+  des8-.->\f g8-.->  des''8 ees,,,8( c'8) aes'-.-> | %036
+  R1*3/4 | %037
+  r4 r4 r8 e8-.-> | %038
+  a'4(\p fis8) b,,8~(\< b8 g8~ | %039
+  g4) ees'8-.->\mf cis''8-- e,,,8(\< gis8) | %040
+  b'8-.->\f r8 r4 r4 | %041
+
+  \sectionLabel \markup { \box \number 42 }
+  \omit Score.BarNumber
+  d'8(\> f,8~ f2~\pp\< | \undo \omit Score.BarNumber %042
+  f8)\f c,8~\p\< c8 b'8-.->\mf e4 | %043
+  bes8-.->\f\< des,8-.-> ges,8-.-> c8-.->\! ees'4(\p | %044
+  f2.~ | %045
+  f4~ f8) r8 a,8(\f\< e8) | %046
+  aes,8-.->\! r8 r8 b''4.\p | %047
+  ees,,8\f\< g,8-.-> d8-.->\! bes'''4.~(\p | %048
+  bes4. a8) f,8-> r8 | %049
+  a2.~(\pp\< | %050
+  a2.~ | %051
+  a4.\mf bes,8-.) r4 | %052
+  ees4 ees8-. r8 b'8-. e,8~( | %053
+  e4 f,8-.) r8 r4 | %054
+  R1*3/4 | %055
+  R1*3/4 | %056
+
+  \sectionLabel \markup { \box \number 57 }
+  \omit Score.BarNumber
+  R1*3/4 | \undo \omit Score.BarNumber %057
+  bes''8-.\mf bes8~\p bes2 | %058
+  ees,->(\mf des'8-.) r8 | %059
+  r8 des8-.\p r8 b8-.\mf b4~\p | %060
+  b4 fis'2~->( | %061
+  fis2~ fis8 a,8-.)\> | %062
+  r8 a8-. r4 ees8-. r8 | %063
+  ees8-.\p  r8 r4 r4 | %064
+  r8 c'8~\< c4~ c8 c8( | %065
+  f,8-.)\f bes8-.\mp r8 aes'4(\f des,8-.) | %066
+  r8 g,,8--\p g8-. r8 r4 | %067
+  g8-. r8 d4->--\< b''8-. d,,( | %068
+  e'8-.) r8 fis'8(\f a,8-.) r4 | %069
+
+  \sectionLabel \markup { \box \number 70 }
+  \omit Score.BarNumber
+  a8-.-> r8 a,4~\niente\< a8 c'8-.->\f | %070
+  a,2\niente\< e'8-.->\f a,~(\mp\< | %071
+  a8 cis4 f4.)\f | %072
+  aes,8-.-> r8 r4 r4 | %073
+  r8 b'8( dis,8) e,,8( c') d'8-.-> | %074
+  d2.\pp | %075
 
 }
