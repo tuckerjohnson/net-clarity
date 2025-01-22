@@ -123,9 +123,12 @@
   b8( cis8~ cis4)\> r8 des( | %091
   ees8) ees8-.\mf \grace e,8^( f'4.)\ff f8-.\> | %092
   f8-. f8-. f8-. ges8--\mf\< ges8-. ges( | %093
-  \time 3/8 aes8)[ \grace f8^( g8\ff a,8]~ | %094
+  \time 3 3/8 aes8) \grace f8^( g8\ff a,8~ | %094
   \time 3/4 a8) \grace aes'8^( bes,8~ bes4.) bes8-. | %095
   bes8-. bes8-. bes8-. bes8-. bes8-.\p \grace ees8^( c8\f | %096
-  d8-.) r8 d8-. d8-. d8( e8) | %097
+  d8-.) r8 d8-. d8-. d8( e8-.) | %097
+  \grace bes8( f8)\mf f'8-. f8( g8-.) g8-.\< g8( | %098
+  \time 3 3/8 a8-.) a8-. a8-. | %099
+  \time 4/4 \grace a,8^( ges'8\ff aes8-.) aes8-. aes8( bes-.) r8 r4 | %100
 
 }

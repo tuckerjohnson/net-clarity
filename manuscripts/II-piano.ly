@@ -137,6 +137,26 @@
         R1*3/4 | %082
         e8-. gis8-. r4 r8 <bes bes,>8-. | %083
 
+        \sectionLabel \markup { \box \number 84 }
+        \omit Score.BarNumber
+        \time 4/4 <bes bes,>8-. r8 r4 <c c,>8-. r8 r4 | \undo \omit Score.BarNumber %084
+        <c c,>8-. r8 <d d,>8-. r8 r8 ges8(\mp\< aes8) aes8( | %085
+        \time 3/4 bes8)\! r8 r4 r4 | %086
+        r4 r8 bes8-.->\f r8 f'8~ | %087
+        f2.~ | %088
+        f2 f4\mp | %089
+        f8(\< g8 a2~\ff | %090
+        a8) a4 a8( c8) r8 | %091
+        \ottava #1 c4\mf\< c8( d8) d8-. d8( | %092
+        e4)\f e8-. e8-. \tuplet 3/2 { <e, c>8(\p\< <d' e c>8 <fis, e d c>8 } | %093
+        \time 3/8 <fis' gis e d c>8-.)\f r8 r8 | %094
+        \time 3/4 e4-> b8-.\mp\< b8-. b8( cis~ | %095
+        cis8) cis8( dis8)\f\< dis8-. dis8-. <dis c>8-. | %096
+        <d! e>-. ees8-.\ff d8-.\mf\< d8-. d8-. e8-.\f | %097
+        r4 \tuplet 3/2 { r8 r8 d8(\mp\< } \tuplet 3/2  { <d, e>8 <d' e f>8 <d, e f g> } | %098
+        \time 3/8 <d' e f g a>8-.)\f r8 r8 | %099
+        \time 4/4 \grace s8 \tuplet 3/2 { r8 ges,8(\mf\< <ges' aes>8 <ges, aes f>8 } \tuplet 3/2 { <ges' aes f g>8 <ges, aes f g a> } <ges' aes f g a bes>8-.)\ff r8 r4 |
+
 
       }
     >>
