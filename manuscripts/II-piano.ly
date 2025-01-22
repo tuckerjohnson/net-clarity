@@ -96,6 +96,39 @@
         g4 aes,2~ | %055
         \voiceOne aes2 fis'8-.)\p r8 | %056
 
+        \sectionLabel \markup { \box \number 57 }
+        \omit Score.BarNumber
+        \oneVoice
+        r4 r4 r8 b,,8-. | \undo \omit Score.BarNumber %057
+        r8 f''8-. r4 r8 ees,8->~ | %058
+        ees4 c'8-. r8 c8-. r8 | %059
+        r8 c8-. r4 cis,8-. r8 | %060
+        <<
+          {
+            \voiceTwo r4 r8 gis'8~(\f gis4 | %061
+          }
+          \new Voice {
+            \voiceOne r4 r4 r8 e'8-. | %(061)
+          }
+        >>
+        \oneVoice ais,,8-.) r8 bes8-. r8 r4 | %062
+        r8 g'4(-> d'8-.) r4 | %063
+        g,,8-.\p r8 r4 r4\< | %064
+        d'4.( e,8-.)\mf r4 | %065
+        r8 bes''8-.\mp r8 aes'4(\f des,8-.) | %066
+        \after 4 \p R1*3/4 | %067
+        r4 r4 b8-. r8 | %068
+        r4 fis'8(\f a,8-.) r4 | %069
+
+        \sectionLabel \markup { \box \number 70 }
+        \omit Score.BarNumber
+        a8-.-> r8 r4 r8\psempre c8-. | \undo \omit Score.BarNumber %070
+        r4 r4 e,8-. r8 | %071
+        R1*3/4 | %072
+        aes,8-. r8 r4 r4 | %073
+        R1*3/4 | %074
+        R1*3/4 | %075
+
       }
     >>
   }
@@ -223,8 +256,36 @@
         >>
         \oneVoice
 
-        e, 8-.\mf d'4->( g,8-.) r4 | %(b057
+        e,8-.\mf d'4->( g,8-.) r4 | %b057
+        r4 r8 \clef treble ges''4.(\p | %b058
+        ges2. | %b059
+        ges8 a'8-.) r4 r4 \clef bass | %b060
+        dis,,,8-. r8 r4 r4 | %b061
+        r4 c'8->(\f f,8-.) r4 | %b062
+        R1*3/4 | %b063
+        b,8-.\p r8 b8-. r8 a'4~\< | %b064
+        a4 a8( fis-.)\mf r4 | %b065
+        <fis e'>8-. r8 r4 r4 | %b066
+        r4 ees8-. r8 c'4~ | %b067
+        c8 des,8-. des-. r8 r4 | %b068
+        aes'2~
+        <<
+          {
+            \voiceTwo aes8 aes8( | %b069
+            f8-.->)
+          }
+          \new Voice {
+            \voiceOne r8 c'8( | %(b069)
+            bes8-.->)
+          }
+        >>
 
+        \oneVoice r8 r4 d,8-.\sustainOn\p r8 | %b070
+        r4 r8 g8-. r4 | %b071
+        r4 r4 r8 fis8-.\sustainOff\sustainOn | %b072
+        r4 bes8-. r8 ees,8-. b-. | %b073
+        des,8-.\sustainOff\sustainOn r8 r4 r4 | %b074
+        r4 r4 r8 f8-. | %b075
 
       }
     >>
