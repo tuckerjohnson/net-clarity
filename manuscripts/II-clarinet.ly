@@ -96,11 +96,36 @@
 
   \sectionLabel \markup { \box \number 70 }
   \omit Score.BarNumber
-  a8-.-> r8 a,4~\niente\< a8 c'8-.->\f | %070
+  a8-.-> r8 a,4~\niente\< a8 c'8-.->\f | \undo \omit Score.BarNumber %070
   a,2\niente\< e'8-.->\f a,~(\mp\< | %071
   a8 cis4 f4.)\f | %072
   aes,8-.-> r8 r4 r4 | %073
   r8 b'8( dis,8) e,,8( c') d'8-.-> | %074
   d2.\pp | %075
+  g8-.-> d8~ d4~ d8 d8-. | %076
+  aes,8--\mf\< d'8-. fis-. bes-.\f b,,8-- c'-- | %077
+  r4 ees,,8->-- des''8-. f8-.-> g,,8---> | %078
+  e''8-.-> f8~\pp\< f4~ f8 f8-. | %079
+  f8-.\mf gis8-. a2\> | %080
+  a8-.\p\< a8-. a8( b,8-.)\f d8-. des,8---> | %081
+  b'4 b8-. f8 ees'8-- fis8-.-> | %082
+  ees8-. ees8-. a,8( f'4\> bes,8-.)\mp | %083
+
+  \sectionLabel \markup { \box \number 84 }
+  \omit Score.BarNumber
+  \time 4/4 bes8-.\mf\< ces8( des ees)\f c8-.\p r8 r4 | \undo \omit Score.BarNumber %084
+  c8-. c8(\< d8 e8)\mf r4 r8 e8-. | %085
+  \time 3/4 r8 e8-. f8( g8) g8( a~) | %086
+  a8 \grace e8^( b'8)--\mp \grace ees,8^( c8\f d8-.) r8 d8-.-> | %087
+  r8 \grace ces'8^( des,8\p ees8-.) ees8-. \grace d8^( e4->)\f | %088
+  \grace a8^( fis8)\p\< fis8-. fis( gis8) gis8( ais8~ | %089
+  ais4) r8 ais8(\f b8-.) r8 | %090
+  b8( cis8~ cis4)\> r8 des( | %091
+  ees8) ees8-.\mf \grace e,8^( f'4.)\ff f8-.\> | %092
+  f8-. f8-. f8-. ges8--\mf\< ges8-. ges( | %093
+  \time 3/8 aes8)[ \grace f8^( g8\ff a,8]~ | %094
+  \time 3/4 a8) \grace aes'8^( bes,8~ bes4.) bes8-. | %095
+  bes8-. bes8-. bes8-. bes8-. bes8-.\p \grace ees8^( c8\f | %096
+  d8-.) r8 d8-. d8-. d8( e8) | %097
 
 }

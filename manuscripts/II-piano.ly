@@ -128,6 +128,15 @@
         aes,8-. r8 r4 r4 | %073
         R1*3/4 | %074
         R1*3/4 | %075
+        R1*3/4 | %076
+        R1*3/4 | %077
+        R1*3/4 | %078
+        R1*3/4 | %079
+        R1*3/4 | %080
+        R1*3/4 | %081
+        R1*3/4 | %082
+        e8-. gis8-. r4 r8 <bes bes,>8-. | %083
+
 
       }
     >>
@@ -286,6 +295,14 @@
         r4 bes8-. r8 ees,8-. b-. | %b073
         des,8-.\sustainOff\sustainOn r8 r4 r4 | %b074
         r4 r4 r8 f8-. | %b075
+        a8-. r8 r4 r4 | %b076
+        R1*3/4 | %b077
+        r8 d8-.\sustainOff\sustainOn r4 r8 fis8-. | %b078
+        R1*3/4 | %b079
+        bes8-. r8 r4 r4 | %b080
+        r4 c8-.\sustainOff\sustainOn r8 r4 | %b081
+        R1*3/4 | %b082
+        \after 2 \sustainOff R1*3/4 | %b083
 
       }
     >>
