@@ -11,8 +11,7 @@
  }
 %\transpose bes c'
 \relative {
-  \tempo "Vivace" 4=168
-  \time 2/4 ces'4.\f ees8 | %001
+  \tempo "Vivace" 4=168 \time 2/4 ces'4.\f ees8 | %001
   \time 6/8 bes'8-. r8 r8 c,4. | %002
   \time 3,2,2 7/8 d'4.\> a'8( cis8~\mp 4~ | %003
   \time 4/4 cis8) e,,,8 g'8-. r8 r8 aes,8~ aes4 | %004
@@ -124,36 +123,37 @@
   ees8) ees8-.\mf \grace e,8^( f'4.)\ff f8-.\> | %092
   f8-. f8-. f8-. ges8--\mf\< ges8-. ges( | %093
   \time 3 3/8 aes8) \grace f8^( g8\ff a,8~ | %094
-  \time 3/4 \ace a8)\startTextSpan \grace aes'8^( bes,8~ bes4.) bes8-. | %095
-  bes8-. bes8-. bes8-. bes8-. bes8-.\p \grace ees8^( c8\f | %096
+  \time 3/4 \pocAce a8)\startTextSpan \grace aes'8^( bes,8~ bes4.) bes8-.\> | %095
+  bes8-. bes8-. bes8-. bes8-. bes8-.\mp \grace ees8^( c8\f | %096
   d8-.) r8 d8-. d8-. d8( e8-.) | %097
   \grace bes8( f8)\mf f'8-. f8( g8-.) g8-.\< g8( | %098
-  \time 3 3/8 a8-.) a8-. a8-. | %099
-  \time 4/4 \grace a,8^( ges'8\ff aes8-.) aes8-. aes8( bes-.)\stopTextSpan r8 r4\fermata | %100
+  \time 3 3/8 a8-.) a8-. a8-.\stopTextSpan \tempo 4=174 | %099
+  \time 3/4 \grace a,8^( ges'8\ff aes8-.) aes8-. aes8( bes-.) r8 | %100
 
   \sectionLabel \markup { \box \number 101 }
   \omit Score.BarNumber
-  \tempo "Presto" 4=184
-  R1*7 | \undo \omit Score.BarNumber
-  r2 r4 r8 f,,,8~\niente\< | %108
+  \tempo "Prestissimo" 4=232
+  \time 4/4 R1*6 | \undo \omit Score.BarNumber
+  \rit R1\startTextSpan
+  r2 r4 r8 f,,,8~\niente\<\stopTextSpan | %108
 
   \sectionLabel \markup { \box \number 109 }
   \omit Score.BarNumber
-  \tempo "Tempo primo" 4=168
+  \tempo 4=200
   \time 3/4 f2~ f8 des'8->~\f | \undo \omit Score.BarNumber %109
   des4 bes2->~ | %110
   bes2\> d,4~\mp | %111
   2.~\> | %112
   \after 4 \< 2.\niente | %113
   c'2.->~\f | %114
-  c4. b4.->\> | %115
+  \rit c4.\startTextSpan b4.->\> | %115
   ees,2.~\p\< | %116
   2 f4~\f | %117
-  f2. | %118
+  \after 2 \stopTextSpan f2. \tempo "Tempo primo" 4=168 | %118
   fis4-> a2->~ | %119
   4. g4.~-> | %120
   g4 aes4->~ aes8 e8~-> | %121
-  \rit 2.~\>\startTextSpan | %122
+  2.~\>\startTextSpan | %122
   4\p r4 \after 8 \stopTextSpan r4 | %123
 
   \sectionLabel \markup { \box \number 124 }

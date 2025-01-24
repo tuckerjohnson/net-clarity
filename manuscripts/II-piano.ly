@@ -151,45 +151,64 @@
         e4)\f e8-. e8-. \stemDown
         \tuplet 3/2 { \D <e, c>8 \U <d' e c>8 \D <fis, e d c>8 } | %093
         \time 3/8 \U <fis' gis e d c>8-. r8 r8 | %094
-        \time 3/4 \ace e4->\startTextSpan b8-.\mp\< b8-. b8( cis~ | %095
+        \time 3/4 \pocAce e4->\startTextSpan b8-.\mp\< b8-. b8( cis~ | %095
         cis8) cis8( dis8)\f\< dis8-. dis8-. <dis c>8-. | %096
         <d! e>-. ees8-.\ff d8-.\mf\< d8-. d8-. e8-.\f | %097
         r4 \tuplet 3/2 { r8 r8 d8 } \tuplet 3/2  { \D <d, e>8 \U <d' e f>8 \D <d, e f g> } | %098
-        \time 3/8 \U <d' e f g a>8-. r8 r8 | %099
-        \time 4/4 \grace s8 \tuplet 3/2 { r8 \D ges,8 \U <ges' aes>8 \D <ges, aes f>8 }
-        \tuplet 3/2 { \U <ges' aes f g>8 \D <ges, aes f g a> } \U <ges' aes f g a bes>8-.\stopTextSpan \ottava #0 r8 r4\fermata \clef bass | %100
+        \time 3/8 \U <d' e f g a>8-. r8 r8\stopTextSpan \tempo 4=174 | %099
+        \time 3/4 \grace s8 \tuplet 3/2 { r8 \D ges,8 \U <ges' aes>8 }
+        \override NoteColumn.ignore-collision = ##t
+        <<
+          {
+            \tuplet 3/2 { \D <ges, aes f>8 \U <aes'! f>8 \D <f, a!> } \U <f' bes>8-.
+          }
+          \new Voice {
+            \override ClusterSpanner.style = #'centered-stairs
+            \tuplet 3/2 { s8 \U \makeClusters { <f a>32 <g>32 <g>32 <f a> } \D s8 } \U s
+          }
+          \new Voice {
+            \override ClusterSpanner.style = #'centered-stairs
+            \tuplet 3/2 { s8 \U s8 \D \makeClusters { <f, a>32 g32 g32 <f a>32 } } \U s8
+          }
+          \new Voice {
+            \override ClusterSpanner.style = #'centered-stairs
+            \tuplet 3/2 { s8 \U s8 \D s } \U \makeClusters { <f' bes>32 <g a>32 <f bes> } s32
+          }
+        >>
+        \override NoteColumn.ignore-collision = ##f
+        \oneVoice \ottava #0 r8 \clef bass | %100
 
         \sectionLabel \markup { \box \number 101 }
         \omit Score.BarNumber
-        \tempo "Presto" 4=184
-        \stemNeutral g,,,,,8-.\f r8 ees8( c8) r8 a'8( f'8-.) r8 | \undo \omit Score.BarNumber %101
+        \tempo "Prestissimo" 4=232
+        \time 4/4 \stemNeutral g,,,,,8-.\ff r8 ees8( c8) r8 a'8( f'8-.) r8 | \undo \omit Score.BarNumber %101
         b,,8-- gis'8-. e8-. fis'8 r8 a,,8-. d8( des8 | %102
         bes8) r8 aes''8 r8 f,8 ges8-. r4 | %103
         g'8( e8) r4 r4 c,8-. r8 | %104
         d'8 r8 r4 aes8 bes8( des8) r8 | %105
         e,8 dis8-. b8-. r8 r2 | %106
-        r4 r8 g'8( fis8) b8 cis,8-. d8-. | %107
-        a8-. r8 c'8 r8 bes,8-. r8 ees'8 <f f,>8-- | %108
+        r4 r8 \rit g'8(\startTextSpan fis8) b8 cis,8-. d8-. | %107
+        a8-. r8 c'8 r8 bes,8-. r8 ees'8 <f f,>8--\stopTextSpan | %108
 
         \sectionLabel \markup { \box \number 109 }
         \omit Score.BarNumber
-        \tempo "Tempo primo" 4=168
+        \tempo 4=200
         \time 3/4 r4 r4 r8 <cis cis'>8-- | \undo \omit Score.BarNumber %109
         r8 e8 <bes bes'>4 r4 | %110
         r4 g'8 r8 <d d,>4 | %111
         r4 gis8 r8 fis,8-. f'8 | %112
         R1*3/4 | %113
         <c c'>4 r4 r4 | %114
-        fis8-. r8 a,8 <b b'>8-- r4 | %115
+        fis8-.\startTextSpan r8 a,8 <b b'>8-- r4 | %115
         <ees ees,>8-- aes,8-. c8 r8 bes8-. r8 | %116
         r4 r4 <f f'>4 | %117
-        r4 r8 b8 dis8 r8 | %118
+        r4 r8 b8 dis8 r8\stopTextSpan \tempo "Tempo primo" 4=168 | %118
         <fis fis,>8-- cis8-. <a a'>4 r4 | %119
         r4 r8 <g g'>8-- <ees ees'>8-. r8 | %120
         f'4.---> a~---> | %121
         <<
           {
-            \voiceOne \rit a2\startTextSpan r4 | %122
+            \voiceOne a2\startTextSpan r4 | %122
           }
           \new Voice {
             \voiceTwo r4 des,8( bes4) <b b'>8-. | %(122)
@@ -414,10 +433,11 @@
         <d d'>8-. r8 8-. 8-. 8-. <e e'>8-. | %b097
         r4 s8 s8^\mp^\< s4 | %b098
         \time 3/8 R1*3/8^\f | %b099
-        \time 4/4 \grace s8 s16 s8.^\mf^\< s4 r4^\ff r4\fermata \clef bass | %b100
-        \omit Staff.DynamicText \omit Staff.Hairpin
+        \time 3/4 \grace s8 s16 s8.^\mf^\< s4 r4^\ff \clef bass | %b100
+        \omit Staff.Hairpin
 
-        \ottava #-1 g,,,,8-.\mp d8---> ees8( c8) bes---> a8( f'8-.) r8 | %b101
+        \time 4/4 \ottava #-1 g,,,,8-.^\mf d8---> ees8( c8) bes---> a8( f'8-.) r8 | %b101
+        \omit Staff.DynamicText
         b,8-- gis'8-. e-. fis cis8---> a-. d( des | %b102
         bes) c---> aes' ees---> f-. ges-. r4 | %b103
         g8( e) r4 r8 b8---> c-. f---> | %b104
