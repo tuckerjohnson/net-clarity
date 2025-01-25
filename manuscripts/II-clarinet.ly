@@ -132,9 +132,9 @@
 
   \sectionLabel \markup { \box \number 101 }
   \omit Score.BarNumber
-  \tempo "Prestissimo" 4=232
+  \tempo \markup { \rhythm { \tuplet 3/2 { 8[ 8 8] } } "=" \rhythm { { 8[ 8] 8 } } "Prestissimo" } 4=232
   \time 4/4 R1*6 | \undo \omit Score.BarNumber
-  \rit R1\startTextSpan
+  \rit \after 4. \startTextSpan R1
   r2 r4 r8 f,,,8~\niente\<\stopTextSpan | %108
 
   \sectionLabel \markup { \box \number 109 }

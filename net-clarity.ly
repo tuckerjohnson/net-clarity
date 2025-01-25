@@ -1,4 +1,4 @@
-\version "2.24.3"
+\version "2.24.4"
 
 \include "general/info.ly"
 \include "general/aliases.ly"
@@ -147,7 +147,7 @@ clarinetMagstep = #(magstep -2)
         \line { \null }
         \center-column {
             \vspace #10
-            \line { \hbracket \fontsize #10 \number 2024 }
+            \line { \hbracket \fontsize #10 \number 2024-25 }
             \vspace #4
             \line { \xcomp  }
             \vspace #1
@@ -165,7 +165,7 @@ clarinetMagstep = #(magstep -2)
   \markuplist { %Front Matter
     \fill-line {
       \left-column {
-        \line { \bold \xtitle " [2024]" }
+        \line { \bold \xtitle " [2024-25]" }
         \line { \xinst " | " 20 minutes }
         \line { \xcomp }
         \vspace #25
@@ -269,10 +269,15 @@ clarinetMagstep = #(magstep -2)
           \overrideTimeSignatureSettings 3/4 1/4 1,1,1 #'()
           \numericTimeSignature
         }
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override OttavaBracket.outside-staff-priority = 200
+        }
       }
     }
   }
-%
+
 %  \bookpart {
 %    \tocItem \markup { "III." \bold "Lento, poco rubato" \parenthesize \italic "to Amber Lucas" }
 %    \score {
@@ -300,7 +305,7 @@ clarinetMagstep = #(magstep -2)
 %      }
 %    }
 %  }
-%
+
 %  \bookpart {
 %    \tocItem \markup { "IV. " \bold "Allegro energico" }
 %    \score {
