@@ -11,6 +11,7 @@ clarinetMagstep = #(magstep -2)
 \paper {
   line-width = 120
   first-page-number = -1
+  #(include-special-characters)
   footnote-separator-markup = \markup { \left-column { \vspace #0.5 \draw-line #'(6 . 0) } }
   print-page-number = ##f
   #(set-paper-size "arch a")

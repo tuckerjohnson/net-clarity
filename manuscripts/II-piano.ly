@@ -158,8 +158,11 @@
       \override NoteColumn.ignore-collision = ##t
       <<
         {
-          \tuplet 3/2 { \D <ges, aes f>8 \U <aes'! \footnote \markup \huge "*" #'(1 . 1) \markup \tiny \left-column {
-            \line { \bold "Cluster Notation:" "Play all keys in between the upper and lower note of the cluster." }
+          \tuplet 3/2 { \D <ges, aes f>8 \U <aes'! \footnote \markup &dagger; #'(1 . 1) \markup \tiny \left-column {
+            \line {
+              \concat { &dagger; \bold "Cluster Notation" ":" }
+              "Play all keys in between the upper and lower note of the cluster."
+            }
           }
           f>8
           \D <f, a!> } \U <f' bes>8-.
@@ -190,7 +193,7 @@
       d'8 r8 r4 aes8 bes8( des8) r8 | %105
       e,8 dis8-. b8-. r8 r2 | %106
       r4 r8 \rit g'8(\startTextSpan fis8) b8 cis,8-. d8-. | %107
-      a8-. r8 c'8 r8 bes,8-. r8 ees'8 <f f,>8--\stopTextSpan | %108
+      a8-.\> r8 c'8 r8 bes,8-. r8 ees'8 <f f,>8--\stopTextSpan\f | %108
 
       \sectionLabel \markup { \box \number 109 }
       \omit Score.BarNumber
@@ -204,24 +207,24 @@
       fis8-.\startTextSpan r8 a,8 <b b'>8-- r4 | %115
       <ees ees,>8-- aes,8-. c8 r8 bes8-. r8 | %116
       r4 r4 <f f'>4 | %117
-      r4 r8 b8 dis8 r8\stopTextSpan \tempo "Tempo primo" 4=168 | %118
-      <fis fis,>8-- cis8-. <a a'>4 r4 | %119
+      r4 r8 b8\> dis8 r8\stopTextSpan \tempo "Tempo primo" 4=168 | %118
+      <fis fis,>8--\mf cis8-. <a a'>4 r4 | %119
       r4 r8 <g g'>8-- <ees ees'>8-. r8 | %120
       f'4.---> a~---> | %121
       <<
         {
-          \voiceOne a2\startTextSpan r4 | %122
+          \voiceOne a2\startTextSpan\> r4 | %122
         }
         \new Voice {
           \voiceTwo r4 des,8( bes4) <b b'>8-. | %(122)
         }
       >>
       \oneVoice
-      r8 d8-- <ees ees'>8-- r8 \after 8 \stopTextSpan r4 \clef treble | %123
+      r8 d8--\mp <ees ees'>8-- r8 \after 8 \stopTextSpan r4 \clef treble | %123
 
       \sectionLabel \markup { \box \number 124 }
       \omit Score.BarNumber
-      \tempo "Poco meno mosso" 4=152
+      \tempo "Meno mosso" 4=152
       <g g'>4--\mp r4 r4 | \undo \omit Score.BarNumber %124
       c'8-. <a a,>4( <fis fis,>) bes8-.-> | %125
       r8 f-.-> r8 des8-.-> r8 <d d'>8~ | %126
@@ -236,7 +239,7 @@
           r8 aes8-. s2 | %(129)
         }
       >>
-      \oneVoice f,8-.-> ees'8~ 4~ 8 b8-. | %130
+      \oneVoice f,8-.->\startTextSpan ees'8~ 4~ 8 b8-. | %130
       <<
         {
           \voiceTwo r8 c8~ c4
@@ -245,13 +248,55 @@
           \voiceOne r4 des'8-. r8
         }
       >>
-      \oneVoice <e, e,>8-. r8 | %131
+      \oneVoice <e, e,>8-. r8\stopTextSpan \tempo "Poco rubato" 4=144 | %131
       r8 f8( g,2) | %132
       bes'8( g,8~ g4~ g8 b~ | %133
       b8) d'8-. r8 e,,8( gis,4~ | %134
       gis2) fis''4~ | %135
       fis2 r8 a8~ | %136
       a4 r8 aes4. | %137
+
+      \sectionLabel \markup { \box \number 138 }
+      \omit Score.BarNumber
+      \tempo 4=132
+      r8 d,,8~ d4. ees'8~ | \undo \omit Score.BarNumber %138
+      ees2 r8 des8~\mp | %139
+      <<
+        {
+          \voiceOne des2. | %140
+        }
+        \new Voice {
+          \voiceTwo r8 a,8~ a2 | %(140)
+        }
+      >>
+      \oneVoice aes2~\p aes8 g''8~\mf | %141
+      g4.~\> <g d>4.~ | %142
+      <<
+        {
+          \voiceOne <g d>8~ <g d a>8~\p 2 | %143
+        }
+        \new Voice {
+          \voiceTwo r4 r4 <des, des,>4-> | %(143)
+        }
+      >>
+      \oneVoice r4\p\< r4 bes''8( <c c,>8~\mf | %144
+      <c c,>2.~ | %145
+      \ace <c c,>4.)\startTextSpan <f f,>4.~ | %146
+      2. | %147
+      r4\p\< r4 r8 <b, b,>8~ | %148
+      4 <e, e,>4 <b b'>4\f | %149
+      r8 <fis' fis'>8~ \after 4. \stopTextSpan 2 | %150
+
+      \sectionLabel \markup { \box \number 151 }
+      \tempo 4=144
+      \omit Score.BarNumber
+      R1*3/4 | \undo \omit Score.BarNumber %151
+      r8 <des des'>8~\p 2 | %152
+      <ees ees'>2 <c c'>4~ | %153
+      8\startTextSpan r8 r4 r4 | %154
+      r4 r4 r8 \after 16 \stopTextSpan <aes aes'>8\p \tempo "Tempo primo" 4=168 | %155
+      R1*3/4 | %156
+      R1*3/4 | %157
 
     }
   }
@@ -380,8 +425,8 @@
       \oneVoice
 
       e,8-.\mf d'4->( g,8-.) r4 | %b057
-      r4 r8 \clef treble ges''4.(\p | %b058
-      ges2. | %b059
+      r4 r8 \clef treble ges''4.~(\p | %b058
+      ges2.~ | %b059
       ges8 a'8-.) r4 r4 \clef bass | %b060
       dis,,,8-. r8 r4 r4 | %b061
       r4 c'8->(\f f,8-.) r4 | %b062
@@ -436,17 +481,16 @@
       r4 r4*1/2 s8^\mp^\< s4 | %b098
       \time 3/8 R1*3/8^\f | %b099
       \time 3/4 \grace s8 s16 s8.^\mf^\< s4 r4^\ff \clef bass | %b100
-      \omit Staff.Hairpin
+      \omit Staff.Hairpin \omit Staff.DynamicText
 
       \time 4/4 \ottava #-1 g,,,,8-.^\mf d8---> ees8( c8) bes---> a8( f'8-.) r8 | %b101
-      \omit Staff.DynamicText
       b,8-- gis'8-. e-. fis cis8---> a-. d( des | %b102
       bes) c---> aes' ees---> f-. ges-. r4 | %b103
       g8( e) r4 r8 b8---> c-. f---> | %b104
       d a4.---> aes'8 bes,( des) fis--->  | %b105
       e8 dis-. b-. r8 r2 | %b106
       r4 r8 g'8( fis) b, cis-. d-. | %b107
-      a e'---> c8 aes'---> bes,-. g'---> ees r8 | %b108
+      a\> e'---> c8 aes'---> bes,-. g'--->\mp ees r8 | %b108
 
       R1*3/4 | %b109
       <f f'>8-. e-. r4 r4 | %b110
@@ -457,27 +501,93 @@
       fis8 d---> a r8 <e' e'>8-. <g g'>8-. | %b115
       r8 <aes aes'>8 c, g'8---> bes-. r8 | %b116
       r4 r4 r8 <d d,>8-. | %b117
-      r4 r8 b,8 dis e~ | %b118
-      e8 cis'8-. r8 gis4.->~ | %b119
+      r4 r8 b,8\> dis e~ | %b118
+      e8\p cis'8-. r8 gis4.->~ | %b119
       8 fis'->~ fis2 \ottava #0 | %b120
       r4 <aes aes'>4 r8 <e e'> | %b121
       <c c'> r8 \ottava #-1 des,8( bes4) r8 | %b122
       r8 d8 \ottava #0 r4 e'4~\mf | %123
 
-      e4~ <e b'>~ <e b' e gis>4~ | %124
-      2~ 8 bes''8~ | %125
-      bes8~ <bes f>4~ <bes f des>4. | %126
-      ees,,4~ <ees g'>2~ | %127
-      <ees c' g'>4 des''4~ <des bes>4~ | %128
-      4. des8~ <des bes>4 | %129
-      <des bes f>4. d,,4.~| %130
-      d2.~ | %131
-      d4 <d a'>4->~ <d a' fis'>~ | %132
-      4. <d a' fis'>4\arpeggio b''8~ | %133
-      b4.~ <b e,>8~ <b e, gis,>4 | %134
-      f,2~ f8 f8->~ | %135
-      <f bes>4~ <f bes des>4~ 8~ <f bes des bes'>8~ | %136
-      4. b4.\p | %137
+      <<
+        {
+          \voiceTwo e4~ <e b'>~ 4~ | %b124
+          2~ 8 r8 | %b125
+          r8 f'4~ <f des>8~ 4 | %b126
+          ees,2.~ | %b127
+          ees4
+        }
+        \new Voice {
+          \voiceOne r4 r4 gis'8~ <gis e>~\sostenutoOn | %(b124)
+          2~ 8\sostenutoOff bes8~ | %(b125)
+          bes2. | %(b126)
+          r4 g2~ | %(b127)
+          <g c,>4
+        }
+      >>
+      \oneVoice
+      des'4~ <des bes>4~ | %b128
+      4. des8~ <des bes>4~ | %b129
+      <<
+        {
+          \voiceOne <des bes>4.
+        }
+        \new Voice {
+          \voiceTwo f,4.
+        }
+      >>
+      \oneVoice
+      d,4.~ | %b130
+      d2. | %b131
+      <<
+        {
+          \voiceTwo d4~ <d a'>4~ <d a'>~ | %b132
+          4~ 8 <d a'>4\arpeggio r8 | %b133
+          r4 r4 gis4 | %134
+        }
+        \new Voice {
+          \voiceOne
+          r4 r4 fis'4~ | %(b132)
+          fis4~ 8 fis4\arpeggio b8~ | %(b133)
+          b4.~ <b e,>4. | %(b134)
+        }
+      >>
+      \oneVoice
+      f,2~ f8 f8->~ | %b135
+      <<
+        {
+          \voiceTwo <f bes>2.~ | %b136
+          4. b4.\p | %b137
+
+          r8\sostenutoOn d8~ d4. \after 16 \sostenutoOff <e e,>8~ | %b138
+          <e e,>2.\sustainOn | %b139
+        }
+        \new Voice {
+          \voiceOne r4 des4.~ <des bes'>8~ | %(b136)
+          4. <g~ b>4. | %(b137)
+
+          g2. | %(b138)
+          g4~ <g d>2 | %(b139)
+        }
+      >>
+      \oneVoice r8 a,8( <bes bes,>2) | %b140
+      <f aes f'>2~\sustainOff\sustainOn\p 8 <ges ges'>8(\sustainOff\sustainOn\mf | %b141
+      <ees' ees'>4~ 8) r8\sustainOff r4 | %b142
+      r4 r4\sustainOn\p <c c,>4-> | %b143
+      <des des,>4(\<\sustainOff\sustainOn <aes aes'>4 <g g'>4~\sustainOff\sustainOn | %b144
+      2)\mf r4\sustainOff | %b145
+      R1*3/4 | %b146
+      R1*3/4 | %b147
+      <ees ees'>2\p r4 | %b148
+      r8\sustainOn <d d'>8~\mf 2 | %b149
+      \after 8 \sustainOff r4 <a a'>2\f | %b150
+
+      gis'8( b4 ais8-.) r4 | %b151
+      R1*3/4\sustainOn | %b152
+      R1*3/4 | %b153
+      r4\sustainOff r8 ees4. | %b144
+      ees8-. r8 r4 r4 | %b145
+      c4( des) r4 | %b146
+      R1*3/4 | %b147
 
     }
   }
