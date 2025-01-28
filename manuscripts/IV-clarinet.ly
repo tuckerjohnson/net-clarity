@@ -179,8 +179,8 @@
   \omit Score.BarNumber
   \override Score.TimeSignature.stencil = ##f
   \time 7/8  d,-.\! r8 r4\shortfermata \once \override Staff.Stem.stencil = ##f
-  \footnote \markup \huge "*" #'(-3 . -1) \markup \tiny \left-column {
-    \line { "* Cadenza notation should be interpreted freely, though music should be" } \vspace #-0.4
+  \footnote \markup &dagger; #'(-3 . -1) \markup \tiny \left-column {
+    \line { &dagger; "Cadenza notation should be interpreted freely, though music should be" } \vspace #-0.4
     \line { "continuous between breath marks and rests. Breath marks indicate a short" } \vspace #-0.4
     \line { "break, while rests are longer." }
   }

@@ -49,6 +49,12 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #21 \oddhead }
     \concat { \if \on-page #23 \oddhead }
     \concat { \if \on-page #25 \oddhead }
+    \concat { \if \on-page #27 \oddhead }
+    \concat { \if \on-page #29 \oddhead }
+    \concat { \if \on-page #31 \oddhead }
+    \concat { \if \on-page #33 \oddhead }
+    \concat { \if \on-page #35 \oddhead }
+    \concat { \if \on-page #37 \oddhead }
 
   }
   evenHeaderMarkup = \markup {
@@ -64,6 +70,12 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #22 \evhead }
     \concat { \if \on-page #24 \evhead }
     \concat { \if \on-page #26 \evhead }
+    \concat { \if \on-page #28 \evhead }
+    \concat { \if \on-page #30 \evhead }
+    \concat { \if \on-page #32 \evhead }
+    \concat { \if \on-page #34 \evhead }
+    \concat { \if \on-page #36 \evhead }
+    \concat { \if \on-page #38 \evhead }
   }
   oddFooterMarkup = \markup {
     \concat { \if \on-page #3 \fill-line { \null \xcr \null } }
@@ -78,6 +90,12 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #21 \oddfoot }
     \concat { \if \on-page #23 \oddfoot }
     \concat { \if \on-page #25 \oddfoot }
+    \concat { \if \on-page #27 \oddfoot }
+    \concat { \if \on-page #29 \oddfoot }
+    \concat { \if \on-page #31 \oddfoot }
+    \concat { \if \on-page #33 \oddfoot }
+    \concat { \if \on-page #35 \oddfoot }
+    \concat { \if \on-page #37 \oddfoot }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }
@@ -92,7 +110,14 @@ clarinetMagstep = #(magstep -2)
     \concat { \if \on-page #20 \evfoot }
     \concat { \if \on-page #22 \evfoot }
     \concat { \if \on-page #24 \evfoot }
-    \concat { \if \on-page #26 \fill-line { \null \tiny \typewriter \longHash \null } }
+    \concat { \if \on-page #26 \evfoot }
+    \concat { \if \on-page #28 \evfoot }
+    \concat { \if \on-page #30 \evfoot }
+    \concat { \if \on-page #32 \evfoot }
+    \concat { \if \on-page #34 \evfoot }
+    \concat { \if \on-page #36 \evfoot }
+    \concat { \if \on-page #38 \evfoot }
+    \concat { \if \on-page #40 \fill-line { \null \tiny \typewriter \longHash \null } }
   }
 
 }
@@ -247,34 +272,13 @@ clarinetMagstep = #(magstep -2)
 %    }
 %  }
 
-<<<<<<< HEAD
-%  \bookpart {
-%    \tocItem \markup { "II. " \bold "Vivace" }
-%    \score {
-%      \header {
-%        title = \markup { \fontsize #1 \xtitle }
-%        subtitle = \markup { \medium \italic \xsub }
-%        composer = \xcomp
-%        poet = \markup { \xinst }
-%        piece = \markup { \large \bold "II. " }
-%      }
-%      <<
-%        \removeWithTag #'part \include "manuscripts/II-clarinet.ly"
-%        \removeWithTag #'part \include "manuscripts/II-piano.ly"
-%      >>
-%      %\midi { }
-%      \layout {
-%        \context {
-%          \Score
-%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-%          \override Hairpin.to-barline = ##f
-%        }
-%      }
-%    }
-%  }
-=======
   \bookpart {
+    \header {
+      title = \markup { \fontsize #1 \xtitle }
+      subtitle = \markup { \medium \italic \xsub }
+      composer = \xcomp
+      poet = \markup { \xinst }
+    }
     \tocItem \markup { "II. " \bold "Vivace" }
     \score {
       \header {
@@ -304,52 +308,46 @@ clarinetMagstep = #(magstep -2)
       }
     }
   }
->>>>>>> working
 
-%  \bookpart {
-%    \tocItem \markup { "III." \bold "Lento, poco rubato" \parenthesize \italic "to Amber Lucas" }
-%    \score {
-%      \header {
-%        piece = \markup { \large \bold "III. " \parenthesize \italic "to Amber Lucas"  }
-%      }
-%      <<
-%        \removeWithTag #'part \include "manuscripts/III-clarinet.ly"
-%        \removeWithTag #'part \include "manuscripts/III-piano.ly"
-%      >>
-%     %\midi { }
-%      \layout {
-%        \context {
-%          \Score
-%          \remove Mark_engraver
-%          \remove Text_mark_engraver
-%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-%          \override Hairpin.to-barline = ##f
-%        }
-%        \context {
-%          \Staff
-%          \RemoveEmptyStaves
-%        }
-%      }
-%    }
-%  }
+  \bookpart {
+    \tocItem \markup { "III." \bold "Lento, poco rubato" \parenthesize \italic "to Amber Lucas" }
+    \score {
+      \header {
+        piece = \markup { \large \bold "III. " \parenthesize \italic "to Amber Lucas"  }
+      }
+      <<
+        \removeWithTag #'part \include "manuscripts/III-clarinet.ly"
+        \removeWithTag #'part \include "manuscripts/III-piano.ly"
+      >>
+     %\midi { }
+      \layout {
+        \context {
+          \Score
+          \remove Mark_engraver
+          \remove Text_mark_engraver
+          \override RehearsalMark.break-visibility = #begin-of-line-invisible
+          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+          \override Hairpin.to-barline = ##f
+        }
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
+    }
+  }
 
-<<<<<<< HEAD
   \bookpart {
     \tocItem \markup { "IV. " \bold "Allegro energico" }
     \score {
       \header {
-        title = ##f
-        subtitle = ##f
-        composer = ##f
-        poet = ##f
         piece = \markup { \large \bold "IV." }
       }
       <<
         \removeWithTag #'part \include "manuscripts/IV-clarinet.ly"
         \include "manuscripts/IV-piano.ly"
       >>
-      \midi { }
+      %\midi { }
       \layout {
         \context {
           \Score
@@ -369,43 +367,9 @@ clarinetMagstep = #(magstep -2)
       }
     }
   }
-=======
-%  \bookpart {
-%    \tocItem \markup { "IV. " \bold "Allegro energico" }
-%    \score {
-%      \header {
-%        title = ##f
-%        subtitle = ##f
-%        composer = ##f
-%        poet = ##f
-%        piece = \markup { \large \bold "IV." }
-%      }
-%      <<
-%        \removeWithTag #'part \include "manuscripts/IV-clarinet.ly"
-%        \include "manuscripts/IV-piano.ly"
-%      >>
-%      %\midi { }
-%      \layout {
-%        \context {
-%          \Score
-%          \remove Text_mark_engraver
-%          \remove Mark_engraver
-%          \override TextSpanner.bound-details.left-broken.text = " "
-%          \override RehearsalMark.break-visibility = #begin-of-line-invisible
-%          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
-%          \override Hairpin.to-barline = ##f
-%          \override Stem.stemlet-length = #0.75
-%        }
-%        \context {
-%          \Staff
-%          \RemoveEmptyStaves
-%          \consists Mark_engraver
-%        }
-%      }
-%    }
-%  }
->>>>>>> working
 
+  \pageBreak
+  \markup { \null }
   \pageBreak
   \markup { \null }
 }
