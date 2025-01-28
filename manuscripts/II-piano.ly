@@ -253,8 +253,8 @@
       bes'8( g,8~ g4~ g8 b~ | %133
       b8) d'8-. r8 e,,8( gis,4~ | %134
       gis2) fis''4~ | %135
-      fis2 r8 a8~ | %136
-      a4 r8 aes4. | %137
+      fis2\startTextSpan r8 a8~ | %136
+      a4 r8 \after 4 \stopTextSpan aes4. | %137
 
       \sectionLabel \markup { \box \number 138 }
       \omit Score.BarNumber
@@ -294,9 +294,56 @@
       r8 <des des'>8~\p 2 | %152
       <ees ees'>2 <c c'>4~ | %153
       8\startTextSpan r8 r4 r4 | %154
-      r4 r4 r8 \after 16 \stopTextSpan <aes aes'>8\p \tempo "Tempo primo" 4=168 | %155
+      r4 r4 r8 \after 16 \stopTextSpan <aes aes'>8-.\pp \tempo "Tempo primo" 4=168 | %155
       R1*3/4 | %156
       R1*3/4 | %157
+      R1*3/4 | %158
+      R1*3/4 | %159
+      R1*3/4 | %160
+      R1*3/4 | %161
+      R1*3/4 | %162
+      R1*3/4 | %163
+      R1*3/4 | %164
+
+      \sectionLabel \markup { \box \number 165 }
+      \omit Score.BarNumber
+      R1*3/4 | \undo \omit Score.BarNumber %165
+      R1*3/4 | %166
+      R1*3/4 | %167
+      R1*3/4 | %168
+      R1*3/4 | %169
+      R1*3/4 | %170
+      R1*3/4 | %171
+      R1*3/4 | %172
+      R1*3/4 | %173
+      R1*3/4 | %174
+      r4 r4 r8 f8~\mp | %175
+      4. <f des>4.~\mf | %176
+      4 <f des b>2\mp | %177
+
+      \sectionLabel \markup { \box \number 178 }
+      \omit Score.BarNumber
+      8-.\mf r8 r4 r4 | \undo \omit Score.BarNumber %178
+      R1*3/4 | %179
+      \ritPoc R1*3/4\startTextSpan | %180
+      R1*3/4 | %181
+      R1*3/4 | %182
+      R1*3/4 | %183
+      R1*3/4 | %184
+      R1*3/4 | %185
+      R1*3/4 | %186
+      <<
+        {
+          s4 s4 s8 s16 s16\stopTextSpan \tempo 4=104 %187
+          s4. \molRit s8\startTextSpan s4  %188
+          \after 8. \stopTextSpan s2.
+        }
+        \new Voice {
+          R1*3/4 % s4\stopTextSpan \tempo 4=104 %187
+          R1*3/4 % \molRit s8\startTextSpan s4.  %188
+          r4 r2\fermata \bar "|." %189
+        }
+      >>
 
     }
   }
@@ -584,10 +631,54 @@
       gis'8( b4 ais8-.) r4 | %b151
       R1*3/4\sustainOn | %b152
       R1*3/4 | %b153
-      r4\sustainOff r8 ees4. | %b144
-      ees8-. r8 r4 r4 | %b145
-      c4( des) r4 | %b146
-      R1*3/4 | %b147
+      \undo \omit Staff.Hairpin \undo \omit Staff.DynamicText
+      r4\sustainOff r8 ees'4.^\mf | %b154
+      ees8-. r8 r4 r4 | %b155
+      c4(^\f des) r4 | %b156
+      R1*3/4 | %b157
+      g,4~^\mf g8 r8 a4~ | %b158
+      a4 r8 fis4.~^\mp | %b159
+      fis8 r8 r4 r4 | %b160
+      R1*3/4 | %b161
+      r8 f8~^\p f4~ f8 r8 | %b162
+      e2 r4 | %b163
+      d4~ d8 r8 bes'4~^\mf | %b164
+
+      bes4 r4 r4 | %b165
+      r4 r8 <bes fis'>4.~ | %b166
+      8 r8 <bes d fis>4.^\f 8-. | %b167
+      r4 r8 aes'8^\mf^\>\sustainOn <aes c>4~\! | %b168
+      2.~ | %b169
+      2.~ | %b170
+      8 <e aes c>4 8-.^\p\sustainOff g4~^\f^\>\sustainOn | %b171
+      4 <ees g>4. <ees g b>8~ | %b172
+      8 8-.^\p\sustainOff r4 r4 | %b173
+      R1*3/4 | %b174
+      <<
+        {
+          s4 s4 s8 s8\sustainOn |
+          s2. s2. |
+        }
+        \new Voice {
+          R1*3/4 | %b175
+          R1*3/4 | %b176
+          R1*3/4 | %b177
+        }
+      >>
+
+      \oneVoice
+      r4\sustainOff c'8(\sustainOn bes4 aes8~ | %b178
+      aes2.) | %b179
+      R1*3/4 | %b180
+      R1*3/4 | %b181
+      R1*3/4 | %b182
+      R1*3/4 | %b183
+      R1*3/4 | %b184
+      R1*3/4 | %b185
+      R1*3/4 | %b186
+      R1*3/4 | %b187
+      R1*3/4 | %b188
+      r4\sustainOff r2\fermata \bar "|." %b189
 
     }
   }

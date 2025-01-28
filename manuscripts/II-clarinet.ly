@@ -8,6 +8,7 @@
   \override StaffSymbol.staff-space = \clarinetMagstep
   \consists Text_mark_engraver
   \consists Mark_engraver
+  \RemoveEmptyStaves
  }
 \transpose bes c'
 \relative {
@@ -171,8 +172,8 @@
   8\mp \breathe g8~( g4~ g8 b,8~ | %133
   b8) \grace gis''8( dis4)\mf e,8( gis,4~ | %134
   gis4) \grace e''8( g,2~\> | %135
-  g2) c4~ | %136
-  c4\startTextSpan r8 \after 4 \stopTextSpan g4.\p \tempo 4=132 | %137
+  g2)\startTextSpan c4~ | %136
+  c4 r8 \after 4 \stopTextSpan g4.\p \tempo 4=132 | %137
 
   \sectionLabel \markup { \box \number 138 }
   \omit Score.BarNumber
@@ -201,5 +202,42 @@
   d,,4.\f d8-. r8 a''8~\mp | %156
   a8 b'4(\< bes8-.) ees,4~ | %157
   ees4 ces,8-.\f r8 r4 | %158
+  bes8\> c'8-.\p r4 r8 aes,8\mf\> | %159
+  des'8-. e'4(\p f d8-.) | %160
+  r8 ees,,,8(\f\> c'4 b'8-.)\p r8 | %161
+  r4 bes4 g'8-. r8 | %162
+  r4 aes,8 ges'8-. r8 a8~\< | %163
+  a4 cis,,8-.\mf r8 r8 a'8~\> | %164
+
+  \sectionLabel \markup { \box \number 165 }
+  \omit Score.BarNumber
+  a8 c'8-.\p r8 b,,\mf\> aes''4~\> | \undo \omit Score.BarNumber %165
+  aes8 f8-.\p r4 r8 cis8-.\mf | %166
+  e8-. r8 r4 ees,,8(\f g8-.) | %167
+  f8\> g'8( ees'8-.)\mp aes,,8(\f\> c8) bes''8~ | %168
+  bes2\mp r8 cis,,8(\mf | %169
+  a'2) a8-- a8-- | %170
+  b8-. e,,8\f\> fis''8( d'-.)\p g,,,8\f c'8--\mp\< | %171
+  c8-- bes,8-. ees,8\f f''8\p des'8-.\< ces,,8 | %172
+  ges8\f aes'4~\mf aes8--\< aes-- aes8-. | %173
+  d,8\f\> e'8 a8-.\mp r8 r8 a-- | %174
+  a8-- a8-- c,,8\f\> bes' g'8-.\mp f,8-- | %175
+  f8--\< f8-- f8-- des\mf ees'8-. e,(\> | %176
+  gis8) fis'8-.\mp a,,8\mf b'8-- 8--\< 8-- | %177
+
+  \sectionLabel \markup { \box \number 178 }
+  \omit Score.BarNumber
+  d,8-.\f r8 c8(\mf bes) bes( aes) | \undo \omit Score.BarNumber %178
+  aes-- g( f)\> f( ees8) ees-- | %179
+  \ritPoc ees--\startTextSpan ees-- ees-- ees-- ees-- d(\mp | %180
+  e fis) a( b cis) g( | %181
+  bes\< c) des( ees f) ges( | %182
+  aes) aes-- aes-- aes-- aes( fes')\mf | %183
+  d-- d-- d-- d(\< b a) | %184
+  g( c f)\f f-- dis(\> cis | %185
+  ais) gis( fis e)\p b'8--\mp b-- | %186
+  b( d, a') g(\> f \after 16 \stopTextSpan ees) \tempo 4=104 | %187
+  c8( bes aes)\p \molRit cis(\>\startTextSpan b a) | %188
+  fis( \after 16 \stopTextSpan e d2)\pp\fermata \bar "|." %189
 
 }

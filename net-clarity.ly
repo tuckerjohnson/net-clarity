@@ -272,7 +272,6 @@ clarinetMagstep = #(magstep -2)
         }
         \context {
           \Staff
-          \RemoveEmptyStaves
           \override OttavaBracket.outside-staff-priority = 200
         }
       }
