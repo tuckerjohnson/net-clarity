@@ -210,21 +210,21 @@
       r4 r8 b8\> dis8 r8\stopTextSpan \tempo "Tempo primo" 4=168 | %118
       <fis fis,>8--\mf cis8-. <a a'>4 r4 | %119
       r4 r8 <g g'>8-- <ees ees'>8-. r8 | %120
-      f'4.---> a~---> | %121
+      f'4.--->\startTextSpan a~---> | %121
       <<
         {
-          \voiceOne a2\startTextSpan\> r4 | %122
+          \voiceOne a2\> r4 | %122
         }
         \new Voice {
           \voiceTwo r4 des,8( bes4) <b b'>8-. | %(122)
         }
       >>
       \oneVoice
-      r8 d8--\mp <ees ees'>8-- r8 \after 8 \stopTextSpan r4 \clef treble | %123
+      r8 d8--\mp <ees ees'>8-- r8 \after 8 \stopTextSpan r4 \clef treble \bar "||" %123
 
       \sectionLabel \markup { \box \number 124 }
       \omit Score.BarNumber
-      \tempo "Meno mosso" 4=152
+      \tempo "Poco rubato" 4=152
       <g g'>4--\mp r4 r4 | \undo \omit Score.BarNumber %124
       c'8-. <a a,>4( <fis fis,>) bes8-.-> | %125
       r8 f-.-> r8 des8-.-> r8 <d d'>8~ | %126
@@ -248,12 +248,12 @@
           \voiceOne r4 des'8-. r8
         }
       >>
-      \oneVoice <e, e,>8-. r8\stopTextSpan \tempo "Poco rubato" 4=144 | %131
+      \oneVoice <e, e,>8-. r8\stopTextSpan \tempo 4=144 | %131
       r8 f8( g,2) | %132
       bes'8( g,8~ g4~ g8 b~ | %133
       b8) d'8-. r8 e,,8( gis,4~ | %134
-      gis2) fis''4~ | %135
-      fis2\startTextSpan r8 a8~ | %136
+      gis2)\startTextSpan fis''4~ | %135
+      fis2 r8 a8~ | %136
       a4 r8 \after 4 \stopTextSpan aes4. | %137
 
       \sectionLabel \markup { \box \number 138 }
@@ -285,10 +285,10 @@
       2. | %147
       r4\p\< r4 r8 <b, b,>8~ | %148
       4 <e, e,>4 <b b'>4\f | %149
-      r8 <fis' fis'>8~ \after 4. \stopTextSpan 2 | %150
+      r8 <fis' fis'>8~ \after 4. \stopTextSpan 2 \bar "||" %150
 
       \sectionLabel \markup { \box \number 151 }
-      \tempo 4=144
+      \tempo "Tempo giusto" 4=144
       \omit Score.BarNumber
       R1*3/4 | \undo \omit Score.BarNumber %151
       r8 <des des'>8~\p 2 | %152

@@ -129,7 +129,9 @@
   d8-.) r8 d8-. d8-. d8( e8-.) | %097
   \grace bes8( f8)\mf f'8-. f8( g8-.) g8-.\< g8( | %098
   \time 3 3/8 a8-.) a8-. a8-.\stopTextSpan \tempo 4=174 | %099
-  \time 3/4 \grace a,8^( ges'8\ff aes8-.) aes8-. aes8( bes-.) r8 | %100
+  \time 3/4 \grace a,8^( ges'8\ff aes8-.) aes8-. aes8( bes-.) r8
+  \mark \markup \teeny { \hspace #2 \rhythm { \tuplet 3/2 { 8[ 8 8] } } "=" \rhythm { { 8[ 8] 8 } } }
+  \bar "||" %100
 
   \sectionLabel \markup { \box \number 101 }
   \omit Score.BarNumber
@@ -150,16 +152,16 @@
   \rit c4.\startTextSpan b4.->\> | %115
   ees,2.~\p\< | %116
   2 f4~\f | %117
-  \after 2 \stopTextSpan f2. \tempo "Tempo primo" 4=168 | %118
+  \after 2 \stopTextSpan f2. \tempo "Tempo primo" 4=168 \bar "||" %118
   fis4-> a2->~ | %119
   4. g4.~-> | %120
-  g4 aes4->~ aes8 e8~-> | %121
-  2.~\>\startTextSpan | %122
-  4\p r4 \after 8 \stopTextSpan r4 | %123
+  g4\startTextSpan aes4->~ aes8 e8~-> | %121
+  2.~\> | %122
+  4\p r4 \after 8 \stopTextSpan r4 \bar "||" %123
 
   \sectionLabel \markup { \box \number 124 }
   \omit Score.BarNumber
-  \tempo "Meno mosso" 4=152
+  \tempo "Poco rubato" 4=152
   R1*3/4 | \undo \omit Score.BarNumber %124
   r8 a'4(\mp\> fis) bes8~-> | %125
   bes8 f4-> des4->\f \grace fis8( d8~\p | %126
@@ -167,12 +169,12 @@
   fis4) \breathe des'4->\f bes8-> \grace f8( d'8~\> | %128
   d8 a8~ \after 4. \mp a2) | %129
   \grace b8( f8->)\startTextSpan ees'8~ ees4~\< ees8 \grace f,8( b8~->\f\> | %130
-  b8) c8~ \after 8 \p c4 \grace b8( \after 8 \stopTextSpan e4~->\f \tempo "Poco rubato" 4=144 | %131
+  b8) c8~ \after 8 \p c4 \grace b8( \after 8 \stopTextSpan e4~->\f \tempo 4=144 | %131
   e8) aes8-> g,2~\> | %132
   8\mp \breathe g8~( g4~ g8 b,8~ | %133
   b8) \grace gis''8( dis4)\mf e,8( gis,4~ | %134
-  gis4) \grace e''8( g,2~\> | %135
-  g2)\startTextSpan c4~ | %136
+  gis4)\startTextSpan \grace e''8( g,2~\> | %135
+  g2) c4~ | %136
   c4 r8 \after 4 \stopTextSpan g4.\p \tempo 4=132 | %137
 
   \sectionLabel \markup { \box \number 138 }
@@ -181,7 +183,7 @@
   c2) r4 | %139
   r8 a,8~(\mf a2 | %140
   gis4.) e''4.\p | %141
-  ees,,4.\mf b''4\p bes8~( | %142
+  ees,,4.\mf b''4(\p bes8~ | %142
   bes2) des,4-> | %143
   a'2 bes'8(\< c,8~ | %144
   c2)\mf r8 b,8~ | %145
@@ -189,16 +191,16 @@
   fis4) ees'4( aes8 g~ | %147
   g4) c,8\p\< des'4 ces'8-. | %148
   r8 bes,,8 fes''2~( | %149
-  fes8 ges8-.) \after 4. \stopTextSpan f,,2\f | %150
+  fes8 ges8-.) \after 4. \stopTextSpan f,,2\f \bar "||" %150
 
   \sectionLabel \markup { \box \number 151 }
   \omit Score.BarNumber
-  \tempo 4=144
+  \tempo "Tempo giusto" 4=144
   r4 r4 r8 g8\> | \undo \omit Score.BarNumber %151
   d'8 cis'8-.\mp r8 ges,4\f\> fes'8 | %152
-  ees'-.\mp r8 f,4\mf c'4~\< | %153
-  c8\startTextSpan a,8\f r8 f8 g'4~\mf | %154
-  g8 r8 e,8\f\> fis'4 \after 16 \stopTextSpan gis'8\mp \tempo "Tempo primo" 4=168 | %155
+  ees'-.\mp\startTextSpan r8 f,4\mf c'4~\< | %153
+  c8 a,8\f r8 f8 g'4~\mf | %154
+  g8 r8 e,8\f\> fis'4 \after 16 \stopTextSpan gis'8\mp \tempo "Tempo primo" 4=168 \bar "||" %155
   d,,4.\f d8-. r8 a''8~\mp | %156
   a8 b'4(\< bes8-.) ees,4~ | %157
   ees4 ces,8-.\f r8 r4 | %158
