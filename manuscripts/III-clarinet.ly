@@ -84,7 +84,7 @@
     { \override Rest.staff-position = #0 \time 4/4 r2 r4 \tuplet 5/4 { r8. ees'16(\< aes) } | }
     \tag #'part  {
       \new CueVoice \relative {
-        \stemUp \tuplet 3/2 { f'8 bes4~ } 16 a cis d e8 fis16 g b8 \stemNeutral s8 |
+        \stemUp \tuplet 3/2 { f'8 bes4~ } bes16 a cis d e8 fis16 g b8 \stemNeutral s8 |
       }
     }
   >>

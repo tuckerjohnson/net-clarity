@@ -22,13 +22,17 @@ pocAce =  \override TextSpanner.bound-details.left.text = \markup { \upright "po
 acePoc =  \override TextSpanner.bound-details.left.text = \markup { \upright "accelerando poco a poco " }
 molAce =  \override TextSpanner.bound-details.left.text = \markup { \upright "molto accel. " }
 
+sD = \stemDown
+sU = \stemUp
+sN = \stemNeutral
+
 ffsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "ff" #:combine
 #:transparent "f" #:normal-text #:italic "sempre" ) )
 
 psempre =
-    #(make-dynamic-script (markup #:combine #:transparent "f" "p" #:combine
-#:transparent "f" #:normal-text #:italic "sempre" ) )
+#(make-dynamic-script
+   (markup "p" #:normal-text #:italic "sempre" ))
 
 ppsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine
@@ -43,6 +47,30 @@ psubito =
 #:transparent "f" #:normal-text #:italic "subito" ) )
 
 
+niente = #(make-dynamic-script (markup (#:normal-text #:abs-fontsize 10 #:bold "n")))
+
+
+clusStemA = {
+  \once \override Stem.length = #11
+}
+
+clusStemB = {
+  \once \override NoteHead.X-offset = #4
+  \once \override Stem.rotation = #'(-33 0 0)
+  \once \override Stem.length = #9.7
+  \once \override Stem.extra-offset = #'(2.65 . 0.4)
+  \once \override Flag.style = #'no-flag
+  \once \override Accidental.extra-offset = #'(4 . -.1)
+}
+
+clusStemC = {
+  \once \override NoteHead.X-offset = #4.8
+  \once \override Stem.rotation = #'(-37 0 0)
+  \once \override Stem.length = #12.5
+  \once \override Stem.extra-offset = #'(3.2 . 0.7)
+  \once \override Flag.style = #'no-flag
+  \once \override Accidental.extra-offset = #'(4.9 . -0.1)
+}
 
 doubleSeparator = \markup {
   \left-column {
