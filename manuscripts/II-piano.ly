@@ -22,12 +22,12 @@
       \time 6/8 bes'8-.-> r8 r8 r4. | %002
       \time 3,2,2 7/8 d4.\> a'8-. cis8~\mp cis4~ | %003
       \time 4/4 cis8 r8 g,8-. r8 r2 | %004
-      f'4. \grace des'8( ges,8) r2\f | %005
+      f'4. \slashedGrace des'8^( ges,8) r2\f | %005
       \time 6/8 f,8-> d8-.-> r8 c'4 e'8-.-> | %006
       \time 9/8 \grace s8 r4.\mp r4. ees,4.( | %007
       \time 3/4 g8-.) r8 b4( aes8-.) r8\f | %008
       \time 4/4 r8 des,8~ des4~ <des bes'>8->-. r8 r4 | %009
-      r4 r8 d'8-.-> r4\p \D \grace a,8( \U ges'4) | %010
+      r4 r8 d'8-.-> r4\p \D \slashedGrace a,8( \U ges'4) | %010
       \time 5/8 f'8-. r8 r8 r4\< | %011
       \time 3/4 r8 b,,8 r4\f r4 | %012
       g''8 r8 r8 a,,4 aes'8-. | %013
@@ -38,10 +38,10 @@
       \omit Score.BarNumber
       \time 3/4 f2\psempre r8 c'8~ | \undo \omit Score.BarNumber %016
       c8 b'8-. r4 a4~ | %017
-      a8 ees4 r8 r8 \grace ees8( g8) | %018
+      a8 ees4 r8 r8 \slashedGrace ees8^( g8) | %018
       e'8-. r8 d,4 f8 cis'8 | %019
-      r4 bes,4 \grace des'8( ges,8-.) r8 | %020
-      r4 r8 a8-. r8 \clef bass \grace gis,,8( b8) | %021
+      r4 bes,4 \slashedGrace des'8^( ges,8-.) r8 | %020
+      r4 r8 a8-. r8 \clef bass \slashedGrace gis,,8^( b8) | %021
       e,4 r8 d8~ 8 r8 \clef treble | %022
       r8 c'''8-. r4 r4 | %023
       r8 f,8-. r4 aes,4 | %024
@@ -154,7 +154,7 @@
       <d! e>-. ees8-.\ff d8-.\mf\< d8-. d8-. e8-.\f | %097
       r4 \tuplet 3/2 { r8 r8 d8 } \tuplet 3/2  { \D <d, e>8 \U <d' e f>8 \D <d, e f g> } | %098
       \time 3/8 \U <d' e f g a>8-. r8 r8\stopTextSpan \tempo 4=174 | %099
-      \time 3/4 \grace s8 \tuplet 3/2 { r8 \D ges,8 \U <ges' aes>8 }
+      \time 3/4 \slashedGrace s8 \tuplet 3/2 { r8 \D ges,8 \U <ges' aes>8 }
       \override NoteColumn.ignore-collision = ##t
       <<
         {
@@ -357,19 +357,19 @@
       \tempo "Vivace" 4=168
       \omit Staff.DynamicText \omit Staff.Hairpin
       \time 2/4 b4~\f b8 r8 | %b001
-      \time 6/8 r4. \grace ees8( c4.) | %b002
+      \time 6/8 r4. \slashedGrace ees8( c4.) | %b002
       \time 3,2,2 7/8 R1*7/8 | %b003
-      \time 4/4 r8 \grace b8( e,8)\mp r4 r8  aes8~ aes4 | %b004
+      \time 4/4 r8 \slashedGrace b8( e,8)\mp r4 r8  aes8~ aes4 | %b004
       r2 a4.\f bes8 | %b005
       \time 6/8 R1*6/8 | %b006
-      \time 9/8 \grace a8( fis4.)\mp cis'4. r4. | %b007
+      \time 9/8 \slashedGrace a8( fis4.)\mp cis'4. r4. | %b007
       \time 3/4 r4 r4 r8 c8~\f | %b008
       \time 4/4 c2~ c8 r8 r8 a'8~ | %b009
       a8~ <a e>8~ 4 aes4\p r4 | %b010
       \time 3,2 5/8 r4. ees,8\< g8~ | %b011
       \time 3/4 g8 r8 f4\f ges'4 | %b012
       r8 bes,4 r8 r4 | %b013
-      \time 4/4 d,8\mp\< r8 r4 r8 cis'4 \U \grace e'8( \D b8) | %b014
+      \time 4/4 d,8\mp\< r8 r4 r8 cis'4 \U \slashedGrace e'8( \D b8) | %b014
       R1\f | %b015
 
       \time 3/4 des,4\p aes4 d4->~ | %b016
@@ -381,7 +381,7 @@
         }
         \new Voice {
           \voiceTwo
-          r4 r8 \grace aes8( ges8~ ges8) r8 | %(b018)
+          r4 r8 \slashedGrace aes8( ges8~ ges8) r8 | %(b018)
         }
       >>
       \oneVoice
@@ -527,7 +527,7 @@
       <d d'>8-. r8 8-. 8-. 8-. <e e'>8-. | %b097
       r4 r4*1/2 s8^\mp^\< s4 | %b098
       \time 3/8 R1*3/8^\f | %b099
-      \time 3/4 \grace s8 s16 s8.^\mf^\< s4 r4^\ff \clef bass | %b100
+      \time 3/4 \slashedGrace s8 s16 s8.^\mf^\< s4 r4^\ff \clef bass | %b100
       \omit Staff.Hairpin \omit Staff.DynamicText
 
       \time 4/4 \ottava #-1 g,,,,8-.^\mf d8---> ees8( c8) bes---> a8( f'8-.) r8 | %b101

@@ -304,6 +304,7 @@ clarinetMagstep = #(magstep -2)
         \context {
           \Staff
           \override OttavaBracket.outside-staff-priority = 200
+          $(remove-grace-property 'Voice 'Stem 'direction)
         }
       }
     }
@@ -319,7 +320,7 @@ clarinetMagstep = #(magstep -2)
         \removeWithTag #'part \include "manuscripts/III-clarinet.ly"
         \removeWithTag #'part \include "manuscripts/III-piano.ly"
       >>
-     %\midi { }
+      %\midi { }
       \layout {
         \context {
           \Score
@@ -367,7 +368,11 @@ clarinetMagstep = #(magstep -2)
       }
     }
   }
-
+%    \header {
+%      title = \markup { \fontsize #1 \xtitle }
+%      subtitle = \markup { \medium \italic \xsub }
+%      composer = \xcomp
+%      poet = \markup { \xinst }
   \pageBreak
   \markup { \null }
   \pageBreak
